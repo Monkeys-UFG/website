@@ -1,0 +1,1 @@
+# Como funciona esse guia?

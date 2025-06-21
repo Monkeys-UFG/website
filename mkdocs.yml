@@ -6,7 +6,9 @@ nav:
   - Blog:
       - 'blog/index.md'
   - Iniciando na OBI/Maratona:
-      - 'start/intro.md'
+      - 'Introdução':
+        - 'start/introduction/comp.md'
+        - 'start/introduction/guide.md'
       - 'start/cpp.md'
       - 'start/stl.md'
       - 'start/complexity.md'
