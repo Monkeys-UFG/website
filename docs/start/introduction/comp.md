@@ -10,7 +10,9 @@ A resolução de problemas em programação competitiva geralmente segue duas et
 
 Após codificar sua solução, você a submete a um avaliador automático. Ele verifica se as respostas geradas pelo seu programa estão corretas, comparando-as com um conjunto de casos de teste pré-determinados. É importante lembrar que cada problema possui limites de tempo e memória que seu programa deve respeitar para ser aceito, e abordaremos isso em mais detalhes adiante.
 
-### **Olimpíada Brasileira de Informática (OBI)**
+![OBILOGO](../../assets/macaco.png){  width=250 align=left .no-margin }
+
+<h3 class="no-top-margin"><strong>Olimpíada Brasileira de Informática (OBI)</strong></h3>
 A Olimpíada Brasileira de Informática (OBI) é uma competicão individual que acontece anualmente. O objetivo da OBI é despertar interesse nos alunos de todas as idades pela ciencia da computação. A organização da OBI está a cargo do instutito de computação da UNICAMP.
 
 A OBI está organizada em duas modalidades, e cada modalidade é dividida em níveis. Em todas as modalidades e níveis os alunos competem individualmente. Cada aluno poderá ser inscrito e participar em apenas um modalidade e nível.

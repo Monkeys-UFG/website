@@ -18,3 +18,11 @@ body[data-md-color-scheme="slate"] figure.left-caption figcaption {
   color: #d4d3d3;
   margin: 0  
 }
+
+img.no-margin {
+  margin-bottom: 0 !important;
+}
+
+.no-top-margin {
+  margin-top: 0 !important;
+}
