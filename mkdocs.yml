@@ -142,8 +142,6 @@ plugins:
         - Contests
         - test
       post_url_format: "{slug}"
-  - tags:
-      tags_file: tags.md
 
 extra_javascript:
   - javascripts/mathjax.js
