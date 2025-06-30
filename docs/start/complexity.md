@@ -2,6 +2,12 @@
 
 ## Aula Relacionada recomendada:
 
+<figure markdown="span" class="left-caption">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cu3kKbkEZSw?si=Y2Nol4FFzANIDpyo&amp;start=877" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Cŕeditos: Canal Maratona UFMG.</figcaption>
+</figure>
+
+
 ## Motivação
 Pense no seguinte problema
 
@@ -180,12 +186,59 @@ Você pode se safar com mais do que isso, mas isso deve permitir que você verif
 Uma maneira simples de resolver o problema é percorrer todos os subarrays possíveis, calcular a soma dos valores em cada subarray e manter a soma máxima.
 
 O código a seguir implementa este algoritmo:
-```cpp title="CSES1643.cpp" linenums="1"
+```cpp linenums="1"
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
   int n;
   cin >> n;
+  vector<int> a(n);
+  for (int i = 0; i < n; i++) {
+    cin >> a[i];
+  }
+  long long ans = 0;
+  for (int l = 0; l < n; l++) {
+    for (int r = 0; r < n; r++) {
+      long long sum = 0;
+      for (int k = l; k <= r; k++) {
+        sum += a[k];
+      }
+      ans = max(ans, sum);
+    }
+  }
+  cout << ans << '\n';
 }
 ```
+
+A complexidade dessa abordagem é de \(O(n^3)\) o que é inviavel ja que \(n\) é da ordem \(2 \cdot 10^5\).
+
+Para melhorar essa complexidade vamos usar o seguinte raciocinio, considere o subproblema de encontrar o subarray de maior soma que termina na positção \(k\). Existem duas possibilidades:
+
+1. O subarray contém apenas o elemento da posição \(k\).
+2. O subarray contém o subarray que termina na posição \(k - 1\), seguido pelo elemento da posição \(k\).
+
+Já que estamos buscando o subarray máximo com soma máxima, o subarray que termina na posição \(k - 1\) também terá soma máxima. Com isso, podemos resolver o problema eficientemente calculando o subarray que termina em cada posição da esquerda para direita.
+
+O seguinte código implementa essa ideia:
+
+```cpp linenums="1"
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+  int n;
+  cin >> n;
+  vector<int> a(n);
+  for (int i = 0; i < n; i++) {
+    cin >> a[i];
+  }
+  long long ans = 0, sum = 0;
+  for (int k = 0; k < n; k++) {
+    sum = max(a[k], sum + a[k]);
+    ans = max(ans, sum);
+  }
+  cout << ans << '\n';
+}
+```
+Esse algoritmo contém apenas um loop que passa pelo input, então a complexidade final será \(O(n)\).
