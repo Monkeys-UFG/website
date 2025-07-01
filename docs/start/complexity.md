@@ -11,22 +11,24 @@
 ## Motivação
 Pense no seguinte problema
 
-> Dado um array de \(n\) inteiros, encontre a maior soma dos valores em um subarray continuo e não vazio.
+> Dado um array de \(n\) inteiros, sua tarefa é encontrar a soma máxima dos valores em um subarray contíguo e não vazio.
 
 > [CSES - Maximum Subarray Sum](https://cses.fi/problemset/task/1643)
 
 !!! note "Nota"
     Tente resolver o problema antes de continuar a leitura.
 
-A eficiencia de algoritmos é muito importante em competições de programação. Normalmente é mais facil elaborar uma solução lenta que resolve o problema, e o real desafio se torna otimizar essa solução. Se sua solução é muita lenta, voce conseguira pouca pontuação, ou nenhuma pontuação no geral.
+Em competições de programação, a eficiência dos algoritmos é crucial. Embora seja geralmente mais simples conceber uma solução funcional, o verdadeiro desafio reside em otimizá-la. Uma solução ineficiente resultará em pouca ou nenhuma pontuação.
 
-## Cálculo de Complexidade
-Nos desejamos calcular quantas operações leva para rodar um algoritmo, em termos do tamanho do input \( n\). Isso pode ser feito usando a [Notação Big O](https://en.wikipedia.org/wiki/Big_O_notation), que expressa o pior caso de complexidade de tempo como uma função de n quando n tende ao infinito. A complexidade é um limite superior para o número de etapas que um algoritmo requer em função do tamanho da entrada. Na notação Big O, denotamos a complexidade de uma função como \( O(f(n))\), onde fatores constantes e termos de ordem inferior são geralmente omitidos de \( f(n)\). Veremos alguns exemplos de como isso funciona a seguir.
+## Análise de Complexidade
+Queremos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a [Notação Big O](https://en.wikipedia.org/wiki/Big_O_notation), que descreve o pior caso da complexidade de tempo à medida que \(n\) se aproxima do infinito. Essa notação fornece um limite superior para o número de passos que um algoritmo pode requerer, em função do tamanho da entrada.
+
+Quando expressamos a complexidade de uma função como \(O(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir.
 
 ## Exemplos:
 ### Operações constantes
 
-O código a seguir é \(O(1)\), por que executa um número constante de operações.
+O código a seguir é \(O(1)\), pois executa um número constante de operações.
 
 ```cpp linenums="1"
 int a;
@@ -35,12 +37,12 @@ int b = 45;
 int c = a + b;
 cout << c << '\n';
 ```
-Podemos assumir que operações de input e output também são \(O(1)\).
+Podemos assumir que operações de entrada (input) e saída (output) também são \(O(1)\).
 
 ### Loops
-Uma razão comum para seu algoritmo seja lento é uma quantidade muito grande loops que rodam pelo input. Quanto mais loops aninhados seu algoritmo conter, mais lento ele será. Se existem \(k\) loops aninhados, a complexidade de tempo será \(O(n^k)\).
+Uma causa comum para a lentidão de um algoritmo é a quantidade excessiva de loops que processam a entrada. Quanto mais loops aninhados seu algoritmo contiver, mais lento ele será. Se houver \(k\) loops aninhados, a complexidade de tempo será \(O(n^k)\).
 
-O código a seguir possui complexidade \(O(n)\)
+O código a seguir tem complexidade \(O(n)\):
 
 ```cpp linenums="1"
 for (int i = 1; i <= n; i++) {
@@ -48,15 +50,14 @@ for (int i = 1; i <= n; i++) {
 }
 ```
 
-Como estamos ignorando fatores de ordem menor o código a seguir também é \(O(n)\)
+Como ignoramos fatores de ordem menor, o código abaixo também é \(O(n)\):
 
 ```cpp linenums="1"
 for (int i = 1; i <= n + 4356; i++) {
   // operações constantes
 }
 ```
-
-Para sabermos a complexidade de loops aninhados podemos multiplicar a complexidade de cada loop.
+Para determinar a complexidade de loops aninhados, podemos multiplicar a complexidade de cada loop:
 
 ```cpp linenums="1"
 for (int i = 1; i <= n; i++) { // O(n)
@@ -77,7 +78,7 @@ for (int i = 1; i <= n; i++) { // O(n)
 ```
 Complexidade: \(O(n^2)\)
 
-Se um algoritmo possui multiplos blocos, consideramos a complexidade como a pior complexidade entre todos os blocos.
+Se um algoritmo possui múltiplos blocos de código, consideramos a complexidade como a pior complexidade entre todos os blocos.
 
 ```cpp linenums="1"
 for (int i = 1; i <= n; i++) {
@@ -104,10 +105,11 @@ for (int i = 1; i <= m; i++) {
   // operações constantes
 }
 ```
-Complexidade: \(O(n^2 + m)\), o primeiro bloco tem complexidade \(O(n^2)\) o segundo possui complexidade \(O(m)\), e nenhuma delas é uma função de ordem inferior em relação à outra.
+
+Complexidade é: \(O(n^2+m)\). Isso porque o primeiro bloco tem complexidade \(O(n^2)\) e o segundo tem complexidade \(O(m)\), e nenhuma delas é uma função de ordem inferior em relação à outra.
 
 ### Recursão
-A complexidade de uma função recursiva depende do número de vezes que a função é chamada e a complexidade de cada chamada. A complexidade será o produto desses valores.
+A complexidade de uma função recursiva é determinada pelo número de vezes que a função é chamada multiplicado pela complexidade de cada chamada.
 
 Considere a seguinte função:
 ```cpp linenums="1"
@@ -122,9 +124,9 @@ int main() {
   f(1, n);
 }
 ```
-A chamada `f(1, n)` causa \(n\) chamadas da função, cada chamada tem complexidade \(O(1)\). Portanto a complexidade final é \(O(n)\)
+A chamada `f(1, n)` resulta em \(n\) chamadas da função, e cada uma delas tem complexidade \(O(1)\). Sendo assim, a complexidade total é \(O(n)\).
 
-Já nessa seguinte função:
+Agora, vejamos a próxima função:
 ```cpp linenums="1"
 int g(int val, int limite) {
   if (val == limite) return;
@@ -138,8 +140,9 @@ int main() {
   g(1, n);
 }
 ```
-Nesse caso cada chamada da função ``g`` gera duas novas chamadas, com excessão de o valor chegar ao limite.
-A tabela da quantidade de chamadas pode ser vizualizada a seguir:
+Nesse caso, cada chamada da função ``g`` gera duas novas chamadas, exceto quando o valor atinge o limite.
+
+A tabela a seguir mostra a quantidade de chamadas:
 
 | Chamada da função     | Número de chamadas                          |
 | ----------- | ------------------------------------ |
@@ -149,25 +152,27 @@ A tabela da quantidade de chamadas pode ser vizualizada a seguir:
 | `...`             |...|
 | `g(limite, n)`| \(2^{n-1}\) |
 
-Baseado nisso a complexidade será:
+
+Com base nisso, a complexidade será:
 
 $$ 1 + 2 + 4 + ... + 2^{n - 1} = 2^n-1 = O(2^n). $$
 
-Complexidades e restrições comuns:
+### Complexidades Comuns e Restrições
 
-- Fórmulas matemáticas que apenas calculam uma resposta: \(O(n)\)
+- Fórmulas matemáticas que apenas calculam uma resposta: \(O(1)\)
 - Busca binária: \(O(\log n)\)
-- Set/map ou priority queue: \(O(\log n)\) por operação
+- Operações em ``Set``/``Map`` ou ``Priority Queue``: \(O(\log n)\) por operação
 - Fatoração prima ou verificação de número primo: \(O\sqrt{n}\)
-- Lendo \(n \) itens do input: \(O(n)\) 
-- Iterar por um array ou lista de \(n \) elementos: \(O(n)\)
-- Sorting: Geralmente implementado em \(O(n \cdot \log n)\) em sorts da linguagem.
+- Leitura \(n \) itens de entrada: \(O(n)\) 
+- Iteração por um array ou lista de \(n \) elementos: \(O(n)\)
+- Ordenação (Sorting): Geralmente implementado em \(O(n \cdot \log n)\) nas funções de ordenação da linguagem.
 - Iterar por todos os subconjuntos de tamanho k de uma lista: \(O(n^k)\)
 - Iterar por todos os subconjuntos: \(O(2^n)\)
 - Iterar por todas as permutações: \(O(n!)\)
 
 Aqui estão limites superiores conservadores para o valor de \(n\) para cada complexidade de tempo.
-Você pode se safar com mais do que isso, mas isso deve permitir que você verifique rapidamente se um algoritmo é viável.
+
+Você pode conseguir um desempenho melhor em alguns casos, mas esta tabela te ajudará a verificar rapidamente a viabilidade de um algoritmo.
 
 
 | \(n\)                      | Complexidades possíveis          |
@@ -182,10 +187,10 @@ Você pode se safar com mais do que isso, mas isso deve permitir que você verif
 | \(n \leq 5 \cdot 10^6\)| \(O(n)\)                         |
 | \(n \leq 10^{18}\)     | \(O(\log^2 n), O(\log n), O(1)\) |
 
-### Maximum Subarray Sum
-Uma maneira simples de resolver o problema é percorrer todos os subarrays possíveis, calcular a soma dos valores em cada subarray e manter a soma máxima.
+### Motivação: Maximum Subarray Sum
+Uma maneira direta de resolver o problema é iterar sobre todos os subarrays possíveis, calcular a soma de cada um e registrar a maior soma encontrada.
 
-O código a seguir implementa este algoritmo:
+O código a seguir implementa essa abordagem:
 ```cpp linenums="1"
 #include <bits/stdc++.h>
 using namespace std;
@@ -211,16 +216,17 @@ int main() {
 }
 ```
 
-A complexidade dessa abordagem é de \(O(n^3)\) o que é inviavel ja que \(n\) é da ordem \(2 \cdot 10^5\).
+A complexidade dessa solução é \(O(n^3)\). Como \(n\) pode ser da ordem de \(2 \cdot 10^5\), essa abordagem se torna inviável para a maioria dos casos.
 
-Para melhorar essa complexidade vamos usar o seguinte raciocinio, considere o subproblema de encontrar o subarray de maior soma que termina na positção \(k\). Existem duas possibilidades:
+Para otimizar a complexidade, podemos usar o seguinte raciocínio: vamos nos concentrar em encontrar o subarray de maior soma que termina na posição \(k\). Existem duas possibilidades para esse subarray:
 
-1. O subarray contém apenas o elemento da posição \(k\).
-2. O subarray contém o subarray que termina na posição \(k - 1\), seguido pelo elemento da posição \(k\).
+1. Ele contém apenas o elemento na posição \(k\).
 
-Já que estamos buscando o subarray máximo com soma máxima, o subarray que termina na posição \(k - 1\) também terá soma máxima. Com isso, podemos resolver o problema eficientemente calculando o subarray que termina em cada posição da esquerda para direita.
+2. Ele é formado pelo subarray de maior soma que termina na posição \(k−1\), seguido pelo elemento na posição \(k\).
 
-O seguinte código implementa essa ideia:
+Considerando que estamos buscando a soma máxima global, o subarray que termina na posição \(k−1\) também deve ter a maior soma possível para que a soma total seja máxima. Com essa ideia, podemos resolver o problema eficientemente, calculando a soma máxima do subarray que termina em cada posição, da esquerda para a direita.
+
+O código a seguir implementa essa abordagem:
 
 ```cpp linenums="1"
 #include <bits/stdc++.h>
@@ -241,4 +247,4 @@ int main() {
   cout << ans << '\n';
 }
 ```
-Esse algoritmo contém apenas um loop que passa pelo input, então a complexidade final será \(O(n)\).
+Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\).
