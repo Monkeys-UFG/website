@@ -187,7 +187,8 @@ Você pode conseguir um desempenho melhor em alguns casos, mas esta tabela te aj
 | \(n \leq 5 \cdot 10^6\)| \(O(n)\)                         |
 | \(n \leq 10^{18}\)     | \(O(\log^2 n), O(\log n), O(1)\) |
 
-### Motivação: Maximum Subarray Sum
+## Motivação: Maximum Subarray Sum
+### 1ª Solução
 Uma maneira direta de resolver o problema é iterar sobre todos os subarrays possíveis, calcular a soma de cada um e registrar a maior soma encontrada.
 
 O código a seguir implementa essa abordagem:
@@ -217,6 +218,8 @@ int main() {
 ```
 
 A complexidade dessa solução é \(O(n^3)\). Como \(n\) pode ser da ordem de \(2 \cdot 10^5\), essa abordagem se torna inviável para a maioria dos casos.
+
+### 2ª Solução
 
 Para otimizar a complexidade, podemos usar o seguinte raciocínio: vamos nos concentrar em encontrar o subarray de maior soma que termina na posição \(k\). Existem duas possibilidades para esse subarray:
 
