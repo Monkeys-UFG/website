@@ -69,3 +69,4 @@
     <button class="ctrl next" onclick="plusSlides(1)">❯</button>
   </div>
 </div>
+<br>
