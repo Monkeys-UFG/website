@@ -128,19 +128,19 @@ A chamada `f(1, n)` resulta em \(n\) chamadas da função, e cada uma delas tem 
 
 Agora, vejamos a próxima função:
 ```cpp linenums="1"
-int g(int val, int limite) {
-  if (val == limite) return;
-  g(val + 1, limite);
-  g(val + 1, limite);
+int fib(n) {
+  if (n == 0) return 0;
+  if (n == 1) return 1;
+  return fib(n - 1) + fib(n - 2);  
 }
 
 int main() {
   int n;
   cin >> n;
-  g(1, n);
+  fib(n);
 }
 ```
-Nesse caso, cada chamada da função ``g`` gera duas novas chamadas, exceto quando o valor atinge o limite.
+Nesse caso, cada chamada da função ``fib`` gera duas novas chamadas, exceto quando o valor atinge o limite.
 
 A tabela a seguir mostra a quantidade de chamadas:
 
@@ -250,4 +250,4 @@ int main() {
   cout << ans << '\n';
 }
 ```
-Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\).
+Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como [Algoritmo de Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
