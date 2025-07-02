@@ -1,0 +1,84 @@
+/* 1) Wrapper principal */
+.slider-wrapper {
+  position: relative;
+  max-width: 800px; /* largura máxima no desktop */
+  margin: auto;
+}
+
+/* 2) Container dos slides: agora sem height fixo, mas com aspect-ratio */
+.slides-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;       /* FORÇA 16:9 em qualquer tamanho */
+  overflow: hidden;
+  background: #000;
+  border: thin solid rgb(132, 132, 132);
+  border-bottom-width: 0;
+}
+
+/* 3) Cada slide ocupa 100% do container (posição absoluta) */
+.image-sliderfade {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* se quiser fade, mantenha a classe .fade com animação */
+}
+.image-sliderfade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 4) Legenda, índice e controles continuam iguais */
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.slide-index {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.controls-bar {
+  border: thin solid rgb(132, 132, 132);
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(228, 228, 228);
+  align-items: center;
+  gap: 20px;
+}
+body[data-md-color-scheme="slate"] .controls-bar {
+  background-color: rgb(50, 50, 50);
+}
+.controls-bar .ctrl {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+}
+.controls-bar .ctrl:hover {
+  color: #25252558;
+}
+body[data-md-color-scheme="slate"] .controls-bar .ctrl:hover {
+  color: #cecece58;
+}
