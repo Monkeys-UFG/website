@@ -6,12 +6,14 @@ nav:
   - Blog:
       - 'blog/index.md'
   - Iniciando na OBI/Maratona:
-      - 'start/intro.md'
+      - 'Introdução':
+        - 'start/introduction/comp.md'
+        - 'start/introduction/guide.md'
       - 'start/cpp.md'
       - 'start/stl.md'
       - 'start/complexity.md'
-      - 'start/practicing.md'
       - 'start/greedy.md'
+      - 'start/practicing.md'
       - 'start/twopointers.md'
       - 'start/prefixsum.md'
       - 'start/binarysearch.md'
@@ -140,8 +142,6 @@ plugins:
         - Contests
         - test
       post_url_format: "{slug}"
-  - tags:
-      tags_file: tags.md
 
 extra_javascript:
   - javascripts/mathjax.js
