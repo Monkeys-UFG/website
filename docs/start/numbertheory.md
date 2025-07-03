@@ -46,15 +46,15 @@ $$
 
 Pois podemos escolher qualquer potência dos primos presentes na fatoração de $n$, de $p_i^{0} = 1$ até $p_i^{\alpha_i}$. A simplificação pode ser feita pela soma de progressão geométrica:
 
-
-\begin{align*}
+$$
+\begin{align}
 & S = 1 + p_i + \cdots + p_i^{\alpha_i -1} +  p_i^{\alpha_i} \\
 & S \cdot p_i = p_i + p_i^{2} + \cdots + p_i^{\alpha_i}+ p_i^{\alpha_i + 1} \\
 & S \cdot p_i - S = p_i^{\alpha_i+1} - p_i^{\alpha_i} + p_i^{\alpha_i} - \cdots + \cdots - p_i + p_i - 1 \\
 & S \cdot (p_i - 1) = p_i^{\alpha_i+1} - 1 \\
 & S = \frac{p_i^{\alpha_i+1} - 1}{p_i - 1}
-\end{align*}
-
+\end{align}
+$$
 
 Por exemplo, a soma dos fatores de 84 é:
 
@@ -221,6 +221,7 @@ int gcd(int a, int b){
     return gcd(b, b%a);
 }
 ```
+
 O algoritmo de Euclides funciona em tempo $O(\log n)$, em que $n = \min(a,b)$. O pior caso do algoritmo é quando $a$ e $b$ são números consecutivos de $Fibonacci$. Por exemplo, $\gcd(13,8) = \gcd(8,5) = \gcd(3,2) = \gcd(2,1) = \gcd(1,0) = 1$.
 
 
@@ -233,11 +234,93 @@ $$
 \varphi(n) = \prod_{i=1}^{k} (p_i^{\alpha_i - 1} \cdot (p_i - 1))
 $$
 
-Por exemplo, $\varphi(12) = 2^1 \cdot (2-1) \cdot 3^0 \cdot (3-1) = 4$. Note que $\varphi(n) = n-1$ se $n$ é primo.
+Por exemplo, $\varphi(12) = 2^1 \cdot (2-1) \cdot 3^0 \cdot (3-1) = 4$. 
+
+Note que $\varphi(n) = n-1$ se $n$ é primo.
 
 
 ## Aritmética modular
  
 Na aritmética modular, o conjunto de números é limitado para apenas $0, 1, 2, \cdots, m-1$, em que $m$ é uma constante. Cada número $x$ é representado pelo número $x \bmod m$. Por exemplo, se $m = 17$, então $75$ é representado como $75 \bmod 17 = 7$.
 
-Frequentemente podemos 
+Pode-se calcular o módulo antes de algumas operações para evitar números muito grandes. Algumas propriedades são:
+
+$$
+\begin{align}
+(x + y) \bmod m = (x \bmod m + y \bmod m) \bmod m \\
+(x - y) \bmod m = (x \bmod m - y \bmod m) \bmod m \\
+(x \cdot y) \bmod m = (x \bmod m \cdot y \bmod m) \bmod m \\
+x^n \bmod m = (x \bmod m)^n \bmod m
+\end{align}
+$$
+
+## Exponenciação Rápida
+Existe um jeito de calcular o valor de $x^n \bmod m$ em $O(\log n)$ utilizando a seguinte recursão:
+
+$$
+x^n = 
+\begin{cases}
+1 &,n = 0 \\
+x^{n/2} \cdot x^{n/2} &, \text{se n é par} \\
+x^{n-1} \cdot x &, \text{se n é impar} 
+\end{cases}
+$$
+
+É importante que no caso de $n$ ser par, o valor de $x^{n/2}$ é calculado apenas uma vez. Isso garante a complexidade $O(\log n)$, por que $n$ é sempre dividido dois quando é par. 
+
+```cpp title="fastexp.cpp" linenums="1"
+int fastexp(int x, int n, int m){
+    if(n==0) return 1;
+    long long p = fastexp(x, n/2, m);
+    p = (p * p) % m;
+    if(n%2 == 1) n = (n * x) % m;
+    return p;
+}
+```
+
+## Pequeno teorema de Fermat e teorema de Euler
+O pequeno teorema de fermat afirma que $x^{m-1} \bmod m  = 1$ quando $m$ é primo e $x$ e $m$ são coprimos. Podemos expandir para $x^k \bmod m = x^{k \bmod (m-1)} \bmod m$.
+
+De forma geral, o teorema de Euler afirma que $x^{\varphi (m)} \bmod m = 1$ quando $x$ e $m$ são coprimos. O teorema de Fermat é equivalente ao teorema de Euler, pois se $m$ é primo, então $\varphi (m) = m-1$.
+
+## Inverso modular
+
+O inverso de $x \mod m$ é um número $x^{-1}$ tal que
+
+$$
+x \cdot x^{-1} \bmod m = 1
+$$
+
+Por exemplo, se $x = 6$ e $m = 17$, então $x^{-1} = 3$, por que $6 \cdot 3 \bmod 17 = 1$. Usando inversos modulares, é possível dividir números módulo $m$, porque divisão por $x$ corresponde à multiplicação por $x^{-1}$. Por exemplo, para calcular o valor de $36/6 \bmod 17$, podemos fazer $36 \cdot 3 \bmod 17 = 2 \cdot 3 \bmod 17$, 
+porque $36 \bmod 17 = 2$ e $6^{-1} \bmod 17 = 3$.
+
+No entanto, o inverso modular nem sempre existe. Por exemplo, se $x = 2$ e $m = 4$, a equação $x \cdot x^{-1} \bmod m = 1$ não pode ser resolvida, porque todos os múltiplos de 2 serão pares e o resto nunca pode ser $1$ quando $m = 4$. 
+
+Temos que $x^{-1} \bmod m$ pode ser calculado apenas quando $x$ e $m$ são coprimos. Se o inverso modular existe, ele pode ser calculado utilizando a fórmula 
+
+$$
+x^{-1} = x^{\varphi(m)-1}
+$$
+
+Se $m$ é primo, a fórmula fica 
+
+$$x^
+{-1} = x^{m-2}
+$$
+
+Por exemplo, $6^{-1} \bmod 17 = 6^{17 - 2} \bmod 17 = 3$.
+
+Essa fórmula permite calcular inversos modulares de uma forma eficiente utilizando o algoritmo da exponenciação rápida. A fórmula pode ser obitda através do teorema de Euler. Primeiramente, o inverso modular deve satisfazer a equação
+
+$$
+x \cdot x^{-1} \bmod m = 1.
+$$
+
+Por outro lado, de acordo com o teorema de Euler,
+
+$$
+x^{\varphi(m)} \bmod m = x \cdot x^{\varphi(m) - 1} \bmod m = 1,
+$$
+
+
+portanto os números $x^{-1}$ e $x^{\varphi(m)-1}$ são iguais.

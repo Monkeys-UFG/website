@@ -4,7 +4,7 @@ Essa seção tem o intuito de apresentar uma introdução à Teoria dos Grafos.
 
 
 ## Definição
-Um grafo é uma estrutura representada por um par ordenado $G = (V, E)$, em que $V$ é o conjunto de vértices e $E$ é o conjunto de arestas. Eles podem ser utilizados para representar relações entre os vértices, através do uso das arestas. Por exemplo, os vértices podem ser vistos como cidades e as arestas como estradas, em que a aresta $(U,V)$ existe se há uma estrada entre as cidades $U$ e $V$.
+Um grafo é representado por um par ordenado $G = (V, E)$, em que $V$ é o conjunto de vértices e $E$ é o conjunto de arestas. Eles podem ser utilizados para representar relações entre os vértices, através do uso das arestas. Por exemplo, os vértices podem ser vistos como cidades e as arestas como estradas, em que a aresta $(U,V)$ existe se há uma estrada entre as cidades $U$ e $V$.
 
 Os exemplos dessa seção serão baseados no seguinte grafo:
 <figure markdown="span" class="graphs"> 
@@ -33,10 +33,10 @@ $$
 
 $$
 \begin{aligned}
-&N(A) = \{B,C\} \\
-&N(B) = \{A,C,D\} \\
-&N(C) = \{A,B,D\} \\
-&N(D) = \{B,C\} 
+    &N(A) = \{B,C\} \\
+    &N(B) = \{A,C,D\} \\
+    &N(C) = \{A,B,D\} \\
+    &N(D) = \{B,C\} 
 \end{aligned}
 $$
 
@@ -46,7 +46,7 @@ Em grafos direcionados, temos dois tipos de grau: de entrada e saida, que repres
 o número de arestas que entram e saem no vértice.
 
 $$
-    Deg(V) = |N(V)| + loops
+    Deg(V) = \left|N(V) \right| + loops
 $$
 
 $$
@@ -57,3 +57,4 @@ $$
 &Deg(D) = 2 
 \end{aligned}
 $$
+
