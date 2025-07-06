@@ -106,7 +106,7 @@ for (int i = 1; i <= m; i++) {
 }
 ```
 
-Complexidade é: \(O(n^2+m)\). Isso porque o primeiro bloco tem complexidade \(O(n^2)\) e o segundo tem complexidade \(O(m)\), e nenhuma delas é uma função de ordem inferior em relação à outra.
+Complexidade: \(O(n^2+m)\). Isso porque o primeiro bloco tem complexidade \(O(n^2)\) e o segundo tem complexidade \(O(m)\), e nenhuma delas é uma função de ordem inferior em relação à outra.
 
 ### Recursão
 A complexidade de uma função recursiva é determinada pelo número de vezes que a função é chamada multiplicado pela complexidade de cada chamada.
@@ -127,7 +127,7 @@ int main() {
 A chamada `f(1, n)` resulta em \(n\) chamadas da função, e cada uma delas tem complexidade \(O(1)\). Sendo assim, a complexidade total é \(O(n)\).
 
 Agora, vejamos a próxima função:
-```cpp linenums="1"
+```cpp linenums="1" title="fibonacci.cpp"
 int fib(n) {
   if (n == 0) return 0;
   if (n == 1) return 1;
@@ -140,22 +140,25 @@ int main() {
   fib(n);
 }
 ```
-Nesse caso, cada chamada da função ``fib`` gera duas novas chamadas, exceto quando o valor atinge o limite.
+Nesse caso, cada chamada da função ``fib(n)`` gera duas novas chamadas recursivas: ``fib(n - 1)`` e ``fib(n - 2)``, exceto quando atinge os casos base, que são retornados diretamente sem gerar novas chamadas.
 
-A tabela a seguir mostra a quantidade de chamadas:
+A árvore abaixo representa visualmente essa estrutura de chamadas para ``fib(5)``
 
-| Chamada da função     | Número de chamadas                          |
-| ----------- | ------------------------------------ |
-| `g(val, n)`       | 1  |
-| `g(val + 1, n)`   | 2 |
-| `g(val + 2, n)`   | 4 |
-| `...`             |...|
-| `g(limite, n)`| \(2^{n-1}\) |
+<figure markdown="span" class="graphs"> 
+    ![Exemplo de Fibonnaci](../assets/graphs/fibonacci.png)
+</figure>
 
+Observe que:
 
-Com base nisso, a complexidade será:
+- A árvore cresce para a esquerda e para a direita a cada chamada, como uma árvore binária.
+
+- Muitos valores são recalculados diversas vezes. Por exemplo, ``fib(2)`` é chamado 3 vezes, ``fib(1)`` aparece 5 vezes.
+
+Podemos estimar o número total de chamadas com a soma dos nós por nível:
 
 $$ 1 + 2 + 4 + ... + 2^{n - 1} = 2^n-1 = O(2^n). $$
+
+Ou seja, a complexidade de tempo da versão recursiva de Fibonacci é exponencial, pois o número de chamadas cresce rapidamente com \(n\).
 
 ### Complexidades Comuns e Restrições
 
@@ -186,6 +189,9 @@ Você pode conseguir um desempenho melhor em alguns casos, mas esta tabela te aj
 | \(n \leq 5 \cdot 10^5\)| \(O(n \log n)\)                  |
 | \(n \leq 5 \cdot 10^6\)| \(O(n)\)                         |
 | \(n \leq 10^{18}\)     | \(O(\log^2 n), O(\log n), O(1)\) |
+
+Uma estimativa conservadora para o número de operações que o servidor pode lidar por segundo é de \(10^8\), mas esse número pode chegar mais próximo de \(5 \cdot 10^8\) se os fatores constantes forem favoráveis.
+
 
 ## Motivação: Maximum Subarray Sum
 ### 1ª Solução

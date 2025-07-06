@@ -1,15 +1,11 @@
 ---
 date: 2024-03-28
-categories:
-  - Contests
-tags:
-  - nelsi
 authors:
   - tiago
   - danilo
 ---
 
-# Indo pro mundial testando
+# Em breve...
 
 ![NELSI](../../assets/blog-images/icpc.jpg)
 

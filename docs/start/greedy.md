@@ -10,5 +10,10 @@
 
 ## Motivação
 Pense no seguinte problema
+> Um restaurante recebeu \(n\) pedidos de reserva. Cada pedido reserva o restaurante por um período contínuo de tempo, sendo o \(i\)-ésimo pedido caracterizado por dois valores: o instante de início \(l_i\) e o instante de término \(r_i\) (com \(l_i \leq r_i\)).
+
+> A administração do restaurante pode aceitar ou recusar os pedidos. Qual é o número máximo de pedidos que podem ser aceitos?
+
+> Importante: nenhum par de pedidos aceitos pode se sobrepor, ou seja, eles não podem compartilhar nem mesmo um instante de tempo. Se um pedido termina exatamente no mesmo momento em que outro começa, ambos não podem ser aceitos simultaneamente.
 
 > [Codeforces - Restaurant](https://codeforces.com/problemset/problem/597/B)
