@@ -10,7 +10,7 @@ $$
 
 Por exemplo, os divisores de $24$ são $1, 2, 3, 4, 6, 8, 12$ e $24$, pois $24 = 1 \cdot 24, 24 = 2 \cdot 12,$ $24 = 3 \cdot 8, etc.$
 
-## Primos
+### Primos
 Um número $n > 1$ é primo se seus únicos divisores positivos são $1$ e $n$. Por exemplo, $7, 19$ e $41$ são primos, mas 35 não é primo pois $5 \cdot 7 = 35$. Para todo número $n > 1$ existe uma única fatoração em primos:
 
 $$
@@ -31,7 +31,7 @@ $$
 \tau(n) = \prod_{i=1}^{k} (\alpha_i + 1),
 $$
 
-Porque para todo primo $p_i,$ existem $\alpha_i$ formas de escolher quantas vezes ele aparece no divisor. Por exemplo, o número de divisores de 84 é:
+Porque para todo primo $p_i,$ existem $\alpha_i + 1$ formas de escolher quantas vezes ele aparece no divisor(de $p_i^0$ até $p_i^{\alpha_i}$). Por exemplo, o número de divisores de 84 é:
 
 $$
 \tau(84) = 3 \cdot 2 \cdot 2 = 12.
@@ -48,11 +48,11 @@ Pois podemos escolher qualquer potência dos primos presentes na fatoração de 
 
 $$
 \begin{align}
-& S = 1 + p_i + \cdots + p_i^{\alpha_i -1} +  p_i^{\alpha_i} \\
-& S \cdot p_i = p_i + p_i^{2} + \cdots + p_i^{\alpha_i}+ p_i^{\alpha_i + 1} \\
-& S \cdot p_i - S = p_i^{\alpha_i+1} - p_i^{\alpha_i} + p_i^{\alpha_i} - \cdots + \cdots - p_i + p_i - 1 \\
-& S \cdot (p_i - 1) = p_i^{\alpha_i+1} - 1 \\
-& S = \frac{p_i^{\alpha_i+1} - 1}{p_i - 1}
+S &= 1 + p_i + \cdots + p_i^{\alpha_i -1} +  p_i^{\alpha_i} \\
+S \cdot p_i &= p_i + p_i^{2} + \cdots + p_i^{\alpha_i}+ p_i^{\alpha_i + 1} \\
+S \cdot p_i - S &= p_i^{\alpha_i+1} - p_i^{\alpha_i} + p_i^{\alpha_i} - \cdots + \cdots - p_i + p_i - 1 \\
+S \cdot (p_i - 1) &= p_i^{\alpha_i+1} - 1 \\
+S &= \frac{p_i^{\alpha_i+1} - 1}{p_i - 1}
 \end{align}
 $$
 
@@ -98,7 +98,7 @@ A função $is \_ prime$ abaixo checa se o número $n$ é primo. Sabemos que o �
 ```cpp title="is_prime.cpp" linenums="1"
 bool is_prime(int n) {
     if (n < 2) return false;
-    if(n%2==0 && n>2) return false;
+    if(n%2==0) return n==2;
 
     for (int x = 3; x*x <= n; x+=2) {
         if (n%x == 0) return false;
@@ -129,30 +129,28 @@ vector<int> factors(int n) {
 Note que cada fator primo aparece no vector a quantidade de vezes que ele divide o número. Por exemplo, $24 = 2^3  \cdot 3$, portanto o resultado da função será $[2, 2, 2, 3]$.
 
 ## Crivo de Eratóstenes
-O crivo de Eratóstenes é um algoritmo que constrói um vetor no qual podemos usar de maneira eficiente para determinar se um determinado número entre $2$ e $n$ é primo.
-O algoritmo constrói um vetor $prime$ cujas posições $2, 3, \cdots, n$ são usadas. O valor $prime[k] = 1$ significa que $k$ é primo, e o valor $prime[k] = 0$ significa que $k$ não é primo.
+O crivo de Eratóstenes é um algoritmo que constrói um vetor no qual podemos usar de maneira eficiente para determinar se um determinado número entre $0$ e $n$ é primo.
+O algoritmo constrói um vetor $prime$ cujas posições $0, 1, 2, 3, \cdots, n$ são usadas. O valor $prime[k] = 1$ significa que $k$ é primo, e o valor $prime[k] = 0$ significa que $k$ não é primo.
 
 O algoritmo itera sobre os números $2, \cdots, n$ um por um. Sempre que um novo primo $x$ é achado, o algoritmo guarda que os múltiplos de $x$ $(2x, 3x, 4x, \cdots)$ não são primos, pois são divisíveis por x.
 
 ```cpp title="crivo.cpp" linenums="1"
-const int N = 1e6+5;
-int prime[N];
-
-void crivo() {
-    for(int x=2; x < N; x++) prime[x] = 1;
+vector<int> crivo(int N) {
+    vector<int>prime(N, 1);
+    prime[0] = prime[1] = 0;
 
     for (int x = 2; x < N; x++) {
         if(prime[x]){
             for(int y = x+x; y < N; y+=x){
                 prime[y] = 0;
-
             }
         }
     }
+    return prime;
 }
 ```
 
-O loop interior do algoritmo é executado $n/x$ vezes para cada valor de $x$. Portanto, um upper bound para a complexidade de tempo é a soma harmonica 
+O loop interior do algoritmo é executado $n/x$ vezes para cada valor de $x$. Portanto, um upper bound para a complexidade de tempo é a série harmônica 
 
 $$
     \sum_{x=2}^{n} \frac {n}{x} = \frac {n}{2} + \frac {n}{3} + \cdots + \frac {n}{n} = O(n \log{n})
@@ -162,20 +160,20 @@ Na realidade, o algoritmo é mais eficiente, pois o loop interior vai ser execut
 
 
 Podemos alterar o algoritmo para obter a fatoração de cada número entre $2$ e $n$, criando um novo vetor $d$ de vectors, em que $d[k]$ guarda a fatoração em primos do número $k$.
-```cpp title="crivo_div.cpp" linenums="1"
-const int N = 1e6+5;
-int prime[N];
-vector<int> d[N];
 
-void crivo() {
-    for(int x=2; x < N; x++) prime[x] = 1;
+
+```cpp title="crivo_div.cpp" linenums="1"
+vector<vector<int>> crivo(int N) {
+    vector<int>prime(N, 1);
+    prime[0] = prime[1] = 0;
+    vector<vector<int>>d(N);
 
     for (int x = 2; x < N; x++) {
         if(prime[x]){
             d[x].push_back(x);
             for(int y = x+x; y < N; y+=x){
                 prime[y] = 0;
-
+            
                 int t = y;
                 while(t%x==0){
                     d[y].push_back(x);
@@ -184,16 +182,14 @@ void crivo() {
             }
         }
     }
+    return d;
 }
 ```
 
-## Algoritmo de Euclides
-
-### Máximo Divisor Comum (MDC ou GCD)
+## Máximo Divisor Comum (MDC ou GCD)
 O máximo divisor comum de dois números $a$ e $b$, $\gcd(a,b)$, é o maior número que divide tanto $a$ quanto $b$. Por exemplo, $\gcd(24,36) = 12$.
 
-
-### Mínimo múltiplo comum (MMC ou LCM)
+## Mínimo múltiplo comum (MMC ou LCM)
 O mínimo múltiplo comum de dois números $a$ e $b$, $lcm(a,b)$, é o menor número que é divisível tanto por $a$ quanto por $b$. Por exemplo, $lcm(24,36) = 72.$
 
 O $\gcd$ e o $lcm$ possuem a seguinte propriedade:
@@ -202,7 +198,7 @@ $$
     lcm(a,b) = \frac{ab}{\gcd(a,b)}
 $$
 
-## Euclides
+## Algoritmo de Euclides
 O algoritmo de euclides é uma maneira eficiente de calcular o $\gcd$ de dois números. O algoritmo é baseado na seguinte fórmula:
 
 $$
@@ -226,7 +222,7 @@ O algoritmo de Euclides funciona em tempo $O(\log n)$, em que $n = \min(a,b)$. O
 
 
 ## Função totiente de Euler
-Números $a$ e $b$ são coprimos se $\gcd(a,b) = 1$. A função totiente de Euler $\varphi(n)$ calcula a quantidade de números coprimos com $n$ de $1$ até $n$. Por exemplo, $\varphi(12) = 4$, por que $1, 5, 7$ e $11$ são coprimos com $12$.
+Números $a$ e $b$ são coprimos se $\gcd(a,b) = 1$. A função totiente de Euler $\varphi(n)$ calcula a quantidade de números coprimos com $n$ de $1$ até $n$. Por exemplo, $\varphi(12) = 4$, porque $1, 5, 7$ e $11$ são coprimos com $12$.
 
 O valor de $\varphi(n)$ pode ser calculado pela fatoração em primos de $n$ usando a formula:
 
@@ -234,7 +230,7 @@ $$
 \varphi(n) = \prod_{i=1}^{k} (p_i^{\alpha_i - 1} \cdot (p_i - 1))
 $$
 
-Por exemplo, $\varphi(12) = 2^1 \cdot (2-1) \cdot 3^0 \cdot (3-1) = 4$. 
+Por exemplo, $\varphi(12) = (2^1 \cdot (2-1)) \cdot (3^0 \cdot (3-1)) = 4$. 
 
 Note que $\varphi(n) = n-1$ se $n$ é primo.
 
@@ -247,10 +243,10 @@ Pode-se calcular o módulo antes de algumas operações para evitar números mui
 
 $$
 \begin{align}
-(x + y) \bmod m = (x \bmod m + y \bmod m) \bmod m \\
-(x - y) \bmod m = (x \bmod m - y \bmod m) \bmod m \\
-(x \cdot y) \bmod m = (x \bmod m \cdot y \bmod m) \bmod m \\
-x^n \bmod m = (x \bmod m)^n \bmod m
+(x + y) \bmod m &= (x \bmod m + y \bmod m) \bmod m \\
+(x - y) \bmod m &= (x \bmod m - y \bmod m) \bmod m \\
+(x \cdot y) \bmod m &= (x \bmod m \cdot y \bmod m) \bmod m \\
+x^n \bmod m &= (x \bmod m)^n \bmod m
 \end{align}
 $$
 
@@ -266,14 +262,14 @@ x^{n-1} \cdot x &, \text{se n é impar}
 \end{cases}
 $$
 
-É importante que no caso de $n$ ser par, o valor de $x^{n/2}$ é calculado apenas uma vez. Isso garante a complexidade $O(\log n)$, por que $n$ é sempre dividido dois quando é par. 
+É importante que no caso de $n$ ser par, o valor de $x^{n/2}$ é calculado apenas uma vez. Isso garante a complexidade $O(\log n)$, porque $n$ é sempre dividido por dois quando é par. 
 
 ```cpp title="fastexp.cpp" linenums="1"
 int fastexp(int x, int n, int m){
     if(n==0) return 1;
     long long p = fastexp(x, n/2, m);
     p = (p * p) % m;
-    if(n%2 == 1) n = (n * x) % m;
+    if(n%2 == 1) p = (p * x) % m;
     return p;
 }
 ```
@@ -285,13 +281,13 @@ De forma geral, o teorema de Euler afirma que $x^{\varphi (m)} \bmod m = 1$ quan
 
 ## Inverso modular
 
-O inverso de $x \mod m$ é um número $x^{-1}$ tal que
+O inverso de $x\mod m$ é um número $x^{-1}$ tal que
 
 $$
 x \cdot x^{-1} \bmod m = 1
 $$
 
-Por exemplo, se $x = 6$ e $m = 17$, então $x^{-1} = 3$, por que $6 \cdot 3 \bmod 17 = 1$. Usando inversos modulares, é possível dividir números módulo $m$, porque divisão por $x$ corresponde à multiplicação por $x^{-1}$. Por exemplo, para calcular o valor de $36/6 \bmod 17$, podemos fazer $36 \cdot 3 \bmod 17 = 2 \cdot 3 \bmod 17$, 
+Por exemplo, se $x = 6$ e $m = 17$, então $x^{-1} = 3$, porque $6 \cdot 3 \bmod 17 = 1$. Usando inversos modulares, é possível dividir números módulo $m$, porque divisão por $x$ corresponde à multiplicação por $x^{-1}$. Por exemplo, para calcular o valor de $36/6 \bmod 17$, podemos fazer $36 \cdot 3 \bmod 17 = 2 \cdot 3 \bmod 17$, 
 porque $36 \bmod 17 = 2$ e $6^{-1} \bmod 17 = 3$.
 
 No entanto, o inverso modular nem sempre existe. Por exemplo, se $x = 2$ e $m = 4$, a equação $x \cdot x^{-1} \bmod m = 1$ não pode ser resolvida, porque todos os múltiplos de 2 serão pares e o resto nunca pode ser $1$ quando $m = 4$. 
@@ -299,16 +295,16 @@ No entanto, o inverso modular nem sempre existe. Por exemplo, se $x = 2$ e $m = 
 Temos que $x^{-1} \bmod m$ pode ser calculado apenas quando $x$ e $m$ são coprimos. Se o inverso modular existe, ele pode ser calculado utilizando a fórmula 
 
 $$
-x^{-1} = x^{\varphi(m)-1}
+x^{-1} = x^{\varphi(m)-1} \bmod m
 $$
 
-Se $m$ é primo, a fórmula fica 
+Se $m$ é primo, obtemos
 
 $$x^
-{-1} = x^{m-2}
+{-1} = x^{m-2} \bmod m
 $$
 
-Por exemplo, $6^{-1} \bmod 17 = 6^{17 - 2} \bmod 17 = 3$.
+Por exemplo, $6^{-1} \bmod 17 = 6^{17 - 2} \bmod 17 = 3$. Note que $6 \cdot 3 \bmod 17 = 1$.
 
 Essa fórmula permite calcular inversos modulares de uma forma eficiente utilizando o algoritmo da exponenciação rápida. A fórmula pode ser obitda através do teorema de Euler. Primeiramente, o inverso modular deve satisfazer a equação
 
@@ -324,3 +320,14 @@ $$
 
 
 portanto os números $x^{-1}$ e $x^{\varphi(m)-1}$ são iguais.
+
+
+## Problemas recomendados
+
+- [CSES - Counting Divisors](https://cses.fi/problemset/task/1713)
+- [CSES - Next Prime](https://cses.fi/problemset/task/3396)
+- [CSES - Common Divisors](https://cses.fi/problemset/task/1081)
+- [CSES - Divisor Analysis](https://cses.fi/problemset/task/2182)
+- [CSES - Exponentiation](https://cses.fi/problemset/task/1095)
+- [CSES - Exponentiation II](https://cses.fi/problemset/task/1712)
+- [Atcoder - Div Game](https://atcoder.jp/contests/abc169/tasks/abc169_d)
