@@ -42,8 +42,7 @@ nav:
       - 'start/segtree.md'
 
   - Biblioteca:
-    - 'Graphs':
-      - 'library/graphs/bfs.md'
+      - 'library/note.md'
   - Sites:
       - 'sites/codeforces.md'
       - 'sites/atcoder.md'
@@ -61,6 +60,8 @@ theme:
   icon:
     annotation: material/arrow-right-circle
     repo: fontawesome/brands/github
+    edit: material/file-edit-outline
+    view: material/file-eye-outline
   palette:
     # Dark Mode
     - scheme: slate
@@ -85,6 +86,8 @@ theme:
     - content.code.copy
     - content.code.select
     - content.tooltips
+    - content.action.edit
+    - content.action.view
 
 markdown_extensions:
   - pymdownx.emoji:
@@ -115,6 +118,7 @@ markdown_extensions:
       generic: true
 repo_url: https://github.com/Monkeys-UFG/website
 repo_name: Monkeys-UFG/website
+edit_uri: edit/main/docs
 
 extra:
   social:

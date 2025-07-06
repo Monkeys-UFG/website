@@ -1,3 +1,3 @@
-#execute "bash run.sh" para iniciar o site localmente. O link aparecerá no terminal
+# run "bash run.sh" to start the site locally. The link will appear in the terminal
 source mkdocs-env/bin/activate
 mkdocs serve
