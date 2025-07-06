@@ -1,6 +1,6 @@
 # Site do Grupo Monkeys
 
-- [Versão no github pages](https://github.com/DaniloLMD)
+- [Versão no github pages](https://monkeys-ufg.github.io/website/)
 
 ## Para clonar e rodar localmente o repositório:
 ```bash
