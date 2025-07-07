@@ -15,7 +15,6 @@ Pense no seguinte problema
 
 > Dado um array de \(n\) inteiros, sua tarefa é encontrar a soma máxima dos valores em um subarray contíguo e não vazio.
 
-
 !!! note "Nota"
     Tente resolver o problema antes de continuar a leitura.
 
@@ -286,4 +285,5 @@ int main() {
   cout << ans << '\n';
 }
 ```
-Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como [Algoritmo de Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
+Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como
+<a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem" target="_blank">Algoritmo de Kadane</a>.

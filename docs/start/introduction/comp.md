@@ -39,7 +39,7 @@ Os níveis da Modalidade Programação são:
 #### Premiação
 Todos os participantes receberão certificados de participação. Os melhores colocados de cada modalidade receberão ainda medalhas de ouro, prata e bronze.
 
-Para mais detalhes: <https://olimpiada.ic.unicamp.br/>
+Para mais detalhes: <a href="https://olimpiada.ic.unicamp.br/" target="_blank">https://olimpiada.ic.unicamp.br/</a>
 
 ### **Maratona de Programação da SBC**
 
