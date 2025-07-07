@@ -1,6 +1,6 @@
 # Complexidade de Algoritmos
 
-## Aula Relacionada recomendada
+## Aula relacionada recomendada
 
 <figure markdown="span" class="left-caption">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/cu3kKbkEZSw?si=Y2Nol4FFzANIDpyo&amp;start=877" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -154,7 +154,7 @@ A chamada `f(1, n)` resulta em \(n\) chamadas da função, e cada uma delas tem 
 
 Agora, vejamos a próxima função:
 ```cpp linenums="1" title="fibonacci.cpp"
-int fib(n) {
+int fib(int n) {
   if (n == 0) return 0;
   if (n == 1) return 1;
   return fib(n - 1) + fib(n - 2);  

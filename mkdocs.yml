@@ -12,6 +12,7 @@ nav:
       - 'start/cpp.md'
       - 'start/stl.md'
       - 'start/complexity.md'
+      - 'start/recursion.md'
       - 'start/greedy.md'
       - 'start/practicing.md'
       - 'start/twopointers.md'
