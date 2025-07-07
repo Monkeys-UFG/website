@@ -13,7 +13,7 @@ Se você é iniciante em programação, realizar um curso sobre a linguagem pode
 !!! info "Conteúdo em Texto"
     O conteúdo em texto será mais conciso e abordará apenas os tópicos mais importantes. Por isso, ele não será tão detalhado quanto o conteúdo em vídeo.
 
-### Conteúdo em vídeos recomendado
+### Conteúdo em vídeo recomendado
 
 <figure markdown="span" class="left-caption">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/vLnPwxZdW4Y?si=AaBkJppx_BZzpRQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -23,7 +23,7 @@ Se você é iniciante em programação, realizar um curso sobre a linguagem pode
 !!! tip "Pro Tip"
     Conhecimento sobre ponteiros, structs e classes é útil, mas não é obrigatório.
 
-### Tópicos em texto
+### Conteúdo em texto recomendado
 
 Para o conteúdo em texto, utilizaremos como referência o site <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>, que oferece um <a href="https://www.w3schools.com/cpp/default.asp" target="_blank">tutorial completo de C++</a>. No entanto, os tópicos que serão mais importantes serão os descritos a seguir.
 
