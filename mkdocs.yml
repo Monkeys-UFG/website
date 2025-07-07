@@ -18,17 +18,20 @@ nav:
       - 'start/prefixsum.md'
       - 'start/binarysearch.md'
       - 'start/bitmanipulation.md'
-      - 'Grafos: Introdução':
+      - 'Grafos':
         - 'start/graphs-intro/introduction.md'
         - 'start/graphs-intro/classes.md'
         - 'start/graphs-intro/representation.md'
         - 'Busca':
           - 'start/graphs-intro/search/dfs.md'
           - 'start/graphs-intro/search/bfs.md'
-        - 'Caminho Minimo':
+        - 'Caminho Mínimo':
           - 'start/graphs-intro/min-path/bellmanford.md'
           - 'start/graphs-intro/min-path/floydwarshall.md'
           - 'start/graphs-intro/min-path/dijkstra.md'
+        - 'Árvore Geradora Mínima':
+          - 'start/graphs-intro/mst/kruskal.md'
+          - 'start/graphs-intro/mst/prim.md'
       - 'start/numbertheory.md'
       - 'start/geometry.md'
       - 'Programação Dinâmica':
@@ -36,8 +39,7 @@ nav:
         - 'start/dp/knapsack.md'
         - 'start/dp/paths.md'
         - 'start/dp/lcs.md'
-      - 'Grafos':
-        - 'start/graphs-advanced/dsu.md'
+      - 'start/dsu.md'
       - 'start/fenwick.md'
       - 'start/segtree.md'
 
