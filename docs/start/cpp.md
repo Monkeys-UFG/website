@@ -25,9 +25,9 @@ Se você é iniciante em programação, realizar um curso sobre a linguagem pode
 
 ### Tópicos em texto
 
-Para o conteúdo em texto, utilizaremos como referência o site [W3Schools](https://www.w3schools.com/), que oferece um [tutorial completo de C++](https://www.w3schools.com/cpp/default.asp). No entanto, os tópicos que serão mais importantes serão os descritos a seguir.
+Para o conteúdo em texto, utilizaremos como referência o site <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>, que oferece um <a href="https://www.w3schools.com/cpp/default.asp" target="_blank">tutorial completo de C++</a>. No entanto, os tópicos que serão mais importantes serão os descritos a seguir.
 
-W3Schools C++ Tutorial: <https://www.w3schools.com/cpp/default.asp>
+W3Schools C++ Tutorial: <a href="https://www.w3schools.com/cpp/default.asp" target="_blank">https://www.w3schools.com/cpp/default.asp</a>
 
 - ``C++ Tutorial``, com exceção das seções ``C++ Enums``, ``C++ References`` e ``C++ Pointers``.
 - ``C++ Functions``, com exceção da seção ``C++ Lambda``.
@@ -37,28 +37,19 @@ As seções não citadas não são tão relevantes.
 
 Para mais informações: 
 
-- C++ reference: <https://en.cppreference.com/w/>
-- cplusplus.com: <https://cplusplus.com/>
+- C++ reference: <a href="https://en.cppreference.com/w/" target="_blank">https://en.cppreference.com/w/</a>
+
+- cplusplus.com: <a href="https://cplusplus.com/" target="_blank">https://cplusplus.com/</a>
 
 ## Lista de Exercícios
 
-- [AtCoder - Doors in the Center](https://atcoder.jp/contests/abc398/tasks/abc398_a)
-- [AtCoder - Thermometer](https://atcoder.jp/contests/abc397/tasks/abc397_a)
-- [AtCoder - Triple Four](https://atcoder.jp/contests/abc396/tasks/abc396_a)
-- [CSES - Weird Algorithm](https://cses.fi/problemset/task/1068)
-- [CSES - Missing Number](https://cses.fi/problemset/task/1083)
-- [CSES - Repetitions](https://cses.fi/problemset/task/1069)
-- [Codeforces - Watermelon](https://codeforces.com/problemset/problem/4/A)
-- [Codeforces - Way Too Long Words](https://codeforces.com/problemset/problem/71/A)
-- [Codeforces - Team](https://codeforces.com/problemset/problem/231/A)
-- [Codeforces - Bit++](https://codeforces.com/problemset/problem/282/A)
-<!-- - [Codeforces - Next Round](https://codeforces.com/problemset/problem/158/A)
-- [Codeforces - Domino piling](https://codeforces.com/problemset/problem/50/A)
-- [Codeforces - Helpful Maths](https://codeforces.com/problemset/problem/339/A)
-- [Codeforces - Boy or Girl](https://codeforces.com/problemset/problem/236/A)
-- [Codeforces - Word Capitalization](https://codeforces.com/problemset/problem/281/A)
-- [Codeforces - Bear and Big Brother](https://codeforces.com/problemset/problem/791/A)
-- [Codeforces - Stones on the Table](https://codeforces.com/problemset/problem/266/A)
-- [Codeforces - Elephant](https://codeforces.com/problemset/problem/617/A)
-- [Codeforces - Soldier and Bananas](https://codeforces.com/problemset/problem/546/A)
-- [Codeforces - Word](https://codeforces.com/problemset/problem/59/A) -->
+- <a href="https://atcoder.jp/contests/abc398/tasks/abc398_a" target="_blank">AtCoder - Doors in the Center</a>
+- <a href="https://atcoder.jp/contests/abc397/tasks/abc397_a" target="_blank">AtCoder - Thermometer</a>
+- <a href="https://atcoder.jp/contests/abc396/tasks/abc396_a" target="_blank">AtCoder - Triple Four</a>
+- <a href="https://cses.fi/problemset/task/1068" target="_blank">CSES - Weird Algorithm</a>
+- <a href="https://cses.fi/problemset/task/1083" target="_blank">CSES - Missing Number</a>
+- <a href="https://cses.fi/problemset/task/1069" target="_blank">CSES - Repetitions</a>
+- <a href="https://codeforces.com/problemset/problem/4/A" target="_blank">Codeforces - Watermelon</a>
+- <a href="https://codeforces.com/problemset/problem/71/A" target="_blank">Codeforces - Way Too Long Words</a>
+- <a href="https://codeforces.com/problemset/problem/231/A" target="_blank">Codeforces - Team</a>
+- <a href="https://codeforces.com/problemset/problem/282/A" target="_blank">Codeforces - Bit++</a>
