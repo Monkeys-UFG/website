@@ -1,14 +1,14 @@
 # C++ Standard Template Library (STL)
 
-## Aula Relacionada recomendada:
+## Aula Relacionada recomendada
 
 <figure markdown="span" class="left-caption">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/beHruxE8D0M?si=gQICcS7_hceNuraj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <figcaption>Cŕeditos: Canal Maratona UFMG.</figcaption>
 </figure>
 
-## Conhecendo a STL:
-A **Standard Template Library** (STL) do C++ é um conjunto de classes e funções baseadas em templates que implementam estruturas de dados e algoritmos amplamente utilizados, como listas, pilhas, vetores, ordenação, busca, entre outros. Além disso, ela disponibiliza iteradores e functors, o que simplifica o uso e a integração de algoritmos com os containers.
+## Conhecendo a STL
+A **Standard Template Library** (STL) do C++ é um conjunto de classes e funções baseadas em templates que implementam estruturas de dados e algoritmos amplamente utilizados, como listas, pilhas, vetores, ordenação, busca, entre outros.
 
 Nesta seção, vamos conhecer as principais estruturas e algoritmos da STL que são usados na programação competitiva.
 
@@ -20,13 +20,13 @@ As estruturas de dados mais comuns são:
 | `set`       |      Armazena elementos únicos de forma ordenada (crescente). Elementos não podem ser acessados por índice. |
 | `map`       |  Armazena elementos em pares "chave/valor". Pode ser acessado através das chaves, e não pelo índice. |
 | `pair`     |      Armazena dois valores como um único elemento, onde cada valor pode ter um tipo diferente. O acesso aos valores é feito por meio de `first` e `second`. |
-| `stack`     |      Armazena elementos em uma ordem específica, chamada LIFO (Last In, First Out), onde os elementos podem ser adicionados e removidos apenas do topo. Não é acessível por índice. |
-| `list`      |      Armazena elementos de forma sequencial, onde cada elemento está ligado ao próximo. A adição e remoção de elementos podem ser realizadas em ambas as extremidades, mas não é acessível por índice. |
-| `queue`     |      Armazena elementos em uma ordem específica, chamada FIFO (First In, First Out), onde os elementos são adicionados no final e removidos da frente. Não é acessível por índice. |
+| `stack`     |      Armazena elementos em uma ordem específica, chamada LIFO (Last In, First Out), onde os elementos podem ser adicionados e removidos apenas do topo (como uma pilha). Não é acessível por índice. |
+| `queue`     |      Armazena elementos em uma ordem específica, chamada FIFO (First In, First Out), onde os elementos são adicionados no final e removidos da frente (como uma fila). Não é acessível por índice. |
+| `priority_queue`      |    Armazena elementos em uma ordem específica, os elementos de maior prioridade aparecem primeiro (por padrão, os elementos de maior valor), é parecido com a queue, pois você só pode acessar os elementos da frente, mas aqui a ordem é determinada não pela ordem de inserção. Não é acessível por índice. |
 | `deque`     |      Armazena elementos em uma fila de duas extremidades (deque), onde os elementos podem ser adicionados e removidos de ambos os lados. Os elementos podem ser acessados por índice. |
 
 
-Os algortimos mais comuns são:
+Os algoritmos mais comuns são:
 
 | Algoritmo      | Descrição                          |
 | ----------- | ------------------------------------ |
@@ -34,9 +34,9 @@ Os algortimos mais comuns são:
 | `reverse`       | Inverte a ordem dos elementos em um determinado intervalo. |
 | `swap`    | Troca os valores de duas variáveis. |
 
-## Template básico para a prática desta seção:
+## Template básico para a prática desta seção
 
-Para facilitar nossa pratíca nessa seção utilizaremos esse template simples
+Para facilitar nossa prática nessa seção utilizaremos esse template simples
 para praticar as estruturas:
 
 ```cpp title="template.cpp" linenums="1"
@@ -57,7 +57,7 @@ O `#!cpp using namespace std;` é uma diretiva no C++ que permite que você use 
 
 Por exemplo, se você não usar o `#!cpp using namespace std;`, seria necessário escrever `#!cpp std::cout`, `#!cpp std::cin`, `#!cpp std::vector`, etc. Com o `#!cpp using namespace std;`, basta escrever `#!cpp cout`, `#!cpp cin`, `#!cpp vector`, e o compilador entenderá automaticamente que você está se referindo à versão padrão dessas funções e estruturas.
 
-## Estruturas de Dados:
+## Estruturas de Dados
 Em cada um dos links abaixo, você encontra referências que ensinam a utilizar cada uma das estruturas.
 
 - ``vector``: <https://www.geeksforgeeks.org/vector-in-cpp-stl/>
@@ -65,18 +65,29 @@ Em cada um dos links abaixo, você encontra referências que ensinam a utilizar 
 - ``map``: <https://www.geeksforgeeks.org/set-in-cpp-stl/>
 - ``pair``: <https://www.geeksforgeeks.org/pair-in-cpp-stl/>
 - ``stack``: <https://www.geeksforgeeks.org/stack-in-cpp-stl/>
-- ``list``: <https://www.geeksforgeeks.org/list-cpp-stl/>
 - ``queue``: <https://www.geeksforgeeks.org/queue-cpp-stl/>
+- ``priority_queue``: <https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/>
 - ``deque``:  <https://www.geeksforgeeks.org/deque-cpp-stl/>
 
-## Algoritmos:
+## Algoritmos
 Em cada um dos links abaixo, você encontra referências que ensinam a utilizar cada um dos algoritmos.
 
 - ``sort``: <https://www.geeksforgeeks.org/sort-c-stl/>
 - ``reverse``: <https://www.geeksforgeeks.org/stdreverse-in-c/>
 - ``swap``: <https://www.geeksforgeeks.org/swap-in-cpp/>
 
-## Problemas recomendados:
+!!! Tip "Pro Tip"
+    Conhecer as estruturas e algoritmos básicos da STL vão te ajudar bastante na sua jornada em programação competitiva.
+
+## Lista de Exercícios
 
 - [CSES - Distinct Numbers](https://cses.fi/problemset/task/1621)
-
+- [OBI - Copa do Mundo](https://neps.academy/br/exercise/276)
+- [Neps Academy - Mini Dicionário](https://neps.academy/br/exercise/2233)
+- [OBI - Sinuca](https://neps.academy/br/exercise/492)
+- [OBI - Frequência na aula](https://neps.academy/br/exercise/252)
+- [OBI - Zero para Cancelar](https://neps.academy/br/exercise/1486)
+- [OBI - Times](https://neps.academy/br/exercise/253)
+- [OBI - Bombom](https://neps.academy/br/exercise/2070)
+- [OBI - Expressões](https://neps.academy/br/exercise/271)
+- [OBI - Quebra-cabeça](https://olimpiada.ic.unicamp.br/pratique/p2/2015/f1/quebra/)

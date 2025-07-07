@@ -1,14 +1,14 @@
-# Site do Grupo Monkeys
+# Monkeys UFG Website
 
-- [Versão no github pages](https://monkeys-ufg.github.io/website/)
+- [Version on github pages](https://monkeys-ufg.github.io/website/)
 
-## Para clonar e rodar localmente o repositório:
+## To clone and run the repository locally:
 ```bash
 git clone https://github.com/Monkeys-UFG/website
 cd website
 bash install.sh
 bash run.sh
 ```
-O link local aparecerá no terminal.
+The local link will appear in the terminal.
 
 

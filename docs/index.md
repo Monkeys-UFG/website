@@ -5,7 +5,7 @@ hide:
 # Bem vindo
 
 <figure markdown="span">
-  ![Image title](assets/Untitled.png){ width="1000" }
+  ![Image title](assets/monkeys.png){ width="1000" }
 </figure>
 
 ## Monkeys UFG
