@@ -1,6 +1,5 @@
 # Breadth First Search (BFS)
 
-
 <div class="slider-wrapper">
   <!-- área de slides -->
   <div class="slides-container">
