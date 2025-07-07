@@ -16,4 +16,4 @@ Pense no seguinte problema
 
 > Importante: nenhum par de pedidos aceitos pode se sobrepor, ou seja, eles não podem compartilhar nem mesmo um instante de tempo. Se um pedido termina exatamente no mesmo momento em que outro começa, ambos não podem ser aceitos simultaneamente.
 
-> [Codeforces - Restaurant](https://codeforces.com/problemset/problem/597/B)
+> <a href="https://codeforces.com/problemset/problem/597/B" target="_blank">Codeforces - Restaurant</a>

@@ -16,7 +16,7 @@ Pense no seguinte problema
 As máquinas podem trabalhar simultaneamente, e você pode definir livremente o cronograma de produção.
 Qual é o menor tempo necessário para produzir \(t \) produtos?
 
-> [CSES - Factory Machines](https://cses.fi/problemset/task/1620)
+> <a href="https://cses.fi/problemset/task/1620" target="_blank">CSES - Factory Machines</a>
 
 !!! note "Nota"
     Tente resolver o problema antes de continuar a leitura.
@@ -41,9 +41,9 @@ for (int i = 0; i < N; i++) {
   }
 }
 ```
-Essa abordagem, por sua vez, tem complexidade \(O(N) \) no pior caso. Agora, suponha que desejemos realizar \(Q \) consultas de elementos. Nesse cenário, a complexidade torna-se \(O(NQ) \), o que é inviável quando \(N \) e \(Q \) são da ordem de \(10^5 \).
+Essa abordagem, por sua vez, tem complexidade \(O(N) \) no pior caso. Agora, suponha que desejemos realizar \(Q \) consultas de elementos. Nesse cenário, a complexidade torna-se \(O(N \cdot Q) \), o que é inviável quando \(N \) e \(Q \) são da ordem de \(10^5 \).
 
-No entanto, há uma propriedade interessante: se os elementos do vetor estiverem ordenados, cada busca pode ser feita em \(O(logN) \).
+No entanto, há uma propriedade interessante: se os elementos do vetor estiverem ordenados, cada busca pode ser feita em \(O(\log{N}) \).
 
 Na busca binária, escolhemos o elemento do meio do intervalo e, a cada iteração, decidimos se o próximo intervalo de busca ficará à direita ou à esquerda desse ponto, com base no valor do elemento que buscamos.
 
@@ -112,7 +112,7 @@ int main() {
   return 0;
 }
 ```
-Complexidade final: \(O(N log N) \)
+Complexidade final: \(O(N \cdot \log{N}) \)
 
 ### Provando a complexidade
 
@@ -120,7 +120,7 @@ Complexidade final: \(O(N log N) \)
 
 Para além da simples busca de elementos, a técnica de busca binária pode ser aplicada na resolução de problemas de minimização e maximização.
 
-Considere uma função booleana \(f(x) \). Em problemas desse tipo, queremos determinar o menor (ou maior) valor de \(x \) para o qual \(f(x) \) retorna verdadeiro. Para que isso seja possível de forma eficiente, é fundamental que \(f \) seja [monótona](https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_mon%C3%B3tona). Sob essa condição, todos os pontos em que \(f(x) = true \) aparecem agrupados em um único intervalo contíguo.
+Considere uma função booleana \(f(x) \). Em problemas desse tipo, queremos determinar o menor (ou maior) valor de \(x \) para o qual \(f(x) \) retorna verdadeiro. Para que isso seja possível de forma eficiente, é fundamental que \(f \) seja <a href="https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_mon%C3%B3tona" target="_blank">monótona</a>. Sob essa condição, todos os pontos em que \(f(x) = true \) aparecem agrupados em um único intervalo contíguo.
 
 Ou seja: 
 
@@ -306,7 +306,7 @@ O C++ possui algumas implementações de busca binária que são uteis em muitos
 #### lower_bound
 Dado um vetor ordenado, retorna um ponteiro para primeira posição maior ou igual a um valor \(X \) procurado.
 
-Complexidade: \( O(logN)\)
+Complexidade: \( O(\log{N})\)
 
 Sintaxe:
 ```
@@ -338,7 +338,7 @@ int main() {
 #### upper_bound
 Dado um vetor ordenado, retorna um ponteiro para primeira posição **estritamente** maior a um valor \(X \) procurado.
 
-Complexidade: \( O(logN)\)
+Complexidade: \( O(\log{N})\)
 
 Sintaxe:
 
@@ -371,7 +371,7 @@ int main() {
 
 Para mais detalhes sobre a implementação dessas funções:
 
- - [lower_bound](https://cplusplus.com/reference/algorithm/lower_bound/)
- - [upper_bound](https://cplusplus.com/reference/algorithm/upper_bound/)
+ - <a href="https://cplusplus.com/reference/algorithm/lower_bound/" target="_blank">lower_bound</a>
+ - <a href="https://cplusplus.com/reference/algorithm/upper_bound/" target="_blank">upper_bound</a>
 
 

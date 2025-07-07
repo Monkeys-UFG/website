@@ -15,13 +15,13 @@ Pense no seguinte problema
 
 > Dado um array de \(n\) inteiros, sua tarefa é encontrar a soma máxima dos valores em um subarray contíguo e não vazio.
 
-
 !!! note "Nota"
     Tente resolver o problema antes de continuar a leitura.
 
 Em competições de programação, a eficiência dos algoritmos é crucial, uma vez que os programas tem que ser executados em um tempo limite. Embora seja geralmente mais simples conceber uma solução que resolva o problema, o verdadeiro desafio reside em otimizá-la. Uma solução lenta resultará em pouca ou nenhuma pontuação.
 
 ## Análise de Complexidade
+
 Para analisar o tempo que um programa demora para executar, vamos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a [Notação Big O](https://en.wikipedia.org/wiki/Big_O_notation), que descreve o pior caso da complexidade de tempo. O que fazemos é estabeler um limite superior, um máximo, para o número de operações que um programa executa.
 
 Quando expressamos a complexidade de uma função como \(O(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir. Explicaremos o que queremos dizer com constantes e termos de ordem inferior com mais detalhes depois.
@@ -286,4 +286,5 @@ int main() {
   cout << ans << '\n';
 }
 ```
-Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como [Algoritmo de Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
+Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como
+<a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem" target="_blank">Algoritmo de Kadane</a>.

@@ -3,7 +3,9 @@
 ## Motivação
 Pense no seguinte problema
 
-> Dado um array de inteiros com \( n \) elementos, e \( q \) consultas do tipo \( [i, j] \), retorne a soma dos elementos do intervalo \( [i, j] \) do array. [[1]](https://cses.fi/problemset/task/1646)
+> Dado um array de inteiros com \( n \) elementos, e \( q \) consultas do tipo \( [i, j] \), retorne a soma dos elementos do intervalo \( [i, j] \) do array.
+
+> <a href="https://cses.fi/problemset/task/1646" target="_blank">CSES - Static Range Sum Queries</a>
 
 !!! note
     Tente resolver o problema antes de continuar a leitura.
@@ -274,6 +276,6 @@ int main() {
 }
 ```
 
-## Problemas recomendados
-- [Static Range Sum Queries](https://cses.fi/problemset/task/1646)
-- [Range Xor Queries](https://cses.fi/problemset/task/1650)
+## Lista de exercícios
+- <a href="https://cses.fi/problemset/task/1646" target="_blank">CSES - Static Range Sum Queries</a>
+- <a href="https://cses.fi/problemset/task/1650" target="_blank">CSES - Range Xor Queries</a>

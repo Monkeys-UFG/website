@@ -63,7 +63,7 @@ $$
 Por exemplo, a soma dos fatores de 84 é:
 
 $$
-\sigma(84) = \frac{2^{3}-1}{2-1} \cdot \frac{3^{2}-1}{3-1} \cdot \frac{7^{2}}{7-1} = 
+\sigma(84) = \frac{2^{3}-1}{2-1} \cdot \frac{3^{2}-1}{3-1} \cdot \frac{7^{2}-1}{7-1} = 
 7 \cdot 4 \cdot 8 = 224
 $$
 
@@ -75,7 +75,7 @@ $$
 \mu(n) = n^{\tau(n)/2},
 $$
 
-Porque podemos formar $\tau(n)/2$ pares de divisores, cada um com produto igual à $n$. Por exemplo, os fatores de $84$ produzem seis pares:
+Porque podemos formar $\tau(n)/2$ pares de divisores, cada um com produto igual à $n$. Por exemplo, os doze fatores de $84$ produzem seis pares:
 
 $$
 \begin{align}
@@ -213,7 +213,11 @@ $$
 
 O algoritmo de Euclides funciona em tempo $O(\log n)$, em que $n = \min(a,b)$.
 
-O pior caso acontece quando $a$ e $b$ são números consecutivos de Fibonacci. Por exemplo, $\gcd(13,8) = \gcd(8,5) = \gcd(5,3) = \gcd(3,2) = \gcd(2,1) = \gcd(1,0) = 1$.
+O pior caso acontece quando $a$ e $b$ são números consecutivos de Fibonacci. Por exemplo,
+
+$$
+\gcd(13,8) = \gcd(8,5) = \gcd(5,3) = \gcd(3,2) = \gcd(2,1) = \gcd(1,0) = 1
+$$
 
 ```cpp title="gcd.cpp" linenums="1"
 int gcd(int a, int b){
@@ -366,10 +370,11 @@ Por exemplo, $6^{-1} \bmod 17 = 6^{17 - 2} \bmod 17 = 3$. Note que $6 \cdot 3 \b
 - <a href="https://cses.fi/problemset/task/1713" target="_blank">CSES - Counting Divisors</a>
 - <a href="https://cses.fi/problemset/task/3396" target="_blank">CSES - Next Prime</a>
 - <a href="https://atcoder.jp/contests/abc169/tasks/abc169_d" target="_blank">Atcoder - Div Game</a>
+- <a href="https://cses.fi/problemset/task/2182" target="_blank">CSES - Divisor Analysis</a>
+- <a href="https://cses.fi/problemset/task/1081" target="_blank">CSES - Common Divisors</a>
+- <a href="https://atcoder.jp/contests/abc412/tasks/abc412_e" target="_blank">Atcoder - LCM Sequence</a>
 - <a href="https://cses.fi/problemset/task/1095" target="_blank">CSES - Exponentiation</a>
 - <a href="https://cses.fi/problemset/task/1712" target="_blank">CSES - Exponentiation II</a>
-- <a href="https://cses.fi/problemset/task/2182" target="_blank">CSES - Divisor Analysis</a>
 - <a href="https://cses.fi/problemset/task/2185" target="_blank">CSES - Prime Multiples</a>
-- <a href="https://cses.fi/problemset/task/1082" target="_blank">CSES - Sum of Divisors</a>
-- <a href="https://cses.fi/problemset/task/1081" target="_blank">CSES - Common Divisors</a>
 - <a href="https://cses.fi/problemset/task/2417" target="_blank">CSES - Counting Coprime Pairs</a>
+- <a href="https://cses.fi/problemset/task/1082" target="_blank">CSES - Sum of Divisors</a>
