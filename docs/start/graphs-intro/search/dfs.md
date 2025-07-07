@@ -3,60 +3,24 @@
 <div class="slider-wrapper">
   <!-- área de slides -->
   <div class="slides-container">
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs1.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs2.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs3.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs4.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs5.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs6.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs7.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs8.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs9.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs10.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs11.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs12.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs13.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs14.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs15.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs16.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs17.png" />
-    </div>
-    <div class="image-sliderfade fade">
-      <img src="../../../../assets/graphs/dfs/dfs18.png" />
-    </div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs1.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs2.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs3.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs4.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs5.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs6.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs7.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs8.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs9.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs10.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs11.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs12.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs13.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs14.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs15.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs16.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs17.png" /></div>
+    <div class="image-sliderfade fade"><img src="../../../../assets/graphs/algorithms/dfs/dfs18.png" /></div>
   </div>
 
   <!-- índice no canto -->
