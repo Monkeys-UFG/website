@@ -37,7 +37,7 @@ Na UFG: Laboratório 252 - INF
 
 Online:
 
-[![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.gg/AARpuXv9)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=flat&logo=discord&logoColor=white)](https://discord.gg/fVy39w4nNv)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/ufg_monkeys/#)
 
 

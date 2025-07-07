@@ -156,7 +156,7 @@ Observe que:
 
 Podemos estimar o número total de chamadas com a soma dos nós por nível:
 
-$$ 1 + 2 + 4 + ... + 2^{n - 1} = 2^n-1 = O(2^n). $$
+$$ 1 + 2 + 4 + \dots + 2^{n - 1} = 2^n-1 = O(2^n). $$
 
 Ou seja, a complexidade de tempo da versão recursiva de Fibonacci é exponencial, pois o número de chamadas cresce rapidamente com \(n\).
 
