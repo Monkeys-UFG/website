@@ -1,2 +1,1 @@
 # Segment Tree
-oi

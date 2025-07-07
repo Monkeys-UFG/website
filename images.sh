@@ -12,6 +12,3 @@ for image in "./docs/assets/graphs/$dir"/*.png; do
     echo "generated image = $file_name"
   fi
 done
-
-
-magick originals/components.png -strip -alpha on -transparent white -scale 40% -quality 1 components.png
