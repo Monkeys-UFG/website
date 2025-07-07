@@ -14,7 +14,7 @@
         <link rel="prev" href="../../bitmanipulation/">
       
       
-        <link rel="next" href="../classes/">
+        <link rel="next" href="../search/dfs/">
       
       
       <link rel="icon" href="../../../assets/favicon.ico">
@@ -989,10 +989,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -1090,9 +1086,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#vizinhanca" class="md-nav__link">
     <span class="md-ellipsis">
       Vizinhança
@@ -1100,8 +1097,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#grau" class="md-nav__link">
     <span class="md-ellipsis">
       Grau
@@ -1109,57 +1106,109 @@
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#componente-conexa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componente Conexa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-grafo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Grafo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Grafo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arvore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Árvore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafos-direcionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafos Direcionados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafo-ponderado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafo Ponderado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafo-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafo Funcional
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representacao-em-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representação em código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representação em código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-adjacencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matriz de Adjacência
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-adjacencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lista de Adjacência
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../classes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Classes
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../representation/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Representação
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1189,10 +1238,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_11_4" id="__nav_3_11_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_11_2" id="__nav_3_11_2_label" tabindex="0">
             
   
   
@@ -1205,8 +1254,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_2">
             <span class="md-nav__icon md-icon"></span>
             Busca
           </label>
@@ -1292,10 +1341,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_11_5" id="__nav_3_11_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_11_3" id="__nav_3_11_3_label" tabindex="0">
             
   
   
@@ -1308,8 +1357,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_3">
             <span class="md-nav__icon md-icon"></span>
             Caminho Mínimo
           </label>
@@ -1416,10 +1465,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_11_6" id="__nav_3_11_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_11_4" id="__nav_3_11_4_label" tabindex="0">
             
   
   
@@ -1432,8 +1481,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_11_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_11_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11_4">
             <span class="md-nav__icon md-icon"></span>
             Árvore Geradora Mínima
           </label>
@@ -1446,12 +1495,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../mst/kruskal/" class="md-nav__link">
+      <a href="../mst/prim/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Kruskal
+    Prim
     
   </span>
   
@@ -1469,12 +1518,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../mst/prim/" class="md-nav__link">
+      <a href="../mst/kruskal/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Prim
+    Kruskal
     
   </span>
   
@@ -2079,9 +2128,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Definição">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#vizinhanca" class="md-nav__link">
     <span class="md-ellipsis">
       Vizinhança
@@ -2089,13 +2139,111 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#grau" class="md-nav__link">
     <span class="md-ellipsis">
       Grau
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#componente-conexa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componente Conexa
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-grafo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Grafo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Grafo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arvore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Árvore
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafos-direcionados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafos Direcionados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafo-ponderado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafo Ponderado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafo-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grafo Funcional
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representacao-em-codigo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representação em código
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Representação em código">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matriz-de-adjacencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matriz de Adjacência
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-adjacencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lista de Adjacência
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2135,7 +2283,7 @@
 <p>Essa seção tem o intuito de apresentar uma introdução à Teoria dos Grafos.</p>
 <h2 id="definicao">Definição</h2>
 <p>Um grafo é representado por um par ordenado <span class="arithmatex">\(G = (V, E)\)</span>, em que <span class="arithmatex">\(V\)</span> é o conjunto de vértices e <span class="arithmatex">\(E\)</span> é o conjunto de arestas. Eles podem ser utilizados para representar relações entre os vértices, através do uso das arestas. Por exemplo, os vértices podem ser vistos como cidades e as arestas como estradas, em que a aresta <span class="arithmatex">\((U,V)\)</span> existe se há uma estrada entre as cidades <span class="arithmatex">\(U\)</span> e <span class="arithmatex">\(V\)</span>.</p>
-<p>Os exemplos dessa seção serão baseados no seguinte grafo:</p>
+<p>Os exemplos a seguir serão baseados no seguinte grafo:</p>
 <figure class="graphs"> 
     <a class="glightbox" href="../../../assets/graphs/undirected_graph.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grafo de exemplo" src="../../../assets/graphs/undirected_graph.png" /></a>
 </figure>
@@ -2149,7 +2297,7 @@
             (C, D)
         \}
 \]</div>
-<h2 id="vizinhanca">Vizinhança</h2>
+<h3 id="vizinhanca">Vizinhança</h3>
 <p>Definimos a vizinhança <span class="arithmatex">\(N\)</span> de um vértice <span class="arithmatex">\(V\)</span> como o conjunto de vértices que estão ligados diretamente a <span class="arithmatex">\(V\)</span> através de uma aresta.
 Em grafos direcionados, se temos a aresta <span class="arithmatex">\((U,V)\)</span>, então <span class="arithmatex">\(V\in N(U)\)</span> e <span class="arithmatex">\(U\notin N(V)\)</span>.  </p>
 <div class="arithmatex">\[
@@ -2163,7 +2311,7 @@ N(V) = \{U | (V,U) \in E\}
     &amp;N(D) = \{B,C\} 
 \end{aligned}
 \]</div>
-<h2 id="grau">Grau</h2>
+<h3 id="grau">Grau</h3>
 <p>O grau de um vértice <span class="arithmatex">\(V\)</span> é o número de arestas que incidem em <span class="arithmatex">\(V\)</span>. Se existe uma aresta que liga um vértice nele mesmo (loops), ela conta duas vezes em seu grau. 
 Em grafos direcionados, temos dois tipos de grau: de entrada e saida, que representam, respectivamente,
 o número de arestas que entram e saem no vértice.</p>
@@ -2178,6 +2326,139 @@ o número de arestas que entram e saem no vértice.</p>
 &amp;Deg(D) = 2 
 \end{aligned}
 \]</div>
+<h3 id="componente-conexa">Componente Conexa</h3>
+<p>Uma componente conexa de um grafo é um subgrafo em que todo par de vértices está conectado por um caminho e não há conexão com vértices que não pertençam a tal subgrafo.</p>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/components.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grafo com duas componentes" src="../../../assets/graphs/components.png" /></a>
+</figure>
+<p>O grafo acima possui duas componentes conexas:</p>
+<div class="arithmatex">\[
+\begin{align}
+    C_1 &amp;= \{A, B, C \}  \\
+    C_2 &amp;= \{E, F, G, H \}
+\end{align}
+\]</div>
+<h2 id="tipos-de-grafo">Tipos de Grafo</h2>
+<h3 id="arvore">Árvore</h3>
+<p>Uma árvore é um tipo de grafo geralmente utilizado para representar uma hierarquia entre os vértices. O vértice mais acima é chamado de Raiz, e a altura de cada vértice representa a sua distância até a raiz. Um vértice que não tem filhos é chamado de Folha.</p>
+<p>Chamamos de floresta um grafo em que todas suas componentes são uma árvore.</p>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/tree.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo de Arvore" src="../../../assets/graphs/tree.png" /></a>
+</figure>
+<p>Árvore cuja raiz é o vertice A, e as folhas são os vértices C, D e F.</p>
+<div class="admonition tip">
+<p class="admonition-title">Características de árvorre</p>
+<ul>
+<li>Um vértice pode ter vários filhos, porém tem um único pai.</li>
+<li>Possui exatamente <span class="arithmatex">\(N-1\)</span> arestas, sendo <span class="arithmatex">\(N\)</span> o número de vértices. </li>
+<li>Existe apenas um caminho entre dois vértices. </li>
+<li>Não apresenta ciclos </li>
+</ul>
+</div>
+<h3 id="grafos-direcionados">Grafos Direcionados</h3>
+<p>Um grafo direcionado ou orientado é um grafo em que suas arestas possuem um sentido.
+Se um par <span class="arithmatex">\((U,V)\)</span> pertence ao conjunto <span class="arithmatex">\(E\)</span> de arestas, então existe um caminho de <span class="arithmatex">\(U\)</span> para <span class="arithmatex">\(V\)</span>,
+mas não necessariamente existe um caminho de <span class="arithmatex">\(V\)</span> para <span class="arithmatex">\(U\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Representação das arestas</p>
+<p>No grafo direcionado, as arestas geralmente são representadas por setas. </p>
+</div>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/directed_graph.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo de Grafo Direcionado" src="../../../assets/graphs/directed_graph.png" /></a>
+</figure>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\hphantom{..............}
+V = \{A, B, C, D\} \\
+&amp;E = \{(A, B),\ (A, C),\ (B, C),\ (D, B),\ (C, D)\}
+\end{aligned}
+\]</div>
+<p>No grafo acima, existe uma aresta entre os vértices <span class="arithmatex">\(A\)</span> e <span class="arithmatex">\(C\)</span>, no entando não há um caminho que saia de <span class="arithmatex">\(C\)</span> e chegue em <span class="arithmatex">\(A\)</span>. Em contrapartida, existe a aresta <span class="arithmatex">\((B,C)\)</span> e um caminho de <span class="arithmatex">\(C\)</span> para <span class="arithmatex">\(B\)</span>, passando pelo vértice <span class="arithmatex">\(D\)</span>.</p>
+<h3 id="grafo-ponderado">Grafo Ponderado</h3>
+<p>Um grafo ponderado é um grafo que cada aresta possui um peso, ou seja, um valor. Formalmente, existe uma função <span class="arithmatex">\(W\)</span> que relaciona o conjunto de arestas <span class="arithmatex">\(E\)</span> do grafo aos numeros reais <span class="arithmatex">\(\mathbb{R}\)</span>. Os pesos podem representar, por exemplo, custo ou distância entre os vértices.</p>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/weighted_graph.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo de Grafo Ponderado" src="../../../assets/graphs/weighted_graph.png" /></a>
+</figure>
+<div class="arithmatex">\[
+\begin{aligned}
+    W(A,B) = 1 \\
+    W(B,C) = 2 \\
+    W(B,D) = 3 \\
+    W(C,D) = 4 \\
+    W(A,C) = 5
+\end{aligned}
+\]</div>
+<h3 id="grafo-funcional">Grafo Funcional</h3>
+<p>É um grafo direcionado em que cada vértice tem grau de saída exatamente igual à 1. 
+Toda componente do grafo apresenta exatamente um ciclo.</p>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/functional_graph.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Exemplo de Grafo Ponderado" src="../../../assets/graphs/functional_graph.png" /></a>
+</figure>
+<h2 id="representacao-em-codigo">Representação em código</h2>
+<p>Os exemplos a seguir serão baseados no seguinte grafo:</p>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/undirected_graph.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grafo de exemplo" src="../../../assets/graphs/undirected_graph.png" /></a>
+</figure>
+<h3 id="matriz-de-adjacencia">Matriz de Adjacência</h3>
+<p>Representamos o grafo como uma matriz <span class="arithmatex">\(M\)</span> de dimensão <span class="arithmatex">\(N \times N\)</span>, sendo <span class="arithmatex">\(N\)</span> o número de vértices. Podemos
+descobrir se existe uma aresta entre <span class="arithmatex">\(U\)</span> e <span class="arithmatex">\(V\)</span> em tempo constante apenas olhando para <span class="arithmatex">\(M[U][V]\)</span>. No entanto, a complexidade de 
+memória é <span class="arithmatex">\(O(N^2)\)</span>, o que pode ser inviável se o grafo tiver muitos vértices e poucas arestas (Grafos Esparsos).</p>
+<div class="arithmatex">\[
+M[U][V] = \begin{cases}
+0, &amp; (U,V) \notin E \\
+1, &amp; (U,V) \in E
+\end{cases}
+\]</div>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/adj_matrix.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Matriz de Adjacência" src="../../../assets/graphs/adj_matrix.png" /></a>
+</figure>
+<p>Exemplo da matriz de Adjacência do grafo desenhado anteriormente.</p>
+<div class="language-cpp highlight"><span class="filename">adj_matrix.cpp</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e3</span><span class="o">+</span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">///número náximo de vértices do grafo</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">N</span><span class="p">][</span><span class="n">N</span><span class="p">];</span><span class="w"> </span><span class="c1">//matriz de adjacência</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="c1">//numero de vértices e arestas</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="p">;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="n">v</span><span class="p">;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">u</span><span class="o">&gt;&gt;</span><span class="n">v</span><span class="p">;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">v</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">][</span><span class="n">u</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="lista-de-adjacencia">Lista de Adjacência</h3>
+<p>Para todo vértice <span class="arithmatex">\(U\)</span> do grafo, fazemos uma estrutura que armazena todo vértice <span class="arithmatex">\(V\in N(U)\)</span>, ou seja, todo vértice <span class="arithmatex">\(V\)</span>
+na vizinhança de <span class="arithmatex">\(U\)</span>. A complexidade de tempo para determinar se existe uma aresta entre os vértices <span class="arithmatex">\(U\)</span> e <span class="arithmatex">\(V\)</span> dependerá
+da estrutura utilizada. Em grafos esparsos, a memória utilizada é consideravelmente menor do que em matrizes de adjacencia.</p>
+<figure class="graphs"> 
+    <a class="glightbox" href="../../../assets/graphs/adj_list.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Lista de Adjacência" src="../../../assets/graphs/adj_list.png" /></a>
+</figure>
+<p>Exemplo da lista de Adjacência do grafo desenhado anteriormente.</p>
+<div class="language-cpp highlight"><span class="filename">adj_list.cpp</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2e5</span><span class="o">+</span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">///número náximo de vértices do grafo</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">N</span><span class="p">];</span><span class="w"> </span><span class="c1">//lista de adjacência</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="c1">//numero de vértices e arestas</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">m</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="n">v</span><span class="p">;</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">u</span><span class="o">&gt;&gt;</span><span class="n">v</span><span class="p">;</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="p">);</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">}</span>
+</span></code></pre></div>
 
 
 
@@ -2200,7 +2481,7 @@ o número de arestas que entram e saem no vértice.</p>
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2 de julho de 2025 21:32:32 UTC">2 de julho de 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="7 de julho de 2025 14:11:11 UTC">7 de julho de 2025</span>
   </span>
 
     
