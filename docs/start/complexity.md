@@ -13,7 +13,7 @@ Pense no seguinte problema
 
 > Dado um array de \(n\) inteiros, sua tarefa é encontrar a soma máxima dos valores em um subarray contíguo e não vazio.
 
-> [CSES - Maximum Subarray Sum](https://cses.fi/problemset/task/1643)
+> <a href="https://cses.fi/problemset/task/1643" target="_blank">CSES - Maximum Subarray Sum</a>
 
 !!! note "Nota"
     Tente resolver o problema antes de continuar a leitura.
@@ -21,7 +21,7 @@ Pense no seguinte problema
 Em competições de programação, a eficiência dos algoritmos é crucial. Embora seja geralmente mais simples conceber uma solução funcional, o verdadeiro desafio reside em otimizá-la. Uma solução ineficiente resultará em pouca ou nenhuma pontuação.
 
 ## Análise de Complexidade
-Queremos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a [Notação Big O](https://en.wikipedia.org/wiki/Big_O_notation), que descreve o pior caso da complexidade de tempo à medida que \(n\) se aproxima do infinito. Essa notação fornece um limite superior para o número de passos que um algoritmo pode requerer, em função do tamanho da entrada.
+Queremos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a <a href="https://en.wikipedia.org/wiki/Big_O_notation" target="_blank">Notação Big O</a>, que descreve o pior caso da complexidade de tempo à medida que \(n\) se aproxima do infinito. Essa notação fornece um limite superior para o número de passos que um algoritmo pode requerer, em função do tamanho da entrada.
 
 Quando expressamos a complexidade de uma função como \(\mathcal{O}(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir.
 
@@ -256,4 +256,5 @@ int main() {
   cout << ans << '\n';
 }
 ```
-Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(\mathcal{O}(n)\). Essa abordagem é conhecida como [Algoritmo de Kadane](https://en.wikipedia.org/wiki/Maximum_subarray_problem).
+Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como
+<a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem" target="_blank">Algoritmo de Kadane</a>.
