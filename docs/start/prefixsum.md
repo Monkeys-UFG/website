@@ -13,7 +13,7 @@ Uma abordagem consistiria em calcular a soma de cada intervalo individualmente. 
 ## Introdução
 Na abordagem acima possivelmente iremos realizar vários cálculos repetidamente, a ideia aqui é pré-processar o array \( a \) e armazenar as somas parciais em um novo array. Seja \( prefix \) esse array, iremos definir \( prefix[i] \) como a soma dos primeiros \( i \) elementos do array \( a \).
 
-Assim, podemos calcular a soma de qualquer intervalo \( [i, j] \) em tempo constante \( O(1) \), coletando o valor da soma dos \( j \) primeiros elementos e subtraindo/removendo todos os elementos anteriores a \( i \), ou seja, os \( i - 1 \) primeiros elementos. Mostraremos que a complexidade de pré-processamento é \( O(n) \), resultando em uma complexidade total de \( O(n + q) \) para \( q \) consultas.
+Assim, podemos calcular a soma de qualquer intervalo \( [i, j] \) em tempo constante \( O(1) \), coletando o valor da soma dos \( j \) primeiros elementos e subtraindo/removendo todos os elementos anteriores a \( i \), ou seja, os \( i - 1 \) primeiros elementos. Mostraremos que a complexidade de pré-processamento é \( O(n) \), resultando em uma complexidade total de \( \mathcal{O}(n + q) \) para \( q \) consultas.
 
 ## Definição
 
