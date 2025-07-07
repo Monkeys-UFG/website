@@ -12,7 +12,9 @@ hide:
 
 Bem-vindo ao site do Grupo de Programação Competitiva da Universidade Federal de Goiás (UFG)!
 
-Este site tem como objetivo ser um guia para estudantes interessados em participar de competições de programação, como a [Olimpíada Brasileira de Informática (OBI)](https://olimpiada.ic.unicamp.br/), a [Maratona SBC de Programação](https://maratona.sbc.org.br/), [Maratona Feminina de Programação](https://www.instagram.com/mfp.sbc/), entre outras. Aqui, você encontrará uma coleção de artigos elaborados por nossos membros, além de diversas referências para o aprendizado dos tópicos mais relevantes da programação competitiva.
+Este site tem como objetivo ser um guia para estudantes interessados em participar de competições de programação, como a <a href="https://olimpiada.ic.unicamp.br/" target="_blank">Olimpíada Brasileira de Informática (OBI)</a>, a <a href="https://maratona.sbc.org.br/" target="_blank">Maratona SBC de Programação</a>
+, <a href="https://www.instagram.com/mfp.sbc/" target="_blank">Maratona Feminina de Programação</a>
+, entre outras. Aqui, você encontrará uma coleção de artigos elaborados por nossos membros, além de diversas referências para o aprendizado dos tópicos mais relevantes da programação competitiva.
 
 ## Um pouco da história Monkeys
 

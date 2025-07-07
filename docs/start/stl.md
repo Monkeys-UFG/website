@@ -60,34 +60,36 @@ Por exemplo, se você não usar o `#!cpp using namespace std;`, seria necessári
 ## Estruturas de Dados
 Em cada um dos links abaixo, você encontra referências que ensinam a utilizar cada uma das estruturas.
 
-- ``vector``: <https://www.geeksforgeeks.org/vector-in-cpp-stl/>
-- ``set``: <https://www.geeksforgeeks.org/set-in-cpp-stl/>
-- ``map``: <https://www.geeksforgeeks.org/set-in-cpp-stl/>
-- ``pair``: <https://www.geeksforgeeks.org/pair-in-cpp-stl/>
-- ``stack``: <https://www.geeksforgeeks.org/stack-in-cpp-stl/>
-- ``queue``: <https://www.geeksforgeeks.org/queue-cpp-stl/>
-- ``priority_queue``: <https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/>
-- ``deque``:  <https://www.geeksforgeeks.org/deque-cpp-stl/>
+- ``vector``: <a href="https://www.geeksforgeeks.org/vector-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/vector-in-cpp-stl/</a>
+- ``set``: <a href="https://www.geeksforgeeks.org/set-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/set-in-cpp-stl/</a>
+- ``map``: <a href="https://www.geeksforgeeks.org/cpp/map-associative-containers-the-c-standard-template-library-stl/" target="_blank">https://www.geeksforgeeks.org/cpp/map-associative-containers-the-c-standard-template-library-stl/</a>
+- ``pair``: <a href="https://www.geeksforgeeks.org/pair-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/pair-in-cpp-stl/</a>
+- ``stack``: <a href="https://www.geeksforgeeks.org/stack-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/stack-in-cpp-stl/</a>
+- ``queue``: <a href="https://www.geeksforgeeks.org/queue-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/queue-cpp-stl/</a>
+- ``priority_queue``: <a href="https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/cpp/priority-queue-in-cpp-stl/</a>
+- ``deque``:  <a href="https://www.geeksforgeeks.org/deque-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/deque-cpp-stl/</a>
 
 ## Algoritmos
 Em cada um dos links abaixo, você encontra referências que ensinam a utilizar cada um dos algoritmos.
 
-- ``sort``: <https://www.geeksforgeeks.org/sort-c-stl/>
-- ``reverse``: <https://www.geeksforgeeks.org/stdreverse-in-c/>
-- ``swap``: <https://www.geeksforgeeks.org/swap-in-cpp/>
+<a href="https://www.geeksforgeeks.org/swap-in-cpp/" target="_blank">https://www.geeksforgeeks.org/swap-in-cpp/</a>
+
+- ``sort``: <a href="https://www.geeksforgeeks.org/sort-c-stl/" target="_blank">https://www.geeksforgeeks.org/sort-c-stl/</a>
+- ``reverse``: <a href="https://www.geeksforgeeks.org/stdreverse-in-c/" target="_blank">https://www.geeksforgeeks.org/stdreverse-in-c/</a>
+- ``swap``: <a href="https://www.geeksforgeeks.org/swap-in-cpp/" target="_blank">https://www.geeksforgeeks.org/swap-in-cpp/</a>
 
 !!! Tip "Pro Tip"
     Conhecer as estruturas e algoritmos básicos da STL vão te ajudar bastante na sua jornada em programação competitiva.
 
 ## Lista de Exercícios
 
-- [CSES - Distinct Numbers](https://cses.fi/problemset/task/1621)
-- [OBI - Copa do Mundo](https://neps.academy/br/exercise/276)
-- [Neps Academy - Mini Dicionário](https://neps.academy/br/exercise/2233)
-- [OBI - Sinuca](https://neps.academy/br/exercise/492)
-- [OBI - Frequência na aula](https://neps.academy/br/exercise/252)
-- [OBI - Zero para Cancelar](https://neps.academy/br/exercise/1486)
-- [OBI - Times](https://neps.academy/br/exercise/253)
-- [OBI - Bombom](https://neps.academy/br/exercise/2070)
-- [OBI - Expressões](https://neps.academy/br/exercise/271)
-- [OBI - Quebra-cabeça](https://olimpiada.ic.unicamp.br/pratique/p2/2015/f1/quebra/)
+- <a href="https://cses.fi/problemset/task/1621" target="_blank">CSES - Distinct Numbers</a>
+- <a href="https://neps.academy/br/exercise/276" target="_blank">OBI - Copa do Mundo</a>
+- <a href="https://neps.academy/br/exercise/2233" target="_blank">Neps Academy - Mini Dicionário</a>
+- <a href="https://neps.academy/br/exercise/492" target="_blank">OBI - Sinuca</a>
+- <a href="https://neps.academy/br/exercise/252" target="_blank">OBI - Frequência na aula</a>
+- <a href="https://neps.academy/br/exercise/1486" target="_blank">OBI - Zero para Cancelar</a>
+- <a href="https://neps.academy/br/exercise/253" target="_blank">OBI - Times</a>
+- <a href="https://neps.academy/br/exercise/2070" target="_blank">OBI - Bombom</a>
+- <a href="https://neps.academy/br/exercise/271" target="_blank">OBI - Expressões</a>
+- <a href="https://olimpiada.ic.unicamp.br/pratique/p2/2015/f1/quebra/" target="_blank">OBI - Quebra-cabeça</a>
