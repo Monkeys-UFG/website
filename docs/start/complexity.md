@@ -11,7 +11,7 @@
 ## Motivação {#motivacao}
 Pense no seguinte problema
 
-> [CSES - Maximum Subarray Sum](https://cses.fi/problemset/task/1643)
+>  <a href="https://cses.fi/problemset/task/1643" target="_blank">CSES - Maximum Subarray Sum</a>
 
 > Dado um array de \(n\) inteiros, sua tarefa é encontrar a soma máxima dos valores em um subarray contíguo e não vazio.
 
@@ -22,7 +22,7 @@ Pense no seguinte problema
 Em competições de programação, a eficiência dos algoritmos é crucial, uma vez que os programas tem que ser executados em um tempo limite. Embora seja geralmente mais simples conceber uma solução que resolva o problema, o verdadeiro desafio reside em otimizá-la. Uma solução lenta resultará em pouca ou nenhuma pontuação.
 
 ## Análise de Complexidade
-Para analisar o tempo que um programa demora para executar, vamos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a [Notação Big O](https://en.wikipedia.org/wiki/Big_O_notation), que descreve o pior caso da complexidade de tempo. O que fazemos é estabeler um limite superior, um máximo, para o número de operações que um programa executa.
+Para analisar o tempo que um programa demora para executar, vamos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a <a href = "https://en.wikipedia.org/wiki/Big_O_notation" target = "_blank"> Notação Big O</a>, que descreve o pior caso da complexidade de tempo. O que fazemos é estabeler um limite superior, um máximo, para o número de operações que um programa executa.
 
 Quando expressamos a complexidade de uma função como \(O(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir. Explicaremos o que queremos dizer com constantes e termos de ordem inferior com mais detalhes depois.
 
@@ -133,7 +133,7 @@ Nesse exemplo, a quantidade de iterações do loop interno vai depender do valor
 | \(i = n\)     |  \(n\) iterações. |
 
 
-Assim vamos ter \(1 + 2 + 3 + \dots + n\) iterações, ou seja, a soma de uma [progressão aritmética](https://pt.wikipedia.org/wiki/Progress%C3%A3o_aritm%C3%A9tica), então teremos \(\dfrac{n*(1+n)}{2} = \dfrac{n^2 + n}{2} = \dfrac{1}{2}n^2 + \dfrac{1}{2}n\) iterações. Podemos ignorar as constantes, \(n^2 + n\), além disso temos que \(n\) tem menos influência (menor ordem) que \(n^2\), então podemos ignorá-lo na notação Big O. Desse modo, a complexidade é \(O(n^2)\).
+Assim vamos ter \(1 + 2 + 3 + \dots + n\) iterações, ou seja, a soma de uma <a href = "https://pt.wikipedia.org/wiki/Progress%C3%A3o_aritm%C3%A9tica" target = "_blank">progressão aritmética</a>, então teremos \(\dfrac{n*(1+n)}{2} = \dfrac{n^2 + n}{2} = \dfrac{1}{2}n^2 + \dfrac{1}{2}n\) iterações. Podemos ignorar as constantes, \(n^2 + n\), além disso temos que \(n\) tem menos influência (menor ordem) que \(n^2\), então podemos ignorá-lo na notação Big O. Desse modo, a complexidade é \(O(n^2)\).
 
 ### Recursão
 A complexidade de uma função recursiva é determinada pelo número de vezes que a função é chamada multiplicado pela complexidade de cada chamada.
@@ -186,7 +186,7 @@ no próximo teremos o dobro (\(2\) nós), depois teremos o dobro do dobro (\(4\)
 
 $$ 1 + 2 + 4 + \dots + 2^{n - 1} = 2^n-1 = O(2^n). $$
 
-> A soma acima é a soma de uma [progressão geométrica](https://pt.wikipedia.org/wiki/Progress%C3%A3o_geom%C3%A9trica) e o desenvolvimento da fórmula de sua soma resultará em \(2^n-1\).
+> A soma acima é a soma de uma <a href = "https://pt.wikipedia.org/wiki/Progress%C3%A3o_geom%C3%A9trica" target = "_blank">progressão geométrica</a> e o desenvolvimento da fórmula de sua soma resultará em \(2^n-1\).
 
 Ou seja, a complexidade de tempo da versão recursiva de Fibonacci é exponencial.
 
@@ -223,7 +223,7 @@ Uma estimativa conservadora para o número de operações que um computador cons
 | \(n \leq 10^{18}\)     | \(O(\log^2 n), O(\log n), O(1)\) |
 
 
-## Solução do [problema motivador](#motivacao) (Maximum Subarray Sum) 
+## Solução do <a href ="#motivacao">problema motivador</a> (Maximum Subarray Sum) 
 ### 1ª Solução
 Uma maneira direta de resolver o problema é iterar sobre todos os subarrays possíveis, calcular a soma de cada um e registrar a maior soma encontrada.
 
