@@ -58,7 +58,7 @@ for (int i = 1; i <= 3*n + 4356; i++) {
   // operações constantes
 }
 ```
-Para determinar a complexidade de loops aninhados, podemos multiplicar a complexidade de cada loop, o loop a seguir tem complexidade \(O(n \cdot m)\).
+Para determinar a complexidade de loops aninhados, podemos multiplicar a complexidade de cada loop, o loop a seguir tem complexidade \(\mathcal{O}(n \cdot m)\).
 
 ```cpp linenums="1"
 // O(n*m)
@@ -98,7 +98,7 @@ for (int i = 1; i <= n; i++) {
 !!! note "Analogia"
     Imagine um toboágua com uma fila enorme, o tempo que demoramos na fila é muito maior que o tempo que demoramos para descê-lo. Assim, podemos considerar que o tempo para usar o toboágua é o tempo que demoramos na fila, ignorando o tempo de descida. Isso é a mesma coisa que fazemos na notação Big O.
 
-No exemplo a seguir, a complexidade é \(O(n^2 + m)\). Diferente do exemplo anterior o segundo loop depende de outro fator da entrada \(m\), esse fator não tem nenhuma relação com \(n\), assim não podemos descartá-lo como no outro código. Pois, possivelmente, a influência de \(m\) pode ser maior que a influência de \(n^2\) e vice-versa.
+No exemplo a seguir, a complexidade é \(\mathcal{O}(n^2 + m)\). Diferente do exemplo anterior o segundo loop depende de outro fator da entrada \(m\), esse fator não tem nenhuma relação com \(n\), assim não podemos descartá-lo como no outro código. Pois, possivelmente, a influência de \(m\) pode ser maior que a influência de \(n^2\) e vice-versa.
 
 ```cpp linenums="1"
 // O(n^2)
@@ -212,15 +212,15 @@ Uma estimativa conservadora para o número de operações que um computador cons
 
 | \(n\)                      | Complexidades possíveis          |
 | :----------------------: | :--------------------------------: |
-| \(n \leq 10\)          | \(O(n!), O(n^7), O(n^6)\)        |
-| \(n \leq 20\)          | \(O(2^nn), O(n^5)\)              |
-| \(n \leq 80\)          | \(O(n^4)\)                       |
-| \(n \leq 400\)         | \(O(n^3)\)                       |
-| \(n \leq 7500\)        | \(O(n^2)\)                       |
-| \(n \leq 7 \cdot 10^4\)| \(O(n \sqrt n)\)                 |
-| \(n \leq 5 \cdot 10^5\)| \(O(n \log n)\)                  |
-| \(n \leq 5 \cdot 10^6\)| \(O(n)\)                         |
-| \(n \leq 10^{18}\)     | \(O(\log^2 n), O(\log n), O(1)\) |
+| \(n \leq 10\)          | \(\mathcal{O}(n!), \mathcal{O}(n^7), \mathcal{O}(n^6)\)        |
+| \(n \leq 20\)          | \(\mathcal{O}(2^nn), \mathcal{O}(n^5)\)              |
+| \(n \leq 80\)          | \(\mathcal{O}(n^4)\)                       |
+| \(n \leq 400\)         | \(\mathcal{O}(n^3)\)                       |
+| \(n \leq 7500\)        | \(\mathcal{O}(n^2)\)                       |
+| \(n \leq 7 \cdot 10^4\)| \(\mathcal{O}(n \sqrt n)\)                 |
+| \(n \leq 5 \cdot 10^5\)| \(\mathcal{O}(n \log n)\)                  |
+| \(n \leq 5 \cdot 10^6\)| \(\mathcal{O}(n)\)                         |
+| \(n \leq 10^{18}\)     | \(\mathcal{O}(\log^2 n), \mathcal{O}(\log n), \mathcal{O}(1)\) |
 
 
 ## Solução do <a href ="#motivacao">problema motivador</a> (Maximum Subarray Sum) 
@@ -286,5 +286,5 @@ int main() {
   cout << ans << '\n';
 }
 ```
-Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(O(n)\). Essa abordagem é conhecida como
+Este algoritmo possui apenas um loop que itera sobre a entrada, resultando em uma complexidade final de \(\mathcal{O}(n)\). Essa abordagem é conhecida como
 <a href="https://en.wikipedia.org/wiki/Maximum_subarray_problem" target="_blank">Algoritmo de Kadane</a>.

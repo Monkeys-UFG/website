@@ -154,7 +154,7 @@ Os exemplos a seguir serão baseados no seguinte grafo:
 ### Matriz de Adjacência
 Representamos o grafo como uma matriz $M$ de dimensão $N \times N$, sendo $N$ o número de vértices. Podemos
 descobrir se existe uma aresta entre $U$ e $V$ em tempo constante apenas olhando para $M[U][V]$. No entanto, a complexidade de 
-memória é $O(N^2)$, o que pode ser inviável se o grafo tiver muitos vértices e poucas arestas (Grafos Esparsos).
+memória é $\mathcal{O}(N^2)$, o que pode ser inviável se o grafo tiver muitos vértices e poucas arestas (Grafos Esparsos).
 
 $$
 M[U][V] = \begin{cases}
