@@ -104,8 +104,7 @@ Por exemplo $\pi(10) = 4,$ pois temos $4$ primos entre $1$ e $10:$ $2, 3, 5, 7$.
 Se um número $n$ não é primo, ele pode ser representado como um produto $a \cdot b,$ em que $a \leq \sqrt{n}$ ou $b \leq \sqrt{n}$, portanto existe um fator entre $2$ e $\lfloor\sqrt{n}\rfloor$. Assim, podemos testar se um número é primo e achar sua fatoração em $O(\sqrt{n})$.
 
 ### Identificar se um número é primo 
-A função $is \_ prime$ abaixo checa se o número $n$ é primo. Sabemos que o único número par primo é $2$, portanto podemos checar a paridade de $n$ e tentar dividir $n$ apenas pelos números impares entre $3$ e $\lfloor \sqrt{n} \rfloor$. Isso é bom porque cortamos a quantidade de números que testaríamos por $2$, já que todo múltiplo de $2$ nós já sabemos que não é primo.
-
+A função $is \_ prime$ abaixo checa se o número $n$ é primo. Sabemos que o único número par primo é $2$, portanto podemos checar a paridade de $n$ e tentar dividir $n$ apenas pelos números impares entre $3$ e $\lfloor \sqrt{n} \rfloor$.
 ```cpp title="is_prime.cpp" linenums="1"
 bool is_prime(int n) {
     if (n < 2) return false;
