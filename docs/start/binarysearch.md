@@ -41,9 +41,9 @@ for (int i = 0; i < N; i++) {
   }
 }
 ```
-Essa abordagem, por sua vez, tem complexidade \(O(N) \) no pior caso. Agora, suponha que desejemos realizar \(Q \) consultas de elementos. Nesse cenário, a complexidade torna-se \(O(N \cdot Q) \), o que é inviável quando \(N \) e \(Q \) são da ordem de \(10^5 \).
+Essa abordagem, por sua vez, tem complexidade \(\mathcal{O}(N) \) no pior caso. Agora, suponha que desejemos realizar \(Q \) consultas de elementos. Nesse cenário, a complexidade torna-se \(\mathcal{O}(NQ) \), o que é inviável quando \(N \) e \(Q \) são da ordem de \(10^5 \).
 
-No entanto, há uma propriedade interessante: se os elementos do vetor estiverem ordenados, cada busca pode ser feita em \(O(\log{N}) \).
+No entanto, há uma propriedade interessante: se os elementos do vetor estiverem ordenados, cada busca pode ser feita em \(\mathcal{O}(\log_2(N)) \).
 
 Na busca binária, escolhemos o elemento do meio do intervalo e, a cada iteração, decidimos se o próximo intervalo de busca ficará à direita ou à esquerda desse ponto, com base no valor do elemento que buscamos.
 
@@ -112,7 +112,7 @@ int main() {
   return 0;
 }
 ```
-Complexidade final: \(O(N \cdot \log{N}) \)
+Complexidade final: \(\mathcal{O}(N\cdot \log_2 (N)) \)
 
 ### Provando a complexidade
 
@@ -306,7 +306,7 @@ O C++ possui algumas implementações de busca binária que são uteis em muitos
 #### lower_bound
 Dado um vetor ordenado, retorna um ponteiro para primeira posição maior ou igual a um valor \(X \) procurado.
 
-Complexidade: \( O(\log{N})\)
+Complexidade: \( \mathcal{O}(\log_2(N))\)
 
 Sintaxe:
 ```
@@ -338,7 +338,7 @@ int main() {
 #### upper_bound
 Dado um vetor ordenado, retorna um ponteiro para primeira posição **estritamente** maior a um valor \(X \) procurado.
 
-Complexidade: \( O(\log{N})\)
+Complexidade: \( \mathcal{O}(\log_2(N))\)
 
 Sintaxe:
 

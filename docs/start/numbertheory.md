@@ -21,7 +21,7 @@ $$
 n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k},
 $$
 
-Em que $p_1, p_2, ..., p_k$ são primos distintos e
+em que $p_1, p_2, ..., p_k$ são primos distintos e
 $\alpha_1, \alpha_2, \cdots, \alpha_k$ são inteiros positivos. Por exemplo, a fatoração do número 84 é:
 
 $$
@@ -35,7 +35,7 @@ $$
 \tau(n) = \prod_{i=1}^{k} (\alpha_i + 1),
 $$
 
-Porque para todo primo $p_i,$ existem $\alpha_i + 1$ formas de escolher quantas vezes ele aparece no divisor, de $p_i^0$ até $p_i^{\alpha_i}$. Por exemplo, o número de divisores de 84 é:
+porque para todo primo $p_i,$ existem $\alpha_i + 1$ formas de escolher quantas vezes ele aparece no divisor, de $p_i^0$ até $p_i^{\alpha_i}$. Por exemplo, o número de divisores de 84 é:
 
 $$
 \tau(84) = 3 \cdot 2 \cdot 2 = 12.
@@ -48,7 +48,7 @@ $$
 \sigma(n) = \prod_{i=1}^{k} (1 + p_i + \cdots + p_i^{\alpha_i}) = \prod_{i=1}^{k} \left(\frac{p_i^{\alpha_i+1} - 1} {p_i - 1} \right),
 $$
 
-Pois podemos escolher qualquer potência dos primos presentes na fatoração de $n$, de $p_i^{0} = 1$ até $p_i^{\alpha_i}$. A simplificação pode ser feita pela soma de progressão geométrica com razão $p_i$:
+pois podemos escolher qualquer potência dos primos presentes na fatoração de $n$, de $p_i^{0} = 1$ até $p_i^{\alpha_i}$. A simplificação pode ser feita pela soma de progressão geométrica com razão $p_i$:
 
 $$
 \begin{align}
@@ -75,7 +75,7 @@ $$
 \mu(n) = n^{\tau(n)/2},
 $$
 
-Porque podemos formar $\tau(n)/2$ pares de divisores, cada um com produto igual à $n$. Por exemplo, os doze fatores de $84$ produzem seis pares:
+porque podemos formar $\tau(n)/2$ pares de divisores, cada um com produto igual à $n$. Por exemplo, os doze fatores de $84$ produzem seis pares:
 
 $$
 \begin{align}
@@ -105,7 +105,6 @@ Se um número $n$ não é primo, ele pode ser representado como um produto $a \c
 
 ### Identificar se um número é primo 
 A função $is \_ prime$ abaixo checa se o número $n$ é primo. Sabemos que o único número par primo é $2$, portanto podemos checar a paridade de $n$ e tentar dividir $n$ apenas pelos números impares entre $3$ e $\lfloor \sqrt{n} \rfloor$.
-
 ```cpp title="is_prime.cpp" linenums="1"
 bool is_prime(int n) {
     if (n < 2) return false;
@@ -164,10 +163,10 @@ vector<int> crivo(int N) {
 O loop interior do algoritmo é executado $n/x$ vezes para cada valor de $x$. Portanto, um upper bound para a complexidade de tempo é a série harmônica 
 
 $$
-    \sum_{x=2}^{n} \frac {n}{x} = \frac {n}{2} + \frac {n}{3} + \cdots + \frac {n}{n} = O(n \log{n})
+    \sum_{x=2}^{n} \frac {n}{x} = \frac {n}{2} + \frac {n}{3} + \cdots + \frac {n}{n} = \mathcal{O}(n \log{n})
 $$
 
-Na realidade, o algoritmo é mais eficiente, pois o loop interior vai ser executado apenas se o número $x$ é primo, cuja frequência é aproximadamente $\frac{n}{\ln(n)}$. Portanto, a complexidade de tempo do algoritmo é $O(n \log \log n)$, sendo muito próxima de $O(n)$.
+Na realidade, o algoritmo é mais eficiente, pois o loop interior vai ser executado apenas se o número $x$ é primo, cuja frequência é aproximadamente $\frac{n}{\ln(n)}$. Portanto, a complexidade de tempo do algoritmo é $\mathcal{O}(n \log \log n)$, sendo muito próxima de $\mathcal{O}(n)$.
 
 
 Podemos alterar o algoritmo para obter a fatoração de cada número entre $2$ e $n$, criando um novo vetor $d$ de vectors, em que $d[k]$ guarda a fatoração em primos do número $k$.
@@ -211,7 +210,7 @@ a, & \text{se } b = 0 \\
 \end{cases}
 $$
 
-O algoritmo de Euclides funciona em tempo $O(\log n)$, em que $n = \min(a,b)$.
+O algoritmo de Euclides funciona em tempo $\mathcal{O}(\log n)$, em que $n = \min(a,b)$.
 
 O pior caso acontece quando $a$ e $b$ são números consecutivos de Fibonacci. Por exemplo,
 
@@ -278,18 +277,18 @@ $$
 
 ## Exponenciação Rápida
 
-Existe um jeito de calcular o valor de $x^n \bmod m$ em $O(\log n)$ utilizando a seguinte recursão:
+Existe um jeito de calcular o valor de $x^n \bmod m$ em $\mathcal{O}(\log n)$ utilizando a seguinte recursão:
 
 $$
 x^n = 
 \begin{cases}
-1 &,n = 0 \\
-x^{n/2} \cdot x^{n/2} &, \text{se n é par} \\
-x^{n-1} \cdot x &, \text{se n é impar} 
+1 &,\text{se $n = 0$} \\
+x^{n/2} \cdot x^{n/2} &, \text{se $n$ for par} \\
+x^{n-1} \cdot x &, \text{se $n$ for impar} 
 \end{cases}
 $$
 
-É importante que no caso de $n$ ser par, o valor de $x^{n/2}$ é calculado apenas uma vez. Isso garante a complexidade $O(\log n)$, porque $n$ é sempre dividido por dois quando é par. 
+É importante que no caso de $n$ ser par, o valor de $x^{n/2}$ é calculado apenas uma vez. Isso garante a complexidade $\mathcal{O}(\log n)$, porque $n$ é sempre dividido por dois quando é par. 
 
 ```cpp title="fastexp.cpp" linenums="1"
 int fastexp(int x, int n, int m){
@@ -301,7 +300,7 @@ int fastexp(int x, int n, int m){
 }
 ```
 
-## Pequeno teorema de Fermat e teorema de Euler
+## Pequeno Teorema de Fermat e Teorema de Euler
 
 Para um $m$ primo e coprimo com $x$, o pequeno teorema de Fermat afirma que
 
@@ -356,7 +355,7 @@ $$
 
 Essa fórmula permite calcular inversos modulares de uma forma eficiente utilizando o algoritmo da exponenciação rápida. 
 
-```cpp title="inverse.cpp" linenums="1"
+```cpp title="mod_inverse.cpp" linenums="1"
 int inv(int x, int m){
     return fexp(x, m-2, m);
 }
