@@ -23,8 +23,7 @@ Em competições de programação, a eficiência dos algoritmos é crucial, uma 
 ## Análise de Complexidade
 Para analisar o tempo que um programa demora para executar, vamos determinar o número de operações que um algoritmo executa em relação ao tamanho da entrada, \(n\). Para isso, utilizamos a <a href = "https://en.wikipedia.org/wiki/Big_O_notation" target = "_blank"> Notação Big O</a>, que descreve o pior caso da complexidade de tempo. O que fazemos é estabeler um limite superior, um máximo, para o número de operações que um programa executa.
 
-Quando expressamos a complexidade de uma função como \(\mathcal{O}(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir.
-Quando expressamos a complexidade de uma função como \(O(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir. Explicaremos o que queremos dizer com constantes e termos de ordem inferior com mais detalhes depois.
+Quando expressamos a complexidade de uma função como \(\mathcal{O}(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir. Explicaremos o que queremos dizer com constantes e termos de ordem inferior com mais detalhes depois.
 
 ## Exemplos:
 ### Operações constantes
