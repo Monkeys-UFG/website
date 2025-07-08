@@ -79,7 +79,7 @@ for (int i = 1; i <= n; i++) { // O(n)
 !!! note "Observação"
     Um programa com \(k\) loops aninhados vai ter complexidade \(\mathcal{O}(n^k)\).
 
-Se um algoritmo possui múltiplos blocos de código, consideramos a complexidade como a pior complexidade entre todos os blocos para a notação Big O. No código a seguir, temos um trecho que executa \(n^2\) iterações e outro que executa \(n\), para um \(n\) muito grande a contribuição de \(n^2\) será muito maior que a contribuição de \(n\) para o número total de iterações do programa (\(n\) tem ordem inferior a \(n^2\)). Assim, descartamos a contribuição de \(n\) para o cálculo da complexidade, o código a seguir tem complexidade \(O(n^2)\).
+Se um algoritmo possui múltiplos blocos de código, consideramos a complexidade como a pior complexidade entre todos os blocos para a notação Big O. No código a seguir, temos um trecho que executa \(n^2\) iterações e outro que executa \(n\), para um \(n\) muito grande a contribuição de \(n^2\) será muito maior que a contribuição de \(n\) para o número total de iterações do programa (\(n\) tem ordem inferior a \(n^2\)). Assim, descartamos a contribuição de \(n\) para o cálculo da complexidade, o código a seguir tem complexidade \(\mathcal{O}(n^2)\).
 
 ```cpp linenums="1"
 // O(n^2)
