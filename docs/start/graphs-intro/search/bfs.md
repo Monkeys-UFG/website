@@ -29,6 +29,7 @@
 
 ## Problemas recomendados
 - <a href="https://cses.fi/problemset/task/1667" target="_blank">CSES - Message Route</a>
+- <a href="https://cses.fi/problemset/task/1192" target="_blank">CSES - Counting Rooms</a>
 - <a href="https://cses.fi/problemset/task/1193" target="_blank">CSES - Labyrinth</a>
 - <a href="https://cses.fi/problemset/task/1194" target="_blank">CSES - Monsters</a>
 - <a href="https://atcoder.jp/contests/abc405/tasks/abc405_d" target="_blank">Atcoder - Escape Route</a>
