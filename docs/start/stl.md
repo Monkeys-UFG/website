@@ -1,6 +1,6 @@
 # C++ Standard Template Library (STL)
 
-## Aula Relacionada recomendada
+## Aula relacionada recomendada
 
 <figure markdown="span" class="left-caption">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/beHruxE8D0M?si=gQICcS7_hceNuraj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -81,7 +81,7 @@ Em cada um dos links abaixo, você encontra referências que ensinam a utilizar 
 !!! Tip "Pro Tip"
     Conhecer as estruturas e algoritmos básicos da STL vão te ajudar bastante na sua jornada em programação competitiva.
 
-## Lista de Exercícios
+## Lista de exercícios
 
 - <a href="https://cses.fi/problemset/task/1621" target="_blank">CSES - Distinct Numbers</a>
 - <a href="https://neps.academy/br/exercise/276" target="_blank">OBI - Copa do Mundo</a>
