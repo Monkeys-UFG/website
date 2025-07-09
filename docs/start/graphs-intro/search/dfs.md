@@ -33,3 +33,13 @@
   </div>
 </div>
 <br>
+
+## Problemas recomendados
+- <a href="https://cses.fi/problemset/task/1666" target="_blank">CSES - Building Roads</a>
+- <a href="https://cses.fi/problemset/task/1668" target="_blank">CSES - Building Teams</a>
+- <a href="https://cses.fi/problemset/task/1192" target="_blank">CSES - Counting Rooms</a>
+- <a href="https://cses.fi/problemset/task/1669" target="_blank">CSES - Round Trip</a>
+- <a href="https://cses.fi/problemset/task/1678" target="_blank">CSES - Round Trip II</a>
+- <a href="https://cses.fi/problemset/task/1679" target="_blank">CSES - Course Schedule</a>
+- <a href="https://atcoder.jp/contests/abc404/tasks/abc404_c" target="_blank">Atcoder - Cycle Graph?</a>
+

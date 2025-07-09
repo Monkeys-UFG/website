@@ -25,9 +25,9 @@ nav:
           - 'start/graphs-intro/search/dfs.md'
           - 'start/graphs-intro/search/bfs.md'
         - 'Caminho Mínimo':
+          - 'start/graphs-intro/min-path/dijkstra.md'
           - 'start/graphs-intro/min-path/bellmanford.md'
           - 'start/graphs-intro/min-path/floydwarshall.md'
-          - 'start/graphs-intro/min-path/dijkstra.md'
         - 'Árvore Geradora Mínima':
           - 'start/graphs-intro/mst/prim.md'
           - 'start/graphs-intro/mst/kruskal.md'
