@@ -279,3 +279,11 @@ int main() {
 ## Lista de exercícios
 - <a href="https://cses.fi/problemset/task/1646" target="_blank">CSES - Static Range Sum Queries</a>
 - <a href="https://cses.fi/problemset/task/1650" target="_blank">CSES - Range Xor Queries</a>
+- <a href="https://codeforces.com/contest/1807/problem/D" target="_blank">Codeforces - Odd Queries</a>
+- <a href="https://codeforces.com/contest/1690/problem/D" target="_blank">Codeforces - Black and White Stripe</a>
+- <a href="https://atcoder.jp/contests/abc125/tasks/abc125_c" target="_blank">Atcoder - GCD on Blackboard</a>
+- <a href="https://codeforces.com/contest/368/problem/B" target="_blank">Codeforces - Sereja and Suffixes</a>
+- <a href="https://codeforces.com/contest/1398/problem/C" target="_blank">Codeforces - Good Subarrays</a>
+- <a href="https://codeforces.com/contest/1738/problem/B" target="_blank">Codeforces - Prefix Sum Addicts</a>
+- <a href="https://cses.fi/problemset/task/1661" target="_blank">CSES - Subarray Sums II</a>
+- <a href="https://cses.fi/problemset/task/1662" target="_blank">CSES - Subarray Divisibility</a>
