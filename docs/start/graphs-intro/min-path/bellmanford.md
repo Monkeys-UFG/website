@@ -28,3 +28,7 @@
   </div>
 </div>
 <br>
+
+## Problemas recomendados
+- <a href="https://cses.fi/problemset/task/1673" target="_blank">CSES - High Score</a>
+- <a href="https://cses.fi/problemset/task/1197" target="_blank">CSES - Cycle Finding</a>

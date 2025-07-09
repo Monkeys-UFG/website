@@ -25,3 +25,13 @@
   </div>
 </div>
 <br>
+
+
+## Problemas recomendados
+- <a href="https://cses.fi/problemset/task/1667" target="_blank">CSES - Message Route</a>
+- <a href="https://cses.fi/problemset/task/1193" target="_blank">CSES - Labyrinth</a>
+- <a href="https://cses.fi/problemset/task/1194" target="_blank">CSES - Monsters</a>
+- <a href="https://atcoder.jp/contests/abc405/tasks/abc405_d" target="_blank">Atcoder - Escape Route</a>
+- <a href="https://codeforces.com/contest/520/problem/B" target="_blank">Codeforces - Two Buttons</a>
+- <a href="https://codeforces.com/contest/2116/problem/C" target="_blank">Codeforces - Gellyfish and Flaming Peony</a>
+- <a href="https://codeforces.com/contest/2114/problem/F" target="_blank">Codeforces - Small Operations</a>

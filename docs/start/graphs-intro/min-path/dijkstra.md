@@ -33,3 +33,10 @@
   </div>
 </div>
 <br>
+
+## Problemas recomendados
+- <a href="https://cses.fi/problemset/task/1671" target="_blank">CSES - Shortest Routes I</a>
+- <a href="https://codeforces.com/problemset/problem/20/C" target="_blank">Codeforces - Dijkstra?</a>
+- <a href="https://cses.fi/problemset/task/1195" target="_blank">CSES - Flight Discount</a>
+- <a href="https://cses.fi/problemset/task/1196" target="_blank">CSES - Flight Routes</a>
+- <a href="https://cses.fi/problemset/task/1202" target="_blank">CSES - Investigation</a> 
