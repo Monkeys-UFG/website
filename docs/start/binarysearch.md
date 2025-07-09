@@ -52,13 +52,25 @@ A ideia pode ser vizualizada a seguir:
 <div class="slider-wrapper">
   <!-- área de slides -->
   <div class="slides-container">
-    <div class="image-sliderfade fade">
-      <img src="../../assets/16x9.png" />
-      <div class="caption">Legenda 1</div>
-    </div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb1.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb2.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb3.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb4.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb5.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb6.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb7.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb8.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb9.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb10.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb11.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb12.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb13.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb14.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb15.png" /></div>
+    <div class="image-sliderfade fade"> <img src="../../assets/binary-search/bb16.png" /></div>
   </div>
 
-  <!-- índice no canto -->
+  <!-- índice no canto -->  
   <div class="slide-index">1/1</div>
 
   <!-- barra de controles fixa embaixo -->
