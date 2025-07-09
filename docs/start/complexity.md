@@ -11,9 +11,10 @@
 ## Motivação {#motivacao}
 Pense no seguinte problema
 
->  <a href="https://cses.fi/problemset/task/1643" target="_blank">CSES - Maximum Subarray Sum</a>
 
 > Dado um array de \(n\) inteiros, sua tarefa é encontrar a soma máxima dos valores em um subarray contíguo e não vazio.
+
+>  <a href="https://cses.fi/problemset/task/1643" target="_blank">CSES - Maximum Subarray Sum</a>
 
 !!! note "Nota"
     Tente resolver o problema antes de continuar a leitura.
