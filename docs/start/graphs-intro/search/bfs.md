@@ -2,9 +2,7 @@
 
 ## Introdução
 
-Temos dois grandes algoritmos para percorrer um grafo, o DFS (Busca em Profundidade) e o BFS (Busca em Largura). A grande diferença entre eles é a  forma que ambos fazem esse caminho. Enquanto o DFS percorre o grafo baseado em profundidade, ou seja, ele primeiro andará o mais fundo possível e, quando ele não encontrar mais lugar para ir, ele volta e tenta achar novos caminhos, o BFS fará o caminho em largura, ou seja, ele vai percorrer o grafo em níveis, conforme apresentado no slide abaixo.
-
-Vamos explorar melhor, nessa sessão, como o BFS funciona, e quais as aplicações práticas que podemos ter com ele.
+O BFS é um algoritmo de Busca em Largura. Podemos interpretar a busca em largura como um incêndio em uma floresta. O incêncio começa de algum foco inicial, depois, ele se espalha pelas árvores mais próximas, até se tornar algo quase incontrolável. No algoritmo de BFS, a ideia é essencialmente a mesma: começamos de um vértice inicial e andamos primeiro para todos os vizinhos próximos, depois, ele se espalha para os vizinhos dos vizinhos, e assim por diante. Uma pequena ilustração de como o algoritmo funciona está demonstrado na sequência de imagens abaixo.
 
 <div class="slider-wrapper">
   <!-- área de slides -->
@@ -32,7 +30,7 @@ Vamos explorar melhor, nessa sessão, como o BFS funciona, e quais as aplicaçõ
 </div>
 <br>
 
-<!-- Explicar como o algoritmo é implementado. -->
+Vamos explorar melhor nessa sessão como o BFS funciona, e quais as aplicações práticas que podemos ter com ele.
 
 ## Implementação
 
@@ -74,7 +72,7 @@ Agora, tendo a ideia do algoritmo em mente, podemos pensar em algumas aplicaçõ
 
 Vamos assumir que todos os grafos podem ter até $N \le 2\cdot 10^{5}$ vértices e $M \le 2\cdot 10^{5}$ arestas.
 
-### Contar componentes conexas.
+### Contar componentes conexas
 
 Dado um grafo $G$, contar quantas componentes conexas ele possui.
 
@@ -95,13 +93,60 @@ int components() {
 
 ```
 
-Essencialmente, o código apresentado acima é o mesmo que o usado na sessão de DFS, mas com um BFS no lugar. Podemos fazer exatamente a mesma coisa para contar quantos vértices tem em cada componente conexa também, apenas trocando o algoritmo de DFS para o de BFS.
+Essencialmente, o código apresentado acima é o mesmo que o usado na sessão de DFS, mas com um BFS no lugar. Ambos algoritmos podem ser usados para resolver o problema de contar componentes conexas, e suas variadas aplicações.
 
 ### Caminho mínimo
 
 Dado um grafo $G$ sem pesos nas arestas e dois vértices $s$ e $t$, achar qual o caminho mínimo de $s$ a $t$. Caso ele não exista, exiba isso.
 
 Como o caminho feito pelo algoritmo é em largura, o que acontece é que ele também calcula a distância mínima de um vértice inicial para todos os outros pertencentes a mesma componente que ele, pois a ideia é que, agora, estamos andando em níveis, e só iremos visitar um nível novo quando já tivermos visitado todo o nível atual. Com isso, podemos caminhar no grafo e garantir que o caminho encontrado de um vértice inicial a todos os outros é o menor possível.
+
+Para a implementação do algoritmo, vamos inicializar todos os valores de $dist[i]$ com $\infty$, sendo que $\infty$ é um número muito grande. Suponha que o nosso vértice atual seja $u$. Para todo vizinho de $u$, vamos chamá-lo de $v$, vamos verificar se devemos colocar ele na fila, vendo se a distância percorrida para chegar até ele é menor do que a distância percorrida até ele atualmente, ou seja, $dist[v] > dist[u]+1$. Se for, atualize e coloque o vértice na fila.
+
+Se quisermos recuperar o caminho de $s$ a $t$, podemos guardar mais informação, no caso um vetor de pais, onde olhamos quem é pai de quem no caminho de um vértice a outro. Como queremos sair do vértice $s$ até o $t$, para recuperar o caminho, sairemos de $t$ até $s$. Abaixo ficará o código que ilustra essa implementação do caminho mínimo mais a recuperação do caminho.
+
+```cpp title="min_path.cpp" linenums="1"
+const int N = 2e5+5;
+vector<int> graph[N];
+int dist[N]; // usando distância.
+int pai[N]; // quem é pai de quem
+
+void bfs(int s) {
+	for(int i=1; i<N; i++){
+		dist[i] = N+10; // valor grande.
+		pai[i] = -1;
+	}
+
+    queue<int> q;
+    q.push(s);
+	dist[s] = 0;
+
+    while(!q.empty()) {
+        int u = q.front();
+        q.pop();
+
+        for(int v: graph[u]) {
+            if(dist[v] > dist[u]+1){
+				dist[v] = dist[u]+1;
+				pai[v] = u; // pai de v é u.
+				q.push(v);
+			}
+        }
+    }
+}
+
+// função para recuperar o caminho de s a t.
+vector<int> rec_path(int t) {
+	vector<int> path;
+	while(t != -1) {
+		path.push_back(t);
+		t = pai[t];
+	}
+	reverse(path.begin(), path.end());
+
+	return path;
+}
+```
 
 ## Problemas recomendados
 - <a href="https://cses.fi/problemset/task/1667" target="_blank">CSES - Message Route</a>
