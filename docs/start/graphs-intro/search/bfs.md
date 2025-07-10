@@ -1,5 +1,9 @@
 # Breadth First Search (BFS)
 
+## Introdução
+
+O BFS é um algoritmo de Busca em Largura. Podemos interpretar a busca em largura como um incêndio em uma floresta. O incêncio começa de algum foco inicial, depois, ele se espalha pelas árvores mais próximas, até se tornar algo quase incontrolável. No algoritmo de BFS, a ideia é essencialmente a mesma: começamos de um vértice inicial e andamos primeiro para todos os vizinhos próximos, depois, ele se espalha para os vizinhos dos vizinhos, e assim por diante. Uma pequena ilustração de como o algoritmo funciona está demonstrado na sequência de imagens abaixo.
+
 <div class="slider-wrapper">
   <!-- área de slides -->
   <div class="slides-container">
@@ -26,6 +30,123 @@
 </div>
 <br>
 
+Vamos explorar melhor nessa sessão como o BFS funciona, e quais as aplicações práticas que podemos ter com ele.
+
+## Implementação
+
+Nós vamos manter uma fila, onde o topo dessa fila é o nosso vértice atual. Percorreremos todos os vizinhos não visitados do vértice atual e vamos adicionar todos eles na fila também. Isso fará com que andemos no nosso grafo em forma de níveis.
+
+```cpp title="bfs.cpp" linenums="1"
+const int N = 2e5+5;
+vector<int> graph[N]; // grafo na forma de lista de adjacência
+vector<bool> vis; // saber se um vértice foi visitado ou não.
+
+
+void bfs(int s) {
+    queue<int> q; // fila para guardar os vértices
+    q.push(s); // colocar o vértice "source" na fila.
+    vis[s] = true; // marcar o vértice s
+
+    while(!q.empty()) {
+        int u = q.front(); // pegar o vértice no topo da fila
+        q.pop(); // retirar o vértice do topo da fila.
+
+        for(int v: graph[u]) { // percorrer todos os vizinhos de u
+            if(!vis[v]){ // se o vértice v não tiver sido visitado
+                vis[v] = true; // marque v como visitado
+                q.push(v); // e coloque ele na fila
+            }
+        }
+    }
+}
+```
+
+A complexidade de usar o BFS é $\mathcal{O}(N + M)$, com $N$ sendo o número de vértices do nosso grafo, e $M$ o número de arestas.
+
+!!! note "Aviso"
+    Um erro comum ao usar algoritmos de grafos é não visitar os vértices. Se não visitar os vértices, a complexidade pode sair de algo linear para algo na ordem exponencial. Tomem cuidado!
+
+Agora, tendo a ideia do algoritmo em mente, podemos pensar em algumas aplicações práticas do BFS em alguns problemas.
+
+## Aplicações
+
+Vamos assumir que todos os grafos podem ter até $N \le 2\cdot 10^{5}$ vértices e $M \le 2\cdot 10^{5}$ arestas.
+
+### Contar componentes conexas
+
+Dado um grafo $G$, contar quantas componentes conexas ele possui.
+
+A ideia é ir por cada vértice não visitado e percorrer a sua componente conexa, visitando todo mundo dela, para ela ser contabilizada somente uma vez. Após percorrer todas as componentes, teremos no final a quantidade guardada em alguma variável.
+
+```cpp title="connected_component.cpp" linenums="1"
+
+int components() {
+	int rs = 0; // guardar qtd de componentes
+
+	for(int i=1; i<=n; i++) {
+		if(!vis[i]){
+			rs++;
+			bfs(i);
+		}
+	}
+}
+
+```
+
+Essencialmente, o código apresentado acima é o mesmo que o usado na sessão de DFS, mas com um BFS no lugar. Ambos algoritmos podem ser usados para resolver o problema de contar componentes conexas, e suas variadas aplicações.
+
+### Caminho mínimo
+
+Dado um grafo $G$ sem pesos nas arestas e dois vértices $s$ e $t$, achar qual o caminho mínimo de $s$ a $t$. Caso ele não exista, exiba isso.
+
+Como o caminho feito pelo algoritmo é em largura, o que acontece é que ele também calcula a distância mínima de um vértice inicial para todos os outros pertencentes a mesma componente que ele, pois a ideia é que, agora, estamos andando em níveis, e só iremos visitar um nível novo quando já tivermos visitado todo o nível atual. Com isso, podemos caminhar no grafo e garantir que o caminho encontrado de um vértice inicial a todos os outros é o menor possível.
+
+Para a implementação do algoritmo, vamos inicializar todos os valores de $dist[i]$ com $\infty$, sendo que $\infty$ é um número muito grande. Suponha que o nosso vértice atual seja $u$. Para todo vizinho de $u$, vamos chamá-lo de $v$, vamos verificar se devemos colocar ele na fila, vendo se a distância percorrida para chegar até ele é menor do que a distância percorrida até ele atualmente, ou seja, $dist[v] > dist[u]+1$. Se for, atualize e coloque o vértice na fila.
+
+Se quisermos recuperar o caminho de $s$ a $t$, podemos guardar mais informação, no caso um vetor de pais, onde olhamos quem é pai de quem no caminho de um vértice a outro. Como queremos sair do vértice $s$ até o $t$, para recuperar o caminho, sairemos de $t$ até $s$. Abaixo ficará o código que ilustra essa implementação do caminho mínimo mais a recuperação do caminho.
+
+```cpp title="min_path.cpp" linenums="1"
+const int N = 2e5+5;
+vector<int> graph[N];
+int dist[N]; // usando distância.
+int pai[N]; // quem é pai de quem
+
+void bfs(int s) {
+	for(int i=1; i<N; i++){
+		dist[i] = N+10; // valor grande.
+		pai[i] = -1;
+	}
+
+    queue<int> q;
+    q.push(s);
+	dist[s] = 0;
+
+    while(!q.empty()) {
+        int u = q.front();
+        q.pop();
+
+        for(int v: graph[u]) {
+            if(dist[v] > dist[u]+1){
+				dist[v] = dist[u]+1;
+				pai[v] = u; // pai de v é u.
+				q.push(v);
+			}
+        }
+    }
+}
+
+// função para recuperar o caminho de s a t.
+vector<int> rec_path(int t) {
+	vector<int> path;
+	while(t != -1) {
+		path.push_back(t);
+		t = pai[t];
+	}
+	reverse(path.begin(), path.end());
+
+	return path;
+}
+```
 
 ## Problemas recomendados
 - <a href="https://cses.fi/problemset/task/1667" target="_blank">CSES - Message Route</a>
