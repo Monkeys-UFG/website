@@ -1,7 +1,5 @@
 # CSES
 
-<!-- Onde estiver em negrito, tem que adicionar o link do site. Aqui, adicionar o link do site do CSES e o link do site do livro (cses.fi/book/book.pdf) -->
-
 O <a href="https://cses.fi" target="_blank">CSES</a> (Code Submission Evaluation System) é um site finlandês com centenas de problemas relacionados a programação dos mais variados tópicos, onde os problemas tendem a ser mais clássicos, o que é perfeito para quem estiver começando na jornada de programação competitiva.
 
 Ele separa os tópicos em várias sessões para direcionar melhor o que é necessário aprender para cada sessão, e além disso, o site possui um <a href="https://cses.fi/book/book.pdf" target="_blank">livro</a>, que serve como um guia para aprender a linguagem C++ e também serve como um guia para resolver os problemas dados como exercício no site. É interessante usar o livro enquanto resolve os problemas, pois acelera bastante o aprendizado, mas lembre-se que o livro é apenas um guia, então há várias coisas que uma pessoa pode aprender se ela dedicar um tempo tentando resolver algum dos problemas sem ler algo sobre antes.
