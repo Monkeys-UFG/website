@@ -13,37 +13,37 @@ nav:
       - 'start/stl.md'
       - 'start/complexity.md'
       - 'start/recursion.md'
-      - 'start/greedy.md'
-      - 'start/practicing.md'
-      - 'start/twopointers.md'
+      # - 'start/greedy.md'
+      # - 'start/practicing.md'
+      # - 'start/twopointers.md'
       - 'start/prefixsum.md'
       - 'start/binarysearch.md'
-      - 'start/bitmanipulation.md'
+      # - 'start/bitmanipulation.md'
       - 'Grafos':
         - 'start/graphs-intro/introduction.md'
         - 'Busca':
           - 'start/graphs-intro/search/dfs.md'
           - 'start/graphs-intro/search/bfs.md'
-        - 'Caminho Mínimo':
-          - 'start/graphs-intro/min-path/dijkstra.md'
-          - 'start/graphs-intro/min-path/bellmanford.md'
-          - 'start/graphs-intro/min-path/floydwarshall.md'
-        - 'Árvore Geradora Mínima':
-          - 'start/graphs-intro/mst/prim.md'
-          - 'start/graphs-intro/mst/kruskal.md'
+        # - 'Caminho Mínimo':
+          # - 'start/graphs-intro/min-path/dijkstra.md'
+          # - 'start/graphs-intro/min-path/bellmanford.md'
+          # - 'start/graphs-intro/min-path/floydwarshall.md'
+        # - 'Árvore Geradora Mínima':
+          # - 'start/graphs-intro/mst/prim.md'
+          # - 'start/graphs-intro/mst/kruskal.md'
       - 'start/numbertheory.md'
-      - 'start/geometry.md'
-      - 'Programação Dinâmica':
-        - 'start/dp/intro.md'
-        - 'start/dp/knapsack.md'
-        - 'start/dp/paths.md'
-        - 'start/dp/lcs.md'
-      - 'start/dsu.md'
-      - 'start/fenwick.md'
-      - 'start/segtree.md'
+      # - 'start/geometry.md'
+      # - 'Programação Dinâmica':
+        # - 'start/dp/intro.md'
+        # - 'start/dp/knapsack.md'
+        # - 'start/dp/paths.md'
+        # - 'start/dp/lcs.md'
+      # - 'start/dsu.md'
+      # - 'start/fenwick.md'
+      # - 'start/segtree.md'
 
-  - Biblioteca:
-      - 'library/note.md'
+  # - Biblioteca:
+      # - 'library/note.md'
   - Sites:
       - 'sites/codeforces.md'
       - 'sites/atcoder.md'
@@ -51,7 +51,7 @@ nav:
       - 'sites/usaco.md'
       - 'sites/cpalgo.md'
         
-  - Membros: 'members.md'
+  # - Membros: 'members.md'
 
 theme:
   language: pt-BR
@@ -127,8 +127,8 @@ extra:
       link: https://github.com/Monkeys-UFG/
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/ufg_monkeys
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/ufg_monkeys
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/fVy39w4nNv
 
 plugins:
   - search
