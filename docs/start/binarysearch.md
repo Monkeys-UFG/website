@@ -126,7 +126,7 @@ int main() {
 ```
 Complexidade final: \(\mathcal{O}(N\cdot \log_2 (N)) \)
 
-### Provando a complexidade
+<!-- ### Provando a complexidade -->
 
 ## Busca Binária em Funções monótonas
 
