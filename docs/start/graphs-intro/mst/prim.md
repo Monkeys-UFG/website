@@ -34,3 +34,8 @@
   </div>
 </div>
 <br>
+
+## Lista de exercícios
+<a href="https://cses.fi/problemset/task/1675" target="_blank">CSES - Road Reparation</a>
+<a href="https://atcoder.jp/contests/abc218/tasks/abc218_e" target="_blank">Atcoder - Destruction</a>
+<a href="https://neps.academy/br/exercise/2167" target="_blank">OBI - Carro elétrico</a>
