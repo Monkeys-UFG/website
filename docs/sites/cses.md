@@ -1,15 +1,12 @@
 # CSES
 
-O <a href="https://cses.fi" target="_blank">CSES</a> (Code Submission Evaluation System) é um site finlandês com centenas de problemas relacionados a programação dos mais variados tópicos, onde os problemas tendem a ser mais clássicos, o que é perfeito para quem estiver começando na jornada de programação competitiva.
+O <a href="https://cses.fi" target="_blank">CSES</a> (Code Submission Evaluation System) é um judge finlandês com centenas de problemas relacionados a programação dos mais variados tópicos, onde os problemas tendem a ser mais clássicos, o que é perfeito para quem estiver começando na jornada de programação competitiva.
 
-Ele separa os tópicos em várias sessões para direcionar melhor o que é necessário aprender para cada sessão, e além disso, o site possui um <a href="https://cses.fi/book/book.pdf" target="_blank">livro</a>, que serve como um guia para aprender a linguagem C++ e também serve como um guia para resolver os problemas dados como exercício no site. É interessante usar o livro enquanto resolve os problemas, pois acelera bastante o aprendizado, mas lembre-se que o livro é apenas um guia, então há várias coisas que uma pessoa pode aprender se ela dedicar um tempo tentando resolver algum dos problemas sem ler algo sobre antes.
+Ele separa os tópicos em várias sessões para direcionar melhor o que é necessário aprender em cada sessão. Além disso, o site possui um <a href="https://cses.fi/book/book.pdf" target="_blank">livro texto</a>. O livro é bastante interessante, pois serve como um guia para aprender a linguagem C++, usada amplamente no contexto de Programação Competitiva, e também serve como um guia para resolver os problemas dados como exercícios no site. É interessante usar o livro e os recursos apresentados nesse site para resolver os problemas propostos, mas lembre-se que o livro é apenas um guia, então há várias coisas que uma pessoa pode aprender sobre um problema se ela dedicar um tempo tentando resolvê-los antes.
 
-O site separa seus problemas em vários tópicos, que variam de problemas introdutórios para outros tópicos mais avançados. É recomendado começar a resolver os problemas pelo tópico "Introductory Problems" e "Sorting and Searching", que é voltado para pensar em como resolver problemas de programação e usar alguns algoritmos e ideias clássicas, como Busca Binária, 2 Pointers, Algoritmos Gulosos, entre outros.
-<!-- 
-## Tópicos
+O site atualmente conta com $400$ problemas diferentes, dos mais variados níveis de dificuldade, e você pode resolvê-los em qualquer ordem que desejar. Assim, se você se sentir perdido em algum problema, você pode ir para o próximo para esfriar sua cabeça do problema atual, e voltar nele depois para enfim poder resolvê-lo. É um site interessante para se aprender e é interessante dedicar um pouco do seu treinamento nas listas de problemas que ele tem a oferecer.
 
-
-### Introductory Problems
+<!-- ### Introductory Problems
 
 Tópico que vai abordar ideias básicas:
 
