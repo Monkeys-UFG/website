@@ -1,5 +1,6 @@
 site_name: Monkeys UFG
-site_url: https://mydomain.org/mysite
+site_url: https://monkeys-ufg.github.io/website/
+
 
 nav:
   - Bem vindo: 'index.md'
