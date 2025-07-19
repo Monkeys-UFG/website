@@ -1,175 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://mydomain.org/mysite/</loc>
+         <loc>https://monkeys-ufg.github.io/website/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/members/</loc>
+         <loc>https://monkeys-ufg.github.io/website/members/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/blog/</loc>
+         <loc>https://monkeys-ufg.github.io/website/blog/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/blog/grupo-com-simulados-da-obi/</loc>
+         <loc>https://monkeys-ufg.github.io/website/blog/grupo-com-simulados-da-obi/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/blog/em-breve/</loc>
+         <loc>https://monkeys-ufg.github.io/website/blog/introdu%C3%A7%C3%A3o-aos-conceitos-de-programa%C3%A7%C3%A3o-competitiva-icpc/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/blog/monkeys-contest---selection-edition/</loc>
+         <loc>https://monkeys-ufg.github.io/website/blog/monkeys-contest---selection-edition/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/library/note/</loc>
+         <loc>https://monkeys-ufg.github.io/website/library/note/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/sites/atcoder/</loc>
+         <loc>https://monkeys-ufg.github.io/website/sites/atcoder/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/sites/codeforces/</loc>
+         <loc>https://monkeys-ufg.github.io/website/sites/codeforces/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/sites/cpalgo/</loc>
+         <loc>https://monkeys-ufg.github.io/website/sites/cpalgo/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/sites/cses/</loc>
+         <loc>https://monkeys-ufg.github.io/website/sites/cses/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/sites/usaco/</loc>
+         <loc>https://monkeys-ufg.github.io/website/sites/usaco/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/binarysearch/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/binarysearch/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/bitmanipulation/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/bitmanipulation/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/complexity/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/complexity/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/cpp/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/cpp/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/dsu/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/dsu/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/fenwick/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/fenwick/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/geometry/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/geometry/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/greedy/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/greedy/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/numbertheory/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/numbertheory/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/practicing/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/practicing/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/prefixsum/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/prefixsum/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/recursion/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/recursion/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/segtree/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/segtree/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/stl/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/stl/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/twopointers/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/twopointers/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/dp/intro/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/dp/intro/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/dp/knapsack/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/dp/knapsack/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/dp/lcs/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/dp/lcs/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/dp/paths/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/dp/paths/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/introduction/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/introduction/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/min-path/bellmanford/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/min-path/bellmanford/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/min-path/dijkstra/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/min-path/dijkstra/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/min-path/floydwarshall/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/min-path/floydwarshall/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/mst/kruskal/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/mst/kruskal/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/mst/prim/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/mst/prim/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/search/bfs/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/search/bfs/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/graphs-intro/search/dfs/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/graphs-intro/search/dfs/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/introduction/comp/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/introduction/comp/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/start/introduction/guide/</loc>
+         <loc>https://monkeys-ufg.github.io/website/start/introduction/guide/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
     <url>
-         <loc>https://mydomain.org/mysite/blog/archive/2025/</loc>
-         <lastmod>2025-07-19</lastmod>
-    </url>
-    <url>
-         <loc>https://mydomain.org/mysite/blog/archive/2024/</loc>
+         <loc>https://monkeys-ufg.github.io/website/blog/archive/2025/</loc>
          <lastmod>2025-07-19</lastmod>
     </url>
 </urlset>
