@@ -2,162 +2,174 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mydomain.org/mysite/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/members/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/blog/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/blog/grupo-com-simulados-da-obi/</loc>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/blog/em-breve/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/blog/monkeys-contest---selection-edition/</loc>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/library/note/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/sites/atcoder/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/sites/codeforces/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/sites/cpalgo/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/sites/cses/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/sites/usaco/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/binarysearch/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/bitmanipulation/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/complexity/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/cpp/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/dsu/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/fenwick/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/geometry/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/greedy/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/numbertheory/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/practicing/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/prefixsum/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/recursion/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/segtree/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/stl/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/twopointers/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/dp/intro/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/dp/knapsack/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/dp/lcs/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/dp/paths/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/introduction/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/min-path/bellmanford/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/min-path/dijkstra/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/min-path/floydwarshall/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/mst/kruskal/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/mst/prim/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/search/bfs/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/graphs-intro/search/dfs/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/introduction/comp/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/start/introduction/guide/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
+    </url>
+    <url>
+         <loc>https://mydomain.org/mysite/blog/archive/2025/</loc>
+         <lastmod>2025-07-19</lastmod>
     </url>
     <url>
          <loc>https://mydomain.org/mysite/blog/archive/2024/</loc>
-         <lastmod>2025-07-09</lastmod>
+         <lastmod>2025-07-19</lastmod>
     </url>
 </urlset>
