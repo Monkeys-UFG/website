@@ -15,7 +15,7 @@ Após codificar sua solução, você a submete a um avaliador automático. Ele v
 ![OBILOGO](../../assets/logos/obi_logo.png){  width=250 align=left .no-margin }
 
 <h3 class="no-top-margin"><strong>Olimpíada Brasileira de Informática (OBI)</strong></h3>
-A Olimpíada Brasileira de Informática (OBI) é uma competicão individual que acontece anualmente. O objetivo da OBI é despertar interesse nos alunos de todas as idades pela ciencia da computação. A organização da OBI está a cargo do instutito de computação da UNICAMP.
+A Olimpíada Brasileira de Informática (OBI) é uma competição individual que acontece anualmente. O objetivo da OBI é despertar interesse nos alunos de todas as idades pela ciência da computação. A organização da OBI está a cargo do instituto de computação da UNICAMP.
 
 A OBI está organizada em duas modalidades, e cada modalidade é dividida em níveis. Em todas as modalidades e níveis os alunos competem individualmente. Cada aluno poderá ser inscrito e participar em apenas um modalidade e nível.
 
