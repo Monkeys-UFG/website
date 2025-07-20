@@ -1,6 +1,10 @@
 # AtCoder
 
-O **AtCoder** é um site japonês focado em programação competitiva, sendo considerado uma das principais plataformas da área no mundo.
+<figure markdown="span">
+  ![AtCoder Logo](../assets/sites/atcoder/atcoder_logo.png){ width="1000" }
+</figure>
+
+O <a href="https://atcoder.jp/" target="_blank">**AtCoder**</a>  é um site japonês focado em programação competitiva, sendo considerado uma das principais plataformas da área no mundo.
 
 ## Tipos de Competições
 
@@ -15,6 +19,10 @@ Essas competições são abertas, cronometradas e possuem um ranking oficial, o 
 Você pode encontrar todas as competições passadas do AtCoder na aba de *contests*:
 
 <a href="https://atcoder.jp/contests/" target="_blank">https://atcoder.jp/contests/</a>
+
+<figure markdown="span">
+  ![AtCoder Contests](../assets/sites/atcoder/atcoder_contests.png){ width="1000" }
+</figure>
 
 ## Sistema de Pontuação e Ranqueamento
 
@@ -51,7 +59,7 @@ O AtCoder oferece *contests* clássicos focados em tópicos essenciais para comp
 
 Esses *contests* são excelentes recursos para aprender e validar suas implementações das técnicas e estruturas de dados mais comuns em programação competitiva.
 
-## kenkoooo/atcoder-problems
+## kenkoooo/atcoder
 
 O <a href="https://kenkoooo.com/atcoder/#/table/" target="_blank">kenkoooo/atcoder</a> é uma ferramenta interativa para praticar problemas do AtCoder. Ela exibe uma tabela com todos os problemas já lançados, mostrando:
 

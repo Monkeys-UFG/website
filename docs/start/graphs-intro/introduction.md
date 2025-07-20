@@ -2,6 +2,12 @@
 
 Essa seção tem o intuito de apresentar uma introdução à Teoria dos Grafos.
 
+## Aula relacionada recomendada
+
+<figure markdown="span" class="left-caption">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2AS8SbpmC7o?si=PViVX5k_jIQG1s0e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Créditos: Canal Maratona UFMG </figcaption>
+</figure>
 
 ## Definição
 Um grafo é representado por um par ordenado $G = (V, E)$, em que $V$ é o conjunto de vértices e $E$ é o conjunto de arestas. Eles podem ser utilizados para representar relações entre os vértices, através do uso das arestas. Por exemplo, os vértices podem ser vistos como cidades e as arestas como estradas, em que a aresta $(U,V)$ existe se há uma estrada entre as cidades $U$ e $V$.
