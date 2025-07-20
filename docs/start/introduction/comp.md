@@ -12,7 +12,7 @@ Após codificar sua solução, você a submete a um avaliador automático. Ele v
 
 ---
 
-![OBILOGO](../../assets/logos/obig_logo_semfundo.png){  width=250 align=left .no-margin }
+![OBILOGO](../../assets/logos/obi_logo_semfundo.png){  width=250 align=left .no-margin }
 
 <h3 class="no-top-margin"><strong>Olimpíada Brasileira de Informática (OBI)</strong></h3>
 A Olimpíada Brasileira de Informática (OBI) é uma competição individual que acontece anualmente. O objetivo da OBI é despertar interesse nos alunos de todas as idades pela ciência da computação. A organização da OBI está a cargo do instituto de computação da UNICAMP.
