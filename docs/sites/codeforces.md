@@ -82,7 +82,7 @@ Também temos um grupo com provas passadas da OBI. Este grupo serve para você, 
 
 ### Problemset
 
-Aqui você encontra uma vasta coleção de **problemas de programação** de competições passadas. É o lugar perfeito para praticar, filtrar por **dificuldade** e **tópico (tags)**, e aprimorar suas habilidades em algoritmos e estruturas de dados.
+Aqui você encontra uma vasta coleção de **problemas de programação** de competições passadas. É o lugar perfeito para praticar, filtrar por **dificuldade** e **tópico (tags)**.
 
 <figure markdown="span">
   ![Codeforces Problemset](../assets/sites/codeforces/codeforces_problemset.png){ width="1000" }
@@ -92,7 +92,7 @@ Aqui você encontra uma vasta coleção de **problemas de programação** de com
 
 ### Gym
 
-O **Gym** permite criar e participar de **treinamentos personalizados** e **competições virtuais**. É ideal para equipes e grupos de estudo que querem simular concursos ou focar em problemas específicos.
+O **Gym** permite criar e participar de **treinamentos personalizados** e **competições virtuais**. É ideal para equipes e grupos de estudo que querem simular competições ou focar em problemas específicos.
 
 <figure markdown="span">
   ![Codeforces Gym](../assets/sites/codeforces/codeforces_gym.png){ width="1000" }
