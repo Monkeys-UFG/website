@@ -108,7 +108,7 @@ Nesta seção, usuários podem formar **comunidades** e **equipes**, como clubes
 
 ### Rating
 
-Seu **Rating** é uma pontuação numérica que reflete sua habilidade em programação competitiva, ajustada a cada competição ranqueada. Ele determina sua **"cor" e "título"** (e.g., Expert, Master), indicando seu nível e motivando a melhora contínua.
+Seu **Rating** é uma pontuação numérica que reflete sua habilidade em programação competitiva, ajustada a cada competição ranqueada. Ele determina sua **"cor" e "nível"** (e.g., Expert, Master).
 
 <figure markdown="span">
   ![Codeforces Leaderboard](../assets/sites/codeforces/codeforces_leaderboard.png){ width="1000" }
