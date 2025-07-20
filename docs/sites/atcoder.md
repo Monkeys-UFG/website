@@ -6,6 +6,8 @@
 
 O <a href="https://atcoder.jp/" target="_blank">**AtCoder**</a>  é um site japonês focado em programação competitiva, sendo considerado uma das principais plataformas da área no mundo.
 
+---
+
 ## Tipos de Competições
 
 O AtCoder organiza três tipos principais de competições semanais:
@@ -24,6 +26,8 @@ Você pode encontrar todas as competições passadas do AtCoder na aba de *conte
   ![AtCoder Contests](../assets/sites/atcoder/atcoder_contests.png){ width="1000" }
 </figure>
 
+---
+
 ## Sistema de Pontuação e Ranqueamento
 
 Cada usuário possui um **rating**, uma pontuação que varia conforme o desempenho nas competições. Esse sistema permite que você acompanhe seu progresso e se compare com outros competidores ao redor do mundo.
@@ -31,6 +35,8 @@ Cada usuário possui um **rating**, uma pontuação que varia conforme o desempe
 <figure markdown="span">
   ![Gráfico de Rating do AtCoder](../assets/sites/atcoder/atcoder_rating.png){ width="1000" }
 </figure>
+
+---
 
 ## Afiliação com a UFG
 
@@ -46,6 +52,8 @@ Isso permite que você filtre o ranking para visualizar apenas os participantes 
   ![Ranking da UFG no AtCoder](../assets/sites/atcoder/atcoder_ufg_ranking.png){ width="1000" }
 </figure>
 
+---
+
 ## Contests Clássicos
 
 O AtCoder oferece *contests* clássicos focados em tópicos essenciais para competições de programação. Dois deles se destacam:
@@ -59,6 +67,8 @@ O AtCoder oferece *contests* clássicos focados em tópicos essenciais para comp
 
 Esses *contests* são excelentes recursos para aprender e validar suas implementações das técnicas e estruturas de dados mais comuns em programação competitiva.
 
+---
+
 ## kenkoooo/atcoder
 
 O <a href="https://kenkoooo.com/atcoder/#/table/" target="_blank">kenkoooo/atcoder</a> é uma ferramenta interativa para praticar problemas do AtCoder. Ela exibe uma tabela com todos os problemas já lançados, mostrando:
@@ -68,3 +78,5 @@ O <a href="https://kenkoooo.com/atcoder/#/table/" target="_blank">kenkoooo/atcod
 * Filtros por dificuldade, tipo de *contest* (ABC, ARC, AGC) e status (resolvido ou não resolvido).
 
 Você pode fazer login com seu usuário do AtCoder para acompanhar seu progresso automaticamente. É uma ferramenta ideal para estudar de forma organizada e escolher problemas adequados ao seu nível de habilidade.
+
+---
