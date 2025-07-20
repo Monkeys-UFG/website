@@ -17,6 +17,7 @@ Se você é iniciante em programação, realizar um curso sobre a linguagem pode
 
 <figure markdown="span" class="left-caption">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/vLnPwxZdW4Y?si=AaBkJppx_BZzpRQK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Créditos: freeCodeCamp.org </figcaption>
   <figcaption>O conteúdo que começa a partir de ponteiros não é obrigatório, mas é útil.</figcaption>
 </figure>
 

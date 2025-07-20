@@ -1,5 +1,12 @@
 # Depth First Search (DFS)
 
+## Aula relacionada recomendada
+
+<figure markdown="span" class="left-caption">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2AS8SbpmC7o?si=ueGpY9Bnf7WlYln_&amp;start=1449" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Créditos: Canal Maratona UFMG </figcaption>
+</figure>
+
 A busca em profundidade (DFS) é uma técnica para percorrer grafos . Ela começa em um vértice inicial e segue para um novo vértice adjacente que ainda não foi visitado. Quando não há mais vértices adjacentes a serem visitados, o algoritmo volta para o vértice anterior e tenta explorar outros caminhos.
 
 <div class="slider-wrapper">
