@@ -102,7 +102,7 @@ O **Gym** permite criar e participar de **treinamentos personalizados** e **comp
 
 ### Groups
 
-Nesta seção, usuários podem formar **comunidades** e **equipes**, como clubes universitários ou grupos de estudo. Os grupos facilitam a organização de treinos, discussões e o acompanhamento do progresso entre os membros.
+Nesta seção, usuários podem formar **comunidades** e **equipes**, como grupos universitários. Os grupos facilitam a organização de treinos e discussões.
 
 ---
 
