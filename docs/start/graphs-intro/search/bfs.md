@@ -1,5 +1,12 @@
 # Breadth First Search (BFS)
 
+## Aula relacionada recomendada
+
+<figure markdown="span" class="left-caption">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_CQ0kQmZhG4?si=6Xi9edVGHIOBM6sj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Créditos: Canal Maratona UFMG </figcaption>
+</figure>
+
 ## Introdução
 
 O BFS é um algoritmo de Busca em Largura. Podemos interpretar a busca em largura como um incêndio em uma floresta. O incêncio começa de algum foco inicial, depois, ele se espalha pelas árvores mais próximas, até se tornar algo quase incontrolável. No algoritmo de BFS, a ideia é essencialmente a mesma: começamos de um vértice inicial e andamos primeiro para todos os vizinhos próximos, depois, ele se espalha para os vizinhos dos vizinhos, e assim por diante. Uma pequena ilustração de como o algoritmo funciona está demonstrado na sequência de imagens abaixo.

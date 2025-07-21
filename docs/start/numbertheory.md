@@ -1,6 +1,13 @@
 # Teoria dos Números
 Teoria dos números é um ramo da matemática que estuda números inteiros. Nessa seção, assumiremos que todos os números são inteiros.
 
+## Aula relacionada recomendada
+
+<figure markdown="span" class="left-caption">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/EiEmhW8_Stw?si=-2ji3drmaNcrR9e7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <figcaption>Créditos: Canal Maratona UFMG </figcaption>
+</figure>
+
 ## Divisores
 Um número $a$ é chamado de divisor ou fator de um número $b$ se $a$ divide $b$. Escrevemos $a \mid b$ e temos a seguinte propriedade:
 

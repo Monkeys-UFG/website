@@ -10,10 +10,12 @@ A resolução de problemas em programação competitiva geralmente segue duas et
 
 Após codificar sua solução, você a submete a um avaliador automático. Ele verifica se as respostas geradas pelo seu programa estão corretas, comparando-as com um conjunto de casos de teste pré-determinados. É importante lembrar que cada problema possui limites de tempo e memória que seu programa deve respeitar para ser aceito, e abordaremos isso em mais detalhes adiante.
 
-![OBILOGO](../../assets/macaco.png){  width=250 align=left .no-margin }
+---
+
+![OBILOGO](../../assets/logos/obi_logo.png){  width=250 align=left .no-margin }
 
 <h3 class="no-top-margin"><strong>Olimpíada Brasileira de Informática (OBI)</strong></h3>
-A Olimpíada Brasileira de Informática (OBI) é uma competicão individual que acontece anualmente. O objetivo da OBI é despertar interesse nos alunos de todas as idades pela ciencia da computação. A organização da OBI está a cargo do instutito de computação da UNICAMP.
+A Olimpíada Brasileira de Informática (OBI) é uma competição individual que acontece anualmente. O objetivo da OBI é despertar interesse nos alunos de todas as idades pela ciência da computação. A organização da OBI está a cargo do instituto de computação da UNICAMP.
 
 A OBI está organizada em duas modalidades, e cada modalidade é dividida em níveis. Em todas as modalidades e níveis os alunos competem individualmente. Cada aluno poderá ser inscrito e participar em apenas um modalidade e nível.
 
@@ -41,6 +43,10 @@ Todos os participantes receberão certificados de participação. Os melhores co
 
 Para mais detalhes: <a href="https://olimpiada.ic.unicamp.br/" target="_blank">https://olimpiada.ic.unicamp.br/</a>
 
+---
+
+![Maratona LOGO](../../assets/logos/logo_maratona.jpg){  width=250 align=left .no-margin }
+
 ### **Maratona de Programação da SBC**
 
 A Maratona de Programação da SBC (Sociedade Brasileira de Computação) é uma das maiores e mais tradicionais competições de programação do país. Voltada para estudantes de graduação em Computação e áreas afins, a maratona ocorre anualmente e é uma competição em equipe, sendo três competidores e um coach. 
@@ -67,6 +73,38 @@ A ordem de prioridade é Top 15 \(\rightarrow\) Melhor time da sede \(\rightarro
 #### Final Brasileira
 A Final Brasileira é disputada em uma sede de maneira presencial com todos os classificados da Primeira Fase. Todo ano uma sede é definida para ser anfitriã da competição e os melhores times são classificados para as Finais Latino-Americanas da competição.
 
+---
+
 ### **Maratona Feminina de Programação (MFP)**
 
-### **Competições online**
+A **Maratona Feminina de Programação (MFP)** é uma competição da Sociedade Brasileira de Computação (SBC) feita para mulheres e pessoas não binárias que cursam graduação em Computação e áreas afins.
+
+Fique por dentro das novidades da MFP no Instagram: <a href = "https://www.instagram.com/mfp.sbc/" target = "_blank">https://www.instagram.com/mfp.sbc/</a>
+
+#### **Como Funciona**
+
+A MFP é uma prova individual, com um limite de tempo de 5 horas, para resolver entre 8 e 9 problemas.
+
+A competição é dividida em fases:
+
+* **Primeira Fase:** Uma etapa classificatória, que pode ser online ou presencial em várias cidades, onde as participantes buscam uma vaga para a fase final.
+
+* **Fase Final:** As melhores participantes da primeira fase se encontram presencialmente na UNICAMP para a fase final.
+
+Para mais informações, você pode conferir o edital da MFP no Linktree: <a href = "https://linktr.ee/mfp.sbc" target = "_blank">Linktree MFP</a>
+
+Além da competição, a MFP costuma oferecer **cursos e workshops** para ajudar as participantes a se prepararem e aprenderem ainda mais.
+
+Você pode conferir as aulas no canal da Maratona SBC: <a href = "https://www.youtube.com/playlist?list=PL_LXOen7bfUBq-1_dduDaibACuWJfycPR" target = "_blank">Playlist MFP</a>
+
+---
+
+### **Competições Online**
+
+Uma ótima maneira de praticar programação competitiva é participar de competições online. Dentre os principais sites, temos:
+
+* <a href = "https://codeforces.com/" target = "_blank">Codeforces</a>
+* <a href = "https://atcoder.jp/" target = "_blank">AtCoder</a>
+* <a href = "https://www.codechef.com/" target = "_blank">CodeChef</a>
+
+Cada um desses sites possui seu formato de prova. Você pode conferir mais informações na [seção de sites](../../../sites/codeforces).
