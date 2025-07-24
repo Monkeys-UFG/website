@@ -1,4 +1,7 @@
 # CSES
+<figure markdown="span">
+    ![Logo do CSES](../assets/sites/cses/cses_logo.png){width="1000"}
+</figure>
 
 O <a href="https://cses.fi/problemset" target="_blank">CSES</a> (Code Submission Evaluation System) é um judge finlandês com centenas de problemas relacionados a programação dos mais variados tópicos, onde os problemas tendem a ser mais clássicos, o que é perfeito para quem estiver começando na jornada de programação competitiva.
 
