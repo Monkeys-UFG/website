@@ -1,5 +1,9 @@
 # Dijkstra
 
+Dado um grafo com $N, M \le 2\cdot 10^5$, com $N$ sendo o número de vértices e $M$ o número de arestas do grafo. O peso das arestas é positivo ($\ge 0$), e o grafo pode ser direcionado ou não direcionado. Queremos calcular a menor distância de um vértice $s$ para todos os outros vértices do grafo. Esse problema também é chamado de **Single Source Shortest Path** (ou SSSP).
+
+Abaixo temos um slideshow de como o algoritmo vai funcionar a cada iteração.
+
 <div class="slider-wrapper">
   <!-- área de slides -->
   <div class="slides-container">
@@ -33,6 +37,18 @@
   </div>
 </div>
 <br>
+
+## Algoritmo
+
+O algoritmo foi desenvolvido por Edsger Dijkstra, e ele funciona da seguinte forma:
+
+Crie um vetor $d[]$, onde para cada vértice $u$, ele conterá a menor distância atual de um vértice $s$ até ele. No começo, $d[s]=0$, e todos os outros vértices serão inicializados com $\infty$. Para fins de implementação, podemos escolher um número grande o suficiente para representar o infinito, visto que esse numero grande não será alcançado no decorrer do algoritmo. Assim,
+
+$$
+  d[u]=\infty, u\ne s
+$$
+
+Usaremos uma **Fila de Prioridade (priority_queue) / set** para armazenar as distâncias. Se você não conhece nenhuma das duas estruturas, recomendamos que passe na sessão de 
 
 ## Problemas recomendados
 - <a href="https://cses.fi/problemset/task/1671" target="_blank">CSES - Shortest Routes I</a>
