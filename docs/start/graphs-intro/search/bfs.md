@@ -71,7 +71,7 @@ void bfs(int s) {
 A complexidade de usar o BFS é $\mathcal{O}(N + M)$, com $N$ sendo o número de vértices do nosso grafo, e $M$ o número de arestas.
 
 !!! note "Aviso"
-    Um erro comum ao usar algoritmos de grafos é não visitar os vértices. Se não visitar os vértices, a complexidade pode sair de algo linear para algo na ordem exponencial. Tomem cuidado!
+    Um erro comum ao usar algoritmos de grafos é não visitar os vértices. Se não visitar os vértices, a complexidade pode sair de linear para exponencial. Tomem cuidado!
 
 Agora, tendo a ideia do algoritmo em mente, podemos pensar em algumas aplicações práticas do BFS em alguns problemas.
 
@@ -164,3 +164,5 @@ vector<int> rec_path(int t) {
 - <a href="https://codeforces.com/contest/520/problem/B" target="_blank">Codeforces - Two Buttons</a>
 - <a href="https://codeforces.com/contest/2116/problem/C" target="_blank">Codeforces - Gellyfish and Flaming Peony</a>
 - <a href="https://codeforces.com/contest/2114/problem/F" target="_blank">Codeforces - Small Operations</a>
+- <a href="https://codeforces.com/contest/1873/problem/H" target="_blank">Codeforces - Mad City</a>
+- <a href="https://cses.fi/problemset/task/1670" target="_blank">CSES - Swap Game</a> (difícil)
