@@ -121,6 +121,8 @@ Algumas implementações do algoritmo de Dijkstra são equivalentes a apresentad
 
 4. **Usar o algoritmo quando há arestas negativas**: O algoritmo de Dijkstra ***não funciona*** quando há arestas negativas, pois isso quebra o fato de que se entramos em um vértice, ele possue a menor distância possível, pois agora é possível que algum cálculo futuro que possa modificar algum vértice já visitado ainda tenha como melhorá-lo. Para calcular distância quando arestas negativas estão presentes, refiram-se aos algoritmos de Bellman Ford e Floyd Warshall, que podem lidar com arestas negativas (e com ciclos negativos) no grafo.
 
+5. **Atualizações erradas feitas na distância:** Nas linhas $28$ a $31$ do algoritmo, há uma verificação sobre a distância percorrida atualmente ser menor do que a distância salva até aquele momento, e que caso isso seja verdade, a gente atualiza a distância e coloca esse vértice na fila. Uma coisa importante que precisa ser comentada: Nesse momento, devemos atualizar a distância no vetor de distâncias, pois o que pode ocorrer é ter muitos vértices na fila sendo processados muitas vezes caso isso não ocorra, podendo subir para a complexidade $\mathcal{O}(n^{2})$.
+
 ## Problemas recomendados
 - <a href="https://cses.fi/problemset/task/1671" target="_blank">CSES - Shortest Routes I</a>
 - <a href="https://codeforces.com/problemset/problem/20/C" target="_blank">Codeforces - Dijkstra?</a>
@@ -129,4 +131,4 @@ Algumas implementações do algoritmo de Dijkstra são equivalentes a apresentad
 - <a href="https://codeforces.com/group/SFkT4V3SYb/contest/625408/problem/D" target="_blank">OBI - Viagem</a>
 - <a href="https://cses.fi/problemset/task/1202" target="_blank">CSES - Investigation</a> 
 - <a href="https://codeforces.com/contest/2014/problem/E" target="_blank"> Codeforces - Rendez-vous de Marian et Robin </a>
-- <a href="https://codeforces.com/contest/1915/problem/G" target="_blank"> Codeforces - Bycicles</a>
+- <a href="https://codeforces.com/contest/1915/problem/G" target="_blank"> Codeforces - Bicycles</a>

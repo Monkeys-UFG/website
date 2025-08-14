@@ -165,4 +165,4 @@ vector<int> rec_path(int t) {
 - <a href="https://codeforces.com/contest/2116/problem/C" target="_blank">Codeforces - Gellyfish and Flaming Peony</a>
 - <a href="https://codeforces.com/contest/2114/problem/F" target="_blank">Codeforces - Small Operations</a>
 - <a href="https://codeforces.com/contest/1873/problem/H" target="_blank">Codeforces - Mad City</a>
-- <a href="https://cses.fi/problemset/task/1670" target="_blank">CSES - Swap Game</a> (difícil)
+- <a href="https://cses.fi/problemset/task/1707" target="_blank">CSES - Graph Girth</a>
