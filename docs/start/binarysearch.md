@@ -339,7 +339,7 @@ int main() {
   vector<int> a = {10, 20, 30, 30, 40, 45, 50};
 
   // encontrando o lower bound de 35 no vetor
-  cout << *lower_boud(a.begin(), a.end(), 35) << '\n';
+  cout << *lower_bound(a.begin(), a.end(), 35) << '\n';
   // também conseguimos guardar a posição 
   // do lower_bound da seguinte forma
   int p = lower_bound(a.begin(), a.end(), 35) - a.begin();
@@ -373,7 +373,7 @@ int main() {
   vector<int> a = {10, 20, 30, 30, 40, 45, 50};
 
   // encontrando o upper bound de 35 no vetor
-  cout << *upper_boud(a.begin(), a.end(), 35) << '\n';
+  cout << *upper_bound(a.begin(), a.end(), 35) << '\n';
   // também conseguimos guardar a posição 
   // do upper_bound da seguinte forma
   int p = upper_bound(a.begin(), a.end(), 35) - a.begin();
