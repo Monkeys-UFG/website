@@ -34,8 +34,8 @@ nav:
           # - 'start/graphs-intro/mst/kruskal.md'
       - 'start/numbertheory.md'
       # - 'start/geometry.md'
-      # - 'Programação Dinâmica':
-      - 'Dinamação Progrâmica':
+      - 'Programação Dinâmica':
+      # - 'Dinamação Progrâmica':
         - 'start/dp/intro.md'
         # - 'start/dp/knapsack.md'
         # - 'start/dp/paths.md'

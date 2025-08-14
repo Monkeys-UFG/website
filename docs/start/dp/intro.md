@@ -75,7 +75,7 @@ Chamamos essa forma de resolver o problema de _top\_down_, onde chamamos a funç
 
 Uma implementação da técnica feita no Bottom_Up pode ser vista abaixo:
 
-``` cpp title="bottom_up_fibonacci.cpp" linenums="1"
+``` cpp title="bottom_up_fibonacci_dp.cpp" linenums="1"
 const int N = 2e5+10;
 
 int dp[N];
@@ -91,7 +91,7 @@ int F(int n) {
     return dp[n];
 }
 ```
- 
+
 Podemos observar que essa função representa o cálculo do $n$-ésimo número de Fibonacci.
 
 Com isso, podemos ver o quão poderosa é a técnica de Programação Dinâmica, e como ela pode ser usada para resolver esse e muitos outros problemas que envolvem salvar o cálculo de algum estado em uma tabela.
@@ -104,5 +104,4 @@ A seguir, será falado de alguns problemas clássicos de programação dinâmica
 
 O primeiro problema clássico envolvendo programação dinâmica tem a seguinte descrição: Imagine que você é um ladrão de joias e pretende roubar as joias de um comércio local. Você tem um saco capaz de aguentar uma quantidade $W$ de peso, e você pesquisou de antemão qual o valor e o peso de cada uma das $N$ joias que existem nesse comércio. Você tem o objetivo de maximizar o valor das joias roubadas sem que o peso delas ultrapasse o peso máximo que você pode carregar, senão o seu saco vai rasgar e você vai ficar sem nenhuma joia.
 
-> Tente pensar em uma solução antes que você leia a solução esperada do problema. Exercitar a mente é fundamental para se ter novas ideias.
-
+> Tente pensar em como você pode resolver o problema antes que você leia a solução esperada. Exercitar a mente é fundamental para se ter novas ideias.
