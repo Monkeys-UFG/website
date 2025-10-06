@@ -14,7 +14,7 @@
         <link rel="prev" href="../dfs/">
       
       
-        <link rel="next" href="../../../numbertheory/">
+        <link rel="next" href="../../min-path/dijkstra/">
       
       
       <link rel="icon" href="../../../../assets/favicon.ico">
@@ -568,6 +568,8 @@
       
         
       
+        
+      
     
     
     
@@ -859,6 +861,8 @@
       
         
       
+        
+      
     
     
     
@@ -1130,6 +1134,82 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8_3" id="__nav_3_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Caminho Mínimo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Caminho Mínimo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../min-path/dijkstra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dijkstra
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1156,6 +1236,82 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Programação Dinâmica
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_10">
+            <span class="md-nav__icon md-icon"></span>
+            Programação Dinâmica
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../dp/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introdução
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1506,9 +1662,9 @@
   </div>
 </div>
 <p><br></p>
-<p>Vamos explorar melhor nessa sessão como o BFS funciona, e quais as aplicações práticas que podemos ter com ele.</p>
+<p>Vamos explorar melhor nessa sessão como implementar o BFS e quais são as aplicações práticas que podemos ter com ele.</p>
 <h2 id="implementacao">Implementação</h2>
-<p>Nós vamos manter uma fila, onde o topo dessa fila é o nosso vértice atual. Percorreremos todos os vizinhos não visitados do vértice atual e vamos adicionar todos eles na fila também. Isso fará com que andemos no nosso grafo em forma de níveis.</p>
+<p>Nós vamos manter uma fila, onde o topo dessa fila é o nosso vértice atual. Percorreremos todos os vizinhos não visitados do vértice atual, marcamos eles como visitados e adicionamos eles na fila. Com isso, andaremos no grafo em níveis, como o exemplo do incêndio falado no começo dessa seção.</p>
 <div class="language-cpp highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">bfs.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1554,16 +1710,12 @@
 </span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="p">}</span>
 </span></code></pre></div></td></tr></table></div>
 <p>A complexidade de usar o BFS é <span class="arithmatex">\(\mathcal{O}(N + M)\)</span>, com <span class="arithmatex">\(N\)</span> sendo o número de vértices do nosso grafo, e <span class="arithmatex">\(M\)</span> o número de arestas.</p>
-<div class="admonition note">
-<p class="admonition-title">Aviso</p>
-<p>Um erro comum ao usar algoritmos de grafos é não visitar os vértices. Se não visitar os vértices, a complexidade pode sair de algo linear para algo na ordem exponencial. Tomem cuidado!</p>
-</div>
 <p>Agora, tendo a ideia do algoritmo em mente, podemos pensar em algumas aplicações práticas do BFS em alguns problemas.</p>
 <h2 id="aplicacoes">Aplicações</h2>
 <p>Vamos assumir que todos os grafos podem ter até <span class="arithmatex">\(N \le 2\cdot 10^{5}\)</span> vértices e <span class="arithmatex">\(M \le 2\cdot 10^{5}\)</span> arestas.</p>
 <h3 id="contar-componentes-conexas">Contar componentes conexas</h3>
 <p>Dado um grafo <span class="arithmatex">\(G\)</span>, contar quantas componentes conexas ele possui.</p>
-<p>A ideia é ir por cada vértice não visitado e percorrer a sua componente conexa, visitando todo mundo dela, para ela ser contabilizada somente uma vez. Após percorrer todas as componentes, teremos no final a quantidade guardada em alguma variável.</p>
+<p>A ideia principal para contar a quantidade de componentes conexas é caminhar nos vértices que ainda não foram visitados, pois, se esse vértice ainda não foi visitado, ele e todos os outros vértices alcançáveis por ele fazem parte da mesma componente conexa. Assim, a solução se torna fazer o BFS em cada vértice ainda não visitado em qualquer ordem, e para cada chamada, aumentar em <span class="arithmatex">\(1\)</span> a resposta final.</p>
 <div class="language-cpp highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">connected_component.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
@@ -1589,7 +1741,7 @@
 <p>Dado um grafo <span class="arithmatex">\(G\)</span> sem pesos nas arestas e dois vértices <span class="arithmatex">\(s\)</span> e <span class="arithmatex">\(t\)</span>, achar qual o caminho mínimo de <span class="arithmatex">\(s\)</span> a <span class="arithmatex">\(t\)</span>. Caso ele não exista, exiba isso.</p>
 <p>Como o caminho feito pelo algoritmo é em largura, o que acontece é que ele também calcula a distância mínima de um vértice inicial para todos os outros pertencentes a mesma componente que ele, pois a ideia é que, agora, estamos andando em níveis, e só iremos visitar um nível novo quando já tivermos visitado todo o nível atual. Com isso, podemos caminhar no grafo e garantir que o caminho encontrado de um vértice inicial a todos os outros é o menor possível.</p>
 <p>Para a implementação do algoritmo, vamos inicializar todos os valores de <span class="arithmatex">\(dist[i]\)</span> com <span class="arithmatex">\(\infty\)</span>, sendo que <span class="arithmatex">\(\infty\)</span> é um número muito grande. Suponha que o nosso vértice atual seja <span class="arithmatex">\(u\)</span>. Para todo vizinho de <span class="arithmatex">\(u\)</span>, vamos chamá-lo de <span class="arithmatex">\(v\)</span>, vamos verificar se devemos colocar ele na fila, vendo se a distância percorrida para chegar até ele é menor do que a distância percorrida até ele atualmente, ou seja, <span class="arithmatex">\(dist[v] &gt; dist[u]+1\)</span>. Se for, atualize e coloque o vértice na fila.</p>
-<p>Se quisermos recuperar o caminho de <span class="arithmatex">\(s\)</span> a <span class="arithmatex">\(t\)</span>, podemos guardar mais informação, no caso um vetor de pais, onde olhamos quem é pai de quem no caminho de um vértice a outro. Como queremos sair do vértice <span class="arithmatex">\(s\)</span> até o <span class="arithmatex">\(t\)</span>, para recuperar o caminho, sairemos de <span class="arithmatex">\(t\)</span> até <span class="arithmatex">\(s\)</span>. Abaixo ficará o código que ilustra essa implementação do caminho mínimo mais a recuperação do caminho.</p>
+<p>Se quisermos recuperar o caminho de <span class="arithmatex">\(s\)</span> a <span class="arithmatex">\(t\)</span>, podemos guardar mais informação. No nosso caso, podemos guardar um vetor que marca quem é o pai de um certo vértice <span class="arithmatex">\(u\)</span>, assim podemos manter, para cada <span class="arithmatex">\(u\)</span> do grafo, por qual vértice eu passei para chegar nele, com exceção do vértice inicial, que não possui antecessor. Como queremos sair do vértice <span class="arithmatex">\(s\)</span> até o <span class="arithmatex">\(t\)</span>, para recuperar o caminho, sairemos de <span class="arithmatex">\(t\)</span> até <span class="arithmatex">\(s\)</span>. Abaixo ficará o código que ilustra essa implementação do caminho mínimo mais a recuperação do caminho.</p>
 <div class="language-cpp highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">min_path.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
@@ -1680,6 +1832,8 @@
 <li><a href="https://codeforces.com/contest/520/problem/B" target="_blank">Codeforces - Two Buttons</a></li>
 <li><a href="https://codeforces.com/contest/2116/problem/C" target="_blank">Codeforces - Gellyfish and Flaming Peony</a></li>
 <li><a href="https://codeforces.com/contest/2114/problem/F" target="_blank">Codeforces - Small Operations</a></li>
+<li><a href="https://codeforces.com/contest/1873/problem/H" target="_blank">Codeforces - Mad City</a></li>
+<li><a href="https://cses.fi/problemset/task/1707" target="_blank">CSES - Graph Girth</a></li>
 </ul>
 
 
@@ -1703,7 +1857,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="20 de julho de 2025 02:55:40 UTC">20 de julho de 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="6 de outubro de 2025 19:26:23 UTC">6 de outubro de 2025</span>
   </span>
 
     
@@ -1731,9 +1885,9 @@
     
     <nav>
       
-        <a href="https://github.com/tiagopio" class="md-author" title="@tiagopio">
+        <a href="https://github.com/WevtonZ" class="md-author" title="@WevtonZ">
           
-          <img src="https://avatars.githubusercontent.com/u/97364045?v=4&size=72" alt="tiagopio">
+          <img src="https://avatars.githubusercontent.com/u/88617964?v=4&size=72" alt="WevtonZ">
         </a>
       
         <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
@@ -1741,9 +1895,9 @@
           <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
         </a>
       
-        <a href="https://github.com/WevtonZ" class="md-author" title="@WevtonZ">
+        <a href="https://github.com/tiagopio" class="md-author" title="@tiagopio">
           
-          <img src="https://avatars.githubusercontent.com/u/88617964?v=4&size=72" alt="WevtonZ">
+          <img src="https://avatars.githubusercontent.com/u/97364045?v=4&size=72" alt="tiagopio">
         </a>
       
         <a href="https://github.com/DaniloLMD" class="md-author" title="@DaniloLMD">
