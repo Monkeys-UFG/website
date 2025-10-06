@@ -34,8 +34,9 @@ nav:
           # - 'start/graphs-intro/mst/kruskal.md'
       - 'start/numbertheory.md'
       # - 'start/geometry.md'
-      # - 'Programação Dinâmica':
-        # - 'start/dp/intro.md'
+      - 'Programação Dinâmica':
+      # - 'Dinamação Progrâmica':
+        - 'start/dp/intro.md'
         # - 'start/dp/knapsack.md'
         # - 'start/dp/paths.md'
         # - 'start/dp/lcs.md'
@@ -51,8 +52,6 @@ nav:
       - 'sites/cses.md'
       - 'sites/usaco.md'
       - 'sites/cpalgo.md'
-        
-  # - Membros: 'members.md'
 
 theme:
   language: pt-BR
