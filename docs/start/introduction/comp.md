@@ -107,4 +107,4 @@ Uma ótima maneira de praticar programação competitiva é participar de compet
 * <a href = "https://atcoder.jp/" target = "_blank">AtCoder</a>
 * <a href = "https://www.codechef.com/" target = "_blank">CodeChef</a>
 
-Cada um desses sites possui seu formato de prova. Você pode conferir mais informações na [seção de sites](../../../sites/codeforces).
+Cada um desses sites possui seu formato de prova. Você pode conferir mais informações na [seção de sites](../../../sites/codeforces.md).

@@ -1,6 +1,6 @@
 # Introdução
 
-Programação Dinâmica é uma técnica de algoritmos bastante poderosa e capaz de resolver problemas bem complexos de programação. Toda a sua essência se baseia em não repetir cálculos já feitos, e os problemas que envolvem essa técnica podem ser resolvidos usando [recursão](../recursion.md), então é bom saberem o que é recursão e terem resolvido alguns problemas relacionados ao tópico antes de iniciar esse, já que Programação Dinâmica é bastante dependente de recursão. 
+Programação Dinâmica (Dynamic Programming, em inglês, abreviado vira DP) é uma técnica de algoritmos bastante poderosa e capaz de resolver problemas bem complexos de programação. Toda a sua essência se baseia em não repetir cálculos já feitos, e os problemas que envolvem essa técnica podem ser resolvidos usando [recursão](../recursion.md), então é bom saberem o que é recursão e terem resolvido alguns problemas relacionados ao tópico antes de iniciar esse, já que Programação Dinâmica é bastante dependente de recursão.
 
 ## Sequência de Fibonacci
 
@@ -66,12 +66,9 @@ int F(int n) {
 }
 ```
 
-Agora, para calcular a complexidade da programação dinâmica, olhamos para a relação _quantidade de subproblemas $\times$ trabalho por subproblema_. A quantidade de subproblemas é calculada olhando quantas outras funções precisam ser computadas para obter uma resposta para a função atual. Isso geralmente é feito olhando para os **estados** do problema, que são os parâmetros passados na função. No caso do Fibonacci, temos que para calcular $F(n)$, devemos ter calculado $F(n-1), F(n-2), \dots, F(0)$, ou seja, $n$ estados da função, e o trabalho por subproblema é calculado olhando as operações mais pesadas realizadas pela função. Temos que nesse caso, o trabalho realizado é $\mathcal{O}(1)$, já que há apenas retornos e verificações. Assim, a complexidade da programação dinâmica no problema de Fibonacci é $\mathcal{O}(n) \cdot \mathcal{O}(1) = \mathcal{O}(n)$.
+Agora, para calcular a complexidade da programação dinâmica, olhamos para a relação _quantidade de subproblemas $\times$ trabalho por subproblema_. A _quantidade de subproblemas_ é calculada olhando quantas outras funções precisam ser computadas para obter uma resposta para a função atual. Isso geralmente é feito olhando para os **estados** do problema, que são os parâmetros passados na função. No caso do Fibonacci, temos que para calcular $F(n)$, devemos ter calculado $F(n-1), F(n-2), \dots, F(0)$, ou seja, $n$ estados da função. O _trabalho por subproblema_ é calculado olhando as operações mais pesadas realizadas pela função. Temos que nesse caso, o trabalho realizado é $\mathcal{O}(1)$, já que há apenas retornos e verificações. Assim, a complexidade da programação dinâmica no problema de Fibonacci é $\mathcal{O}(n) \cdot \mathcal{O}(1) = \mathcal{O}(n)$.
 
 Chamamos essa forma de resolver o problema de _top\_down_, onde chamamos a função do valor esperado, calculamos recursivamente o valor até chegar nos casos base da recursão e depois retornamos os valores obtidos, guardando os valores na tabela conforme construímos a resposta. Há uma outra forma de se fazer, chamada de _bottom\_up_, que é o exato oposto da _top\_down_: ela se baseia em começar pelos casos base da recursão e "subir" com os resultados obtidos, assim computando a $DP$ de baixo para cima.
-
-!!! note "Informação Útil"
-    Em inglês, o tópico de chama Dynamic Programming, e abreviado fica DP. As pessoas preferem chamar a técnica de DP quando abreviam porque vem do inglês, e a maioria dos blogs relacionados a isso são em inglês. Então se em algum tópico que você for ler estiver escrito DP em vez de PD, é por isso.
 
 Uma implementação da técnica feita no Bottom_Up pode ser vista abaixo:
 
@@ -79,7 +76,7 @@ Uma implementação da técnica feita no Bottom_Up pode ser vista abaixo:
 const int N = 2e5+10;
 
 int dp[N];
-int F(int n) {
+void F(int n) {
     // casos base
     dp[0] = 0;
     dp[1] = 1;
@@ -88,20 +85,11 @@ int F(int n) {
     for(int i=2; i<=n; i++){
         dp[i] = dp[i-1] + dp[i-2];
     }
-    return dp[n];
 }
 ```
 
-Podemos observar que essa função representa o cálculo do $n$-ésimo número de Fibonacci.
+Podemos observar que essa função representa o cálculo do $n$-ésimo número de Fibonacci. Para recuperar algum dos valores, só precisamos acessar a $dp$ na posição desejada.
 
-Com isso, podemos ver o quão poderosa é a técnica de Programação Dinâmica, e como ela pode ser usada para resolver esse e muitos outros problemas que envolvem salvar o cálculo de algum estado em uma tabela.
+No geral, o estilo Top Down é chamado de _DP Recursiva_ e o estilo Bottom Up é chamado de _DP Iterativa_. Ambas tem suas vantagens e desvantagens.
 
-## Problemas Clássicos
-
-A seguir, será falado de alguns problemas clássicos de programação dinâmica, que servirá como problemas introdutórios para a técnica ensinada acima.
-
-### Problema da Mochila
-
-O primeiro problema clássico envolvendo programação dinâmica tem a seguinte descrição: Imagine que você é um ladrão de joias e pretende roubar as joias de um comércio local. Você tem um saco capaz de aguentar uma quantidade $W$ de peso, e você pesquisou de antemão qual o valor e o peso de cada uma das $N$ joias que existem nesse comércio. Você tem o objetivo de maximizar o valor das joias roubadas sem que o peso delas ultrapasse o peso máximo que você pode carregar, senão o seu saco vai rasgar e você vai ficar sem nenhuma joia.
-
-> Tente pensar em como você pode resolver o problema antes que você leia a solução esperada. Exercitar a mente é fundamental para se ter novas ideias.
+Uma delas é que a DP recursiva é mais fácil de ser implementada e pensada, visto que ela deriva da solução recursiva. Esse estilo sofre de desempenho, visto que algoritmos recursivos no geral sofrem da própria recursão, mas essa perca de velocidade não impacta na solução da grande maioria dos problemas. Ainda assim, é importante saber ambas formas de se resolver problemas de Programação Dinâmica, visto que há problemas que só podem ser resolvidos usando a DP recursiva e outros que só podem ser resolvidos usando a DP iterativa.

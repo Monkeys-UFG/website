@@ -37,11 +37,11 @@ O BFS é um algoritmo de Busca em Largura. Podemos interpretar a busca em largur
 </div>
 <br>
 
-Vamos explorar melhor nessa sessão como o BFS funciona, e quais as aplicações práticas que podemos ter com ele.
+Vamos explorar melhor nessa sessão como implementar o BFS e quais são as aplicações práticas que podemos ter com ele.
 
 ## Implementação
 
-Nós vamos manter uma fila, onde o topo dessa fila é o nosso vértice atual. Percorreremos todos os vizinhos não visitados do vértice atual e vamos adicionar todos eles na fila também. Isso fará com que andemos no nosso grafo em forma de níveis.
+Nós vamos manter uma fila, onde o topo dessa fila é o nosso vértice atual. Percorreremos todos os vizinhos não visitados do vértice atual, marcamos eles como visitados e adicionamos eles na fila. Com isso, andaremos no grafo em níveis, como o exemplo do incêndio falado no começo dessa seção.
 
 ```cpp title="bfs.cpp" linenums="1"
 const int N = 2e5+5;
@@ -70,9 +70,6 @@ void bfs(int s) {
 
 A complexidade de usar o BFS é $\mathcal{O}(N + M)$, com $N$ sendo o número de vértices do nosso grafo, e $M$ o número de arestas.
 
-!!! note "Aviso"
-    Um erro comum ao usar algoritmos de grafos é não visitar os vértices. Se não visitar os vértices, a complexidade pode sair de linear para exponencial. Tomem cuidado!
-
 Agora, tendo a ideia do algoritmo em mente, podemos pensar em algumas aplicações práticas do BFS em alguns problemas.
 
 ## Aplicações
@@ -83,7 +80,7 @@ Vamos assumir que todos os grafos podem ter até $N \le 2\cdot 10^{5}$ vértices
 
 Dado um grafo $G$, contar quantas componentes conexas ele possui.
 
-A ideia é ir por cada vértice não visitado e percorrer a sua componente conexa, visitando todo mundo dela, para ela ser contabilizada somente uma vez. Após percorrer todas as componentes, teremos no final a quantidade guardada em alguma variável.
+A ideia principal para contar a quantidade de componentes conexas é caminhar nos vértices que ainda não foram visitados, pois, se esse vértice ainda não foi visitado, ele e todos os outros vértices alcançáveis por ele fazem parte da mesma componente conexa. Assim, a solução se torna fazer o BFS em cada vértice ainda não visitado em qualquer ordem, e para cada chamada, aumentar em $1$ a resposta final.
 
 ```cpp title="connected_component.cpp" linenums="1"
 
@@ -110,7 +107,7 @@ Como o caminho feito pelo algoritmo é em largura, o que acontece é que ele tam
 
 Para a implementação do algoritmo, vamos inicializar todos os valores de $dist[i]$ com $\infty$, sendo que $\infty$ é um número muito grande. Suponha que o nosso vértice atual seja $u$. Para todo vizinho de $u$, vamos chamá-lo de $v$, vamos verificar se devemos colocar ele na fila, vendo se a distância percorrida para chegar até ele é menor do que a distância percorrida até ele atualmente, ou seja, $dist[v] > dist[u]+1$. Se for, atualize e coloque o vértice na fila.
 
-Se quisermos recuperar o caminho de $s$ a $t$, podemos guardar mais informação, no caso um vetor de pais, onde olhamos quem é pai de quem no caminho de um vértice a outro. Como queremos sair do vértice $s$ até o $t$, para recuperar o caminho, sairemos de $t$ até $s$. Abaixo ficará o código que ilustra essa implementação do caminho mínimo mais a recuperação do caminho.
+Se quisermos recuperar o caminho de $s$ a $t$, podemos guardar mais informação. No nosso caso, podemos guardar um vetor que marca quem é o pai de um certo vértice $u$, assim podemos manter, para cada $u$ do grafo, por qual vértice eu passei para chegar nele, com exceção do vértice inicial, que não possui antecessor. Como queremos sair do vértice $s$ até o $t$, para recuperar o caminho, sairemos de $t$ até $s$. Abaixo ficará o código que ilustra essa implementação do caminho mínimo mais a recuperação do caminho.
 
 ```cpp title="min_path.cpp" linenums="1"
 const int N = 2e5+5;
