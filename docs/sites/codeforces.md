@@ -12,7 +12,7 @@ O <a href="https://codeforces.com/" target="_blank">**Codeforces**</a> é um sit
 
 O Codeforces organiza diversos tipos de competições, principalmente:
 
-* **Divisional Contests (Div. 1, Div. 2, Div. 3, Div. 4):** São competições regulares divididas por nível de habilidade. A Div. 4 é para iniciantes, enquanto a Div. 1 é para os competidores mais experientes. É comum que as Divs 1 e 2 sejam combinadas (Div. 1 + Div. 2) para permitir que participantes de diferentes níveis compitam juntos em um conjunto de problemas. Quanto menor o número da divisão, maior a dificuldade.
+* **Divisional Contests (Div. 1, Div. 2, Div. 3, Div. 4):** São competições regulares divididos por nível de habilidade. O Div. 4 é para iniciantes, enquanto a Div. 1 é para os competidores mais experientes. É comum que competições do tipo Div 1 e 2 sejam combinadas (Div. 1 + Div. 2) para permitir que participantes de diferentes níveis compitam juntos em um conjunto de problemas. Quanto menor o número da divisão, maior a dificuldade.
 * **Educational Rounds:** Competições que geralmente ocorrem em dias de semana, ideais para aprender e praticar novos algoritmos e estruturas de dados, com um foco mais didático.
 * **Unrated Contests:** Competições onde o desempenho não afeta o *rating* do participante, servindo como uma ótima oportunidade para praticar individualmente ou em equipe, dependendo do contest.
 

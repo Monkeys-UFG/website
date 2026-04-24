@@ -22,11 +22,11 @@ Este site tem como objetivo ser um guia para estudantes interessados em particip
 
 **Iniciando na OBI/Maratona**: Um guia completo para estudantes que querem começar a participar das competições de programação!
 
-**Biblioteca**: Biblioteca com implementações de algoritmos utilizadas pelo grupo Monkeys.
+<!-- **Biblioteca**: Biblioteca com implementações de algoritmos utilizadas pelo grupo Monkeys. -->
 
 **Sites**: Conheça os principais sites para programação competitiva e como aproveitá-los ao máximo.
 
-**Membros**: Conheça os integrantes do grupo Monkeys e suas contribuições.
+<!-- **Membros**: Conheça os integrantes do grupo Monkeys e suas contribuições. -->
 
 ## Dúvidas?
 Se você tiver alguma dúvida, não hesite em entrar em contato conosco!
