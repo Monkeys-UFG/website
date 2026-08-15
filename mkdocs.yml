@@ -13,12 +13,12 @@ nav:
       - 'start/cpp.md'
       - 'start/stl.md'
       - 'start/complexity.md'
+      - 'start/binarysearch.md'
+      - 'start/prefixsum.md'
       - 'start/recursion.md'
       # - 'start/greedy.md'
       # - 'start/practicing.md'
       # - 'start/twopointers.md'
-      - 'start/prefixsum.md'
-      - 'start/binarysearch.md'
       # - 'start/bitmanipulation.md'
       - 'Grafos':
         - 'start/graphs-intro/introduction.md'
@@ -35,7 +35,6 @@ nav:
       - 'start/numbertheory.md'
       # - 'start/geometry.md'
       - 'Programação Dinâmica':
-      # - 'Dinamação Progrâmica':
         - 'start/dp/intro.md'
         # - 'start/dp/knapsack.md'
         # - 'start/dp/paths.md'
