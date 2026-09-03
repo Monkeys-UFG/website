@@ -158,7 +158,7 @@ $$
 
 Podemos usar essa propriedade para resolver o problema motivador.
 
-### Solução:
+### Solução
 
 O objetivo é descobrir o **menor tempo** necessário para produzir uma quantidade \(t\) de produtos.  
 Podemos converter isso em um **problema de minimização** definindo uma função booleana
