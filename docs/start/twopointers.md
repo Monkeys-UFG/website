@@ -119,7 +119,8 @@ int main() {
 }
 ```
 
-Analisando a complexidade desse código, podemos ver que, apesar de ter um while aninhado. Podemos observar que, como o for controla o o ponteiro $r$ e o while controla o ponteiro $l$, e ambos só vão pra frente, então no máximo ambos vão fazer no máximo $n$ operações cada. Assim, temos que $n+n = 2n \in \mathcal{O}(n)$.
+Analisando a complexidade desse código, apesar do `while` aninhado, note que o `for` avança o ponteiro $r$ e o `while` avança o ponteiro $l$.
+Como ambos só vão para a frente, cada um anda no máximo $n$ vezes; assim, o total de avanços é $n+n = 2n \in \mathcal{O}(n)$.
 
 ## Outros problemas
 
