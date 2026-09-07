@@ -26,7 +26,7 @@ Para analisar o tempo que um programa demora para executar, vamos determinar o n
 
 Quando expressamos a complexidade de uma função como \(\mathcal{O}(f(n))\), geralmente omitimos fatores constantes e termos de ordem inferior de \(f(n)\). Veremos alguns exemplos práticos de como isso funciona a seguir. Explicaremos o que queremos dizer com constantes e termos de ordem inferior com mais detalhes depois.
 
-## Exemplos:
+## Exemplos
 ### Operações constantes
 
 O código a seguir é \(\mathcal{O}(1)\), pois executa um número constante de operações.
