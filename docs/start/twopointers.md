@@ -57,7 +57,7 @@ int main() {
 }
 ```
 
-Pensando no pior caso, temos $10^5$ elementos em um vetor, com $x=10^9$ e os valores de $a$ são todos $1$. Iremos iterar sobre o loop externo um total de $n$ vezes, e o loop interno rodará $n-i$ vezes toda vez que o algoritmo entrar, resultando em uma complexidade $\mathcal{O}(n^2)$, o que resulta em $\approx 10^{10}$ operações, resultando em <span style="color: red;">tempo limite excedido.</span>
+Pensando no pior caso, temos $2 \cdot 10^5$ elementos em um vetor, com $x=10^9$ e os valores de $a$ são todos $1$. Iremos iterar sobre o loop externo um total de $n$ vezes, e o loop interno rodará $n-i$ vezes toda vez que o algoritmo entrar, resultando em uma complexidade $\mathcal{O}(n^2)$, o que resulta em $\approx 4 \cdot 10^{10}$ operações, resultando em <span style="color: red;">tempo limite excedido.</span>
 
 ## Introdução
 
