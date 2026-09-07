@@ -167,7 +167,7 @@ Se a resposta for sim para ambas perguntas, quase certamente você pode usar Two
 
 ## Lista de Exercícios
 
-!!! warning
+!!! tip "Dica"
     Problemas que envolvem Two Pointers podem precisar de outras técnicas, como Busca Binária ou Soma de Prefixo. Considere isso quando estiver resolvendo os problemas abaixo.
 
 - <a href="https://cses.fi/problemset/task/1640" target="_blank">CSES - Sum of Two Values</a>
