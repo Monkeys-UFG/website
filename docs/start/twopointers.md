@@ -79,7 +79,7 @@ Assim, o nosso novo algoritmo fica:
 3. Enquanto $sum > x$, então faremos $sum = sum - a[l]$ e avançamos $l$ em $1$.
 4. Se $sum == x$, achamos uma resposta. Incrementamos o valor da resposta em $1$.
 
-Essa forma de usar a técnica de Two Pointers as vezes é referida como **Sliding Window (Janela Deslizante)**.
+Essa forma de usar a técnica de Two Pointers às vezes é referida como **Sliding Window (Janela Deslizante)**.
 
 ## Código e Análise de Complexidade
 
