@@ -119,7 +119,7 @@ Analisando a complexidade desse código, podemos ver que, apesar de ter um while
 
 ## Outros problemas
 
-Nessa parte do artigo, serão apresentado outros problemas que também podem ser resolvidos usando a técnica de Two Pointers.
+Nessa parte do artigo, serão apresentados outros problemas que também podem ser resolvidos usando a técnica de Two Pointers.
 
 ### Contar segmentos com valores distintos
 
