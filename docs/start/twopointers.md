@@ -37,7 +37,7 @@ int main() {
     }
     long long ans = 0;
     for (int l=0; l<n; l++){ // itere o l de 0 a n-1
-        int sum = 0;
+        long long sum = 0;
         for (int r=l; r<n; r++) { // itere o r de l a n-1
             sum += a[r];
 
