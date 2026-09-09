@@ -8,6 +8,10 @@
         <link rel="canonical" href="https://monkeys-ufg.github.io/website/start/twopointers/">
       
       
+        <link rel="prev" href="../prefixsum/">
+      
+      
+        <link rel="next" href="../recursion/">
       
       
         
@@ -272,6 +276,8 @@
   
   
   
+    
+  
   
     
     
@@ -279,10 +285,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../introduction/comp/" class="md-tabs__link">
           
   
@@ -563,8 +571,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -588,21 +598,26 @@
       
         
       
-    
-    
-    
-      
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked="">
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -620,7 +635,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -895,6 +910,175 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Two Pointers
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Two Pointers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#problema-motivador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema motivador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-e-analise-de-complexidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Código e Análise de Complexidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outros-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outros problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outros problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contar-segmentos-com-valores-distintos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contar segmentos com valores distintos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Sum
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-para-identificar-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dicas para identificar problemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -945,10 +1129,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9">
         
           
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
             
   
   
@@ -966,8 +1150,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1029,10 +1213,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_2">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_2">
         
           
-          <label class="md-nav__link" for="__nav_3_8_2" id="__nav_3_8_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9_2" id="__nav_3_9_2_label" tabindex="0">
             
   
   
@@ -1050,8 +1234,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9_2">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1147,10 +1331,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8_3">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9_3">
         
           
-          <label class="md-nav__link" for="__nav_3_8_3" id="__nav_3_8_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_9_3" id="__nav_3_9_3_label" tabindex="0">
             
   
   
@@ -1168,8 +1352,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_8_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_9_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1273,10 +1457,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10">
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_11">
         
           
-          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_11" id="__nav_3_11_label" tabindex="0">
             
   
   
@@ -1294,8 +1478,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_11">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1577,6 +1761,108 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#problema-motivador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema motivador
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introdução
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-e-analise-de-complexidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Código e Análise de Complexidade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outros-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Outros problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Outros problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contar-segmentos-com-valores-distintos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contar segmentos com valores distintos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#two-sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Sum
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dicas-para-identificar-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dicas para identificar problemas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lista-de-exercicios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de Exercícios
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1609,6 +1895,233 @@
 
 
 <h1 id="two-pointers">Two Pointers</h1>
+<h2 id="problema-motivador">Problema motivador</h2>
+<blockquote>
+<p>Dado um vetor com <span class="arithmatex">\(N\)</span> elementos (<span class="arithmatex">\(1 \le N \le 2 \cdot 10^5\)</span>), com valores positivos no vetor (<span class="arithmatex">\(1 \le a_i \le 10^9\)</span>), e dado um número alvo <span class="arithmatex">\(x\)</span>, eu quero contar quantos subarrays existem tal que a soma do subarray é igual a <span class="arithmatex">\(x\)</span>. Formalmente, eu quero contar pares <span class="arithmatex">\(l,r\)</span>, com <span class="arithmatex">\(l \le r\)</span>, onde <span class="arithmatex">\(\sum_{i=l}^{r} a_i = x\)</span>.</p>
+<p><a href="https://cses.fi/problemset/task/1660" target="_blank">CSES - Subarray Sums I</a></p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Um subarray (ou subvetor) é uma subsequência contígua de elementos de um vetor. Ou seja, é um trecho obtido apenas removendo elementos do início, do fim, ou de ambos lados do vetor original. Por exemplo, seja <span class="arithmatex">\(A = [3, 5, 4, 1, 9, 7]\)</span>. Os vetores <span class="arithmatex">\([5, 4, 1], [9, 7], [4, 1, 9, 7]\)</span> são subarrays válidos do vetor <span class="arithmatex">\(A\)</span>. Porém, o vetor <span class="arithmatex">\([3, 4, 1, 9]\)</span> não é um subarray válido do vetor <span class="arithmatex">\(A\)</span> (o número 5 estava no meio do vetor e foi omitido).</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tente resolver o problema antes de seguir no tópico.</p>
+</div>
+<p>A forma mais direta de se resolver esse problema é testar todos os subarrays possíveis. Uma forma de fazer isso é:</p>
+<ol>
+<li>Fixamos um índice <span class="arithmatex">\(l\)</span>, variando de 0 a <span class="arithmatex">\(n-1\)</span>.</li>
+<li>Para cada <span class="arithmatex">\(l\)</span>, criamos um índice <span class="arithmatex">\(r\)</span> para andar de <span class="arithmatex">\(l\)</span> a <span class="arithmatex">\(n-1\)</span>, acumulando os valores de <span class="arithmatex">\(A\)</span> em uma variável <span class="arithmatex">\(sum\)</span>.</li>
+<li>Se <span class="arithmatex">\(sum = x\)</span>, então incrementamos a resposta em 1.</li>
+<li>Se <span class="arithmatex">\(sum &gt; x\)</span>, podemos quebrar a iteração e ir para o próximo <span class="arithmatex">\(l\)</span>. Podemos fazer isso pois todos os valores <span class="arithmatex">\(a_i\)</span> são positivos, então continuar somando significa necessariamente aumentar o valor de <span class="arithmatex">\(sum\)</span>.</li>
+</ol>
+<div class="language-cpp highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">subarray_sums_I_lento.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">    </span><span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">l</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">l</span><span class="o">++</span><span class="p">){</span><span class="w"> </span><span class="c1">// itere o l de 0 a n-1</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="o">=</span><span class="n">l</span><span class="p">;</span><span class="w"> </span><span class="n">r</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">r</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// itere o r de l a n-1</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">            </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">r</span><span class="p">];</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">                </span><span class="n">ans</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">                </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30"></a>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32"></a>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Pensando no pior caso, temos <span class="arithmatex">\(2 \cdot 10^5\)</span> elementos em um vetor, com <span class="arithmatex">\(x=10^9\)</span> e os valores de <span class="arithmatex">\(a\)</span> são todos <span class="arithmatex">\(1\)</span>. Iremos iterar sobre o loop externo um total de <span class="arithmatex">\(n\)</span> vezes, e o loop interno rodará <span class="arithmatex">\(n-i\)</span> vezes toda vez que o algoritmo entrar, resultando em uma complexidade <span class="arithmatex">\(\mathcal{O}(n^2)\)</span>, o que resulta em <span class="arithmatex">\(\approx 4 \cdot 10^{10}\)</span> operações, resultando em <span style="color: red;">tempo limite excedido.</span></p>
+<h2 id="introducao">Introdução</h2>
+<p>O método de Two Pointers consiste em usarmos dois índices, que chamamos de ponteiros, para andar sobre um vetor, satisfazendo certas propriedades. Podemos querer que esses dois ponteiros movam na mesma direção, um andando mais lento do que o outro, e podemos querer também que ambos ponteiros andem em direções opostas, terminando o algoritmo quando eles se encontram/cruzam. Para problemas como o acima, reduziremos a complexidade de <span class="arithmatex">\(\mathcal{O}(n^2)\)</span> para <span class="arithmatex">\(\mathcal{O}(n)\)</span> com essa técnica.</p>
+<p>No problema apresentado, na solução força bruta fornecida, toda vez que passamos do índice <span class="arithmatex">\(l\)</span> para o <span class="arithmatex">\(l+1\)</span>, descartávamos todo o trabalho feito até o momento, incrementando o <span class="arithmatex">\(l\)</span> e reiniciamos <span class="arithmatex">\(r\)</span> para ser o novo <span class="arithmatex">\(l\)</span>, zerando a variável <span class="arithmatex">\(sum\)</span>. Isso é bastante ineficiente. Quando já calculamos o intervalo <span class="arithmatex">\([l,r]\)</span>, para ir pro intervalo <span class="arithmatex">\([l+1,r]\)</span>, basta decrementar o valor de <span class="arithmatex">\(a_l\)</span> da nossa soma atual.</p>
+<p>Essa é a técnica de Two Pointers. Podemos garantir duas propriedades importantes quando estamos fazendo essas operações:</p>
+<ol>
+<li>Quando avançamos o ponteiro <span class="arithmatex">\(r\)</span>, temos que a nossa soma atual <strong>aumenta</strong>.</li>
+<li>Quando avançamos o ponteiro <span class="arithmatex">\(l\)</span>, a nossa soma atual <strong>diminui</strong>.</li>
+</ol>
+<p>Com isso, em vez de resetar o ponteiro <span class="arithmatex">\(r\)</span> toda vez que <span class="arithmatex">\(l\)</span> muda, avançamos ambos ponteiros pra frente apenas.</p>
+<p>Assim, o nosso novo algoritmo fica:</p>
+<ol>
+<li>Inicie <span class="arithmatex">\(l=r=sum=0\)</span>.</li>
+<li>Faça <span class="arithmatex">\(sum = sum + a[r]\)</span>.</li>
+<li>Enquanto <span class="arithmatex">\(sum &gt; x\)</span>, então faremos <span class="arithmatex">\(sum = sum - a[l]\)</span> e avançamos <span class="arithmatex">\(l\)</span> em <span class="arithmatex">\(1\)</span>.</li>
+<li>Se <span class="arithmatex">\(sum == x\)</span>, achamos uma resposta. Incrementamos o valor da resposta em <span class="arithmatex">\(1\)</span>.</li>
+</ol>
+<p>Essa forma de usar a técnica de Two Pointers às vezes é referida como <strong>Sliding Window (Janela Deslizante)</strong>.</p>
+<h2 id="codigo-e-analise-de-complexidade">Código e Análise de Complexidade</h2>
+<div class="language-c++ highlight"><table class="highlighttable"><tbody><tr><th colspan="2" class="filename"><span class="filename">two_pointers.cpp</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span>
+<span class="normal"><a href="#__codelineno-1-29">29</a></span>
+<span class="normal"><a href="#__codelineno-1-30">30</a></span>
+<span class="normal"><a href="#__codelineno-1-31">31</a></span>
+<span class="normal"><a href="#__codelineno-1-32">32</a></span>
+<span class="normal"><a href="#__codelineno-1-33">33</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">nullptr</span><span class="p">);</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="o">&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">r</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">        </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">r</span><span class="p">];</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">        </span><span class="k">while</span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">            </span><span class="n">sum</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">l</span><span class="p">];</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">            </span><span class="n">l</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">sum</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">            </span><span class="n">ans</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">ans</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="sc">'\n'</span><span class="p">;</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31"></a>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></tbody></table></div>
+<p>Analisando a complexidade desse código, apesar do <code>while</code> aninhado, note que o <code>for</code> avança o ponteiro <span class="arithmatex">\(r\)</span> e o <code>while</code> avança o ponteiro <span class="arithmatex">\(l\)</span>.
+Como ambos só vão para a frente, cada um anda no máximo <span class="arithmatex">\(n\)</span> vezes; assim, o total de avanços é <span class="arithmatex">\(n+n = 2n \in \mathcal{O}(n)\)</span>.</p>
+<h2 id="outros-problemas">Outros problemas</h2>
+<p>Nessa parte do artigo, serão apresentados outros problemas que também podem ser resolvidos usando a técnica de Two Pointers.</p>
+<h3 id="contar-segmentos-com-valores-distintos">Contar segmentos com valores distintos</h3>
+<p>Dado um vetor com <span class="arithmatex">\(N\)</span> elementos, queremos contar quantos subarrays existem tal que todos os elementos do subarray são distintos.</p>
+<p>Podemos fazer uma solução parecida com a solução feita no problema motivador acima. Vamos manter um mapa de frequência indicando a frequência de cada valor passado na janela no momento. Inicializaremos o mapa vazio e os ponteiros <span class="arithmatex">\(l,r\)</span> com <span class="arithmatex">\(0\)</span>.</p>
+<ol>
+<li>Avançamos o ponteiro <span class="arithmatex">\(r\)</span> e inserimos <span class="arithmatex">\(a[r]\)</span> no mapa.</li>
+<li>Se a frequência de <span class="arithmatex">\(a[r]\)</span> se tornar maior do que <span class="arithmatex">\(1\)</span>, significa que encontramos uma duplicata. Avançamos o ponteiro <span class="arithmatex">\(l\)</span> e removemos <span class="arithmatex">\(a[l]\)</span> do mapa até que a duplicata seja removida.</li>
+<li>Quando a janela <span class="arithmatex">\([l,r]\)</span> estiver válida (ou seja, sem elementos repetidos), isso significa que todos os subarrays que terminam em <span class="arithmatex">\(r\)</span> e começam entre <span class="arithmatex">\(l\)</span> e <span class="arithmatex">\(r\)</span> são válidos.</li>
+</ol>
+<p>Portanto, a cada passo do ponteiro <span class="arithmatex">\(r\)</span>, somamos <span class="arithmatex">\(r-l+1\)</span> a nossa resposta.</p>
+<p>Vamos olhar para um exemplo prático. Seja <span class="arithmatex">\(a = [1,2,1,3]\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(r=0, l=0 \rightarrow [1]\)</span> é válido. Adicionamos <span class="arithmatex">\(0-0+1=1\)</span> a nossa resposta. (subarrays válidos: <span class="arithmatex">\([1]\)</span>).</li>
+<li><span class="arithmatex">\(r=1,l=0 \rightarrow [1,2]\)</span> é válido. Adicionamos <span class="arithmatex">\(1-0+1=2\)</span> a resposta. (subarrays válidos: <span class="arithmatex">\([2], [1,2]\)</span>).</li>
+<li><span class="arithmatex">\(r=2,l=0 \rightarrow [1,2,1]\)</span> não é válido. Avançamos <span class="arithmatex">\(l\)</span> para <span class="arithmatex">\(1\)</span>. Nova janela fica <span class="arithmatex">\([2,1]\)</span>, que é válido. Adicionamos <span class="arithmatex">\(2-1+1=2\)</span> a resposta. (subarrays válidos: <span class="arithmatex">\([1],[2,1]\)</span>).</li>
+<li><span class="arithmatex">\(r=3,l=1 \rightarrow [2,1,3]\)</span> é válido. Adicionamos <span class="arithmatex">\(3-1+1=3\)</span> a resposta. (subarrays válidos: <span class="arithmatex">\([3],[1,3],[2,1,3]\)</span>).</li>
+</ul>
+<p><span class="arithmatex">\(R = 1+2+2+3 = 8\)</span> subarrays válidos.</p>
+<p>Complexidade final fica <span class="arithmatex">\(\mathcal{O}(n \log n)\)</span>, onde <span class="arithmatex">\(\log n\)</span> vem dos acessos do mapa.</p>
+<h3 id="two-sum">Two Sum</h3>
+<p>Dado um vetor ordenado com <span class="arithmatex">\(n\)</span> elementos e um valor alvo <span class="arithmatex">\(k\)</span>, quero saber se existem dois índices <span class="arithmatex">\(i,j\)</span> tal que <span class="arithmatex">\(a[i] + a[j] = k\)</span>.</p>
+<p>A ideia aqui é que, como o vetor está ordenado, podemos colocar um ponteiro no começo <span class="arithmatex">\((l)\)</span> e um no final <span class="arithmatex">\((r)\)</span>. Com isso, podemos garantir que, quando avançamos o <span class="arithmatex">\(l\)</span>, aumentamos o valor da soma dos dois valores e quando diminuímos o ponteiro <span class="arithmatex">\(r\)</span>, a soma dos dois valores diminui. Assim, podemos fazer o seguinte:</p>
+<ul>
+<li>Se <span class="arithmatex">\(a[l]+a[r]=k\)</span>, achamos o valor!</li>
+<li>Se <span class="arithmatex">\(a[l]+a[r]&lt;k\)</span>, então a soma é menor do que o desejado. Incrementamos <span class="arithmatex">\(l\)</span>.</li>
+<li>Se <span class="arithmatex">\(a[l]+a[r]&gt;k\)</span>, a soma é maior do que o desejado. Decrementamos <span class="arithmatex">\(r\)</span>.</li>
+</ul>
+<p>Isso funciona pois, a cada iteração, eliminamos com certeza um elemento do vetor (seja ele o menor ou o maior valor do vetor atualmente), reduzindo a busca sem precisar testar todas as <span class="arithmatex">\(\mathcal{O}(n^2)\)</span> combinações de pares.</p>
+<h2 id="dicas-para-identificar-problemas">Dicas para identificar problemas</h2>
+<p>Podemos nos perguntar algumas coisas quando estamos tentando identificar se um problema pode ser resolvido usando a técnica de Two Pointers:</p>
+<ol>
+<li>É <strong>monótono</strong>? Ou seja, expandir para a direita faz com que algo em uma variável apenas aumente? Expandir pra esquerda faz com que essa mesma variável apenas diminua?</li>
+<li>O problema em questão envolve <strong>coisas contínuas</strong>? Como por exemplo, subarrays, substrings, achar pares em vetores ordenados.</li>
+</ol>
+<p>Se a resposta for sim para ambas perguntas, quase certamente você pode usar Two Pointers para resolver esse problema.</p>
+<h2 id="lista-de-exercicios">Lista de Exercícios</h2>
+<div class="admonition tip">
+<p class="admonition-title">Dica</p>
+<p>Problemas que envolvem Two Pointers podem precisar de outras técnicas, como Busca Binária ou Soma de Prefixo. Considere isso quando estiver resolvendo os problemas abaixo.</p>
+</div>
+<ul>
+<li><a href="https://cses.fi/problemset/task/1640" target="_blank">CSES - Sum of Two Values</a></li>
+<li><a href="https://cses.fi/problemset/task/3420" target="_blank">CSES - Distinct Values Subarrays</a></li>
+<li><a href="https://cses.fi/problemset/task/2428" target="_blank">CSES - Distinct Values Subarrays II</a></li>
+<li><a href="https://codeforces.com/contest/2000/problem/D" target="_blank">Codeforces - Right Left Wrong</a></li>
+<li><a href="https://codeforces.com/contest/702/problem/C" target="_blank">Codeforces - Cellular Network</a></li>
+<li><a href="https://cses.fi/problemset/task/1641" target="_blank">CSES - Sum of Three Values</a></li>
+<li><a href="https://codeforces.com/edu/course/2/lesson/9/2/practice/contest/307093/problem/F" target="_blank">Codeforces - Segment with Small Spread</a> (para acessar esse problema, entre na aba <a href="https://codeforces.com/edu/courses" target="_blank">Edu</a> na hotbar do Codeforces. Após isso, dê <em>enroll</em> em <em>ITMO Academy: pilot course</em>.)</li>
+<li><a href="https://codeforces.com/edu/course/2/lesson/9/3/practice/contest/307094/problem/B" target="_blank">Codeforces - Total Length</a> (para acessar esse problema, entre na aba <a href="https://codeforces.com/edu/courses" target="_blank">Edu</a> na hotbar do Codeforces. Após isso, dê <em>enroll</em> em <em>ITMO Academy: pilot course</em>.)</li>
+<li><a href="https://codeforces.com/edu/course/2/lesson/9/3/practice/contest/307094/problem/E" target="_blank">Codeforces - Knapsack on a Segment</a> (para acessar esse problema, entre na aba <a href="https://codeforces.com/edu/courses" target="_blank">Edu</a> na hotbar do Codeforces. Após isso, dê <em>enroll</em> em <em>ITMO Academy: pilot course</em>.)</li>
+</ul>
 
 
 
@@ -1631,7 +2144,7 @@
     <span class="md-icon" title="Última atualização">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="13 de novembro de 2024 13:38:21 UTC">13 de novembro de 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="7 de setembro de 2026 20:18:34 UTC">7 de setembro de 2026</span>
   </span>
 
     
