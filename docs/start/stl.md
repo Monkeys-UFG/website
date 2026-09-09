@@ -52,12 +52,21 @@ int main() {
 ### `#!cpp #include <bits/stdc++.h>`
 É um arquivo de cabeçalho que já inclui todas as bibliotecas padrão, ou seja, você não precisa dar `#!cpp #include` manualmente para cada estrutura de dados ou algoritmo que for usar. Por exemplo, se precisar de `vector` e `set`, normalmente teria que incluir `#!cpp #include <vector>` e `#!cpp #include <set>` separadamente. Com `#!cpp #include <bits/stdc++.h>`, tudo isso já vem junto, facilitando o uso e economizando tempo.
 
+!!! warning "Um pequeno aviso"
+    Em programação competitiva, queremos ser rápidos para criar códigos funcionais, já que o tempo da prova é valioso. O código geralmente é descartável; uma vez criado e uma vez que ele é enviado, não tem mais utilidade para nós que não seja para estudos. Quando falamos de engenharia de software, no entanto, código é um ativo de longo prazo, e o uso dessa biblioteca e do namespace pode gerar perda de clareza, demora na compilação, entre outros problemas que são relevantes para a indústria. Então, use esse include apenas no contexto de programação competitiva.
+
 ### `#!cpp using namespace std;`
 O `#!cpp using namespace std;` é uma diretiva no C++ que permite que você use os elementos da biblioteca padrão (std) sem precisar escrever `#!cpp std::` antes de cada um deles. Isso facilita a escrita do código, pois você não precisa digitar `#!cpp std::` repetidamente para acessar coisas como `#!cpp cout`, `#!cpp cin`, `#!cpp vector`, entre outros.
 
 Por exemplo, se você não usar o `#!cpp using namespace std;`, seria necessário escrever `#!cpp std::cout`, `#!cpp std::cin`, `#!cpp std::vector`, etc. Com o `#!cpp using namespace std;`, basta escrever `#!cpp cout`, `#!cpp cin`, `#!cpp vector`, e o compilador entenderá automaticamente que você está se referindo à versão padrão dessas funções e estruturas.
 
 ## Estruturas de Dados
+
+<!-- As estruturas de dados encontradas na linguagem são feitas em cima de um template. Esse template contém algumas funções que são comuns para todas as estruturas. Algumas dessas funções são:
+
+1. *size / length:* Duas funções que servem para retornar a quantidade de elementos que a estrutura tem. Como exemplo, suponha que tenhamos um `#!cpp vector<int> a = {2,1,3,1};`. Usar $a.size()$ irá retornar o valor $4$.
+2.  -->
+
 Em cada um dos links abaixo, você encontra referências que ensinam a utilizar cada uma das estruturas.
 
 - ``vector``: <a href="https://www.geeksforgeeks.org/vector-in-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/vector-in-cpp-stl/</a>
@@ -70,7 +79,15 @@ Em cada um dos links abaixo, você encontra referências que ensinam a utilizar 
 - ``deque``:  <a href="https://www.geeksforgeeks.org/deque-cpp-stl/" target="_blank">https://www.geeksforgeeks.org/deque-cpp-stl/</a>
 
 ## Algoritmos
-Em cada um dos links abaixo, você encontra referências que ensinam a utilizar cada um dos algoritmos.
+
+Nessa seção, serão apresentado alguns algoritmos que são comuns em programação competitiva, junto de sua complexidade e de algumas dicas sobre como usá-lo de uma forma diferente para economizar tempo e espaço no seu código.
+
+<!-- 1. **Sort:** Essa função ordena um intervalo de valores em ordem crescente. O algoritmo é uma combinação do QuickSort, HeapSort e InsertionSort.
+    + **Complexidade:** $\mathcal{O}(N \log N)$.
+    + **Dica:** Essa função aceita funções de comparação customizadas e expressões _lambda_. Se quisermos ordenar descrescente, basta usar `#!cpp greater<T>()`, onde $T$ é o tipo da função.
+2. **Reverse:** Essa função inverte um intervalo de valores.
+3. **Swap:** Troca dois elementos de uma lista de lugar. -->
+
 
 <a href="https://www.geeksforgeeks.org/swap-in-cpp/" target="_blank">https://www.geeksforgeeks.org/swap-in-cpp/</a>
 
